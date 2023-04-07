@@ -53,3 +53,7 @@ dkms.conf
 
 # MacOS
 .DS_Store
+
+# General
+.vscode
+.gdb_history
