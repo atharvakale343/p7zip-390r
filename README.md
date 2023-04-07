@@ -5,9 +5,8 @@
 ## Build target
 
 ```bash
-cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
-PATH=$PATH:$PWD/_o/bin
-cd -
+cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
+PATH=$PATH:$PWD/p7zip/CPP/7zip/Bundles/Alone2/_o/bin
 ```
 
 ## Run target
@@ -26,4 +25,4 @@ cd playground
 7zz e files.zip -ofiles_extracted
 ```
 
-### 
+###
