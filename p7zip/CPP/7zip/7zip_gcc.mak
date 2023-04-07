@@ -42,7 +42,7 @@ ifndef DEF_FILE
 ifndef IS_NOT_STANDALONE
 ifndef MY_DYNAMIC_LINK
 ifneq ($(CC), clang)
-LDFLAGS_STATIC_2 =
+LDFLAGS_STATIC_2 = -g
 # -static
 # -static-libstdc++ -static-libgcc
 endif
@@ -51,7 +51,7 @@ endif
 endif
 endif
 
-LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2)
+LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2) -g
 
 ifndef O
   ifdef IS_MINGW
@@ -147,7 +147,7 @@ endif
 
 
 
-CFLAGS = $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -o $@
+CFLAGS = $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -g -o $@
 
 
 ifdef IS_MINGW
@@ -175,7 +175,7 @@ CXX_WARN_FLAGS =
 #-Wno-invalid-offsetof
 #-Wno-reorder
 
-CXXFLAGS = $(MY_ARCH_2) $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS)
+CXXFLAGS = $(MY_ARCH_2) -g $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS)
 
 STATIC_TARGET=
 ifdef COMPL_STATIC
@@ -216,7 +216,7 @@ $(7z_BIN):
 $(7Z_ADDON_CODEC):
 	$(MY_MKDIR) $(O)/$(7z_LIB)/$(7Z_ADDON_CODEC)
 
-LFLAGS_ALL = -s $(MY_ARCH_2) $(LDFLAGS) $(LD_arch) $(OBJS) $(MY_LIBS) $(LIB2)
+LFLAGS_ALL = $(MY_ARCH_2) $(LDFLAGS) $(LD_arch) $(OBJS) $(MY_LIBS) $(LIB2)
 $(PROGPATH): $(ZSTD_LIB) $(LZ4_LIB) $(BROTLI_LIB) $(LIZARD_LIB) $(LZ5_LIB) $(FAST-LZMA2_LIB) $(LZHAM_LIB) $(OBJS)
 	$(CXX) -o $(PROGPATH) $(LFLAGS_ALL) $(7z_ADDON_LIB) $(7z_ADDON_LIB_FLAG)
 
@@ -1321,7 +1321,7 @@ $O/libzstd.$(DYSUFFIX): ../../../../C/zstd/lib/zstd.h
 	$(RM) zstd_build
 	$(MY_MKDIR) -p zstd_build
 	$(CD) zstd_build; \
-	cmake ../../../../../C/zstd/build/cmake -DCMAKE_BUILD_TYPE=Release -DZSTD_BUILD_PROGRAMS=OFF -DZSTD_BUILD_STATIC=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake ../../../../../C/zstd/build/cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug -DZSTD_BUILD_PROGRAMS=OFF -DZSTD_BUILD_STATIC=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) zstd_build/lib/libzstd.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
@@ -1341,7 +1341,7 @@ $O/liblz4.$(DYSUFFIX): ../../../../C/lz4/lib/lz4.h
 	$(RM) lz4_build
 	$(MY_MKDIR) -p lz4_build
 	$(CD) lz4_build; \
-	cmake ../../../../../C/lz4/build/cmake -DCMAKE_BUILD_TYPE=Release -DLZ4_BUILD_CLI=OFF -DLZ4_BUILD_LEGACY_LZ4C=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug ../../../../../C/lz4/build/cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug -DLZ4_BUILD_CLI=OFF -DLZ4_BUILD_LEGACY_LZ4C=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) lz4_build/liblz4.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
@@ -1361,7 +1361,7 @@ $O/libbrotlicommon.$(DYSUFFIX) $O/libbrotlienc.$(DYSUFFIX) $O/libbrotlidec.$(DYS
 	$(RM) brotli_build
 	$(MY_MKDIR) -p brotli_build
 	$(CD) brotli_build; \
-	cmake ../../../../../C/brotli/ -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" ../../../../../C/brotli/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" -DBUILD_TESTING=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) brotli_build/libbrotlicommon.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
@@ -1413,7 +1413,7 @@ $O/liblzhamdll.$(DYSUFFIX) $O/liblzhamcomp.$(DYSUFFIX) $O/liblzhamdecomp.$(DYSUF
 	$(RM) lzham_build
 	$(MY_MKDIR) -p lzham_build
 	$(CD) lzham_build; \
-	cmake ../../../../../C/lzham_codec/ -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_C_FLAGS="-g2" ../../../../../C/lzham_codec/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) lzham_build/lzhamcomp/liblzhamcomp.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
