@@ -44,13 +44,13 @@ cd playground
 
 ![List of ROP Gadgets](screenshots/rop_gadgets.png)
 
-## One Gadgets
+### One Gadgets
 
 ![List of One Gadgets](screenshots/one_gadgets.png)
 
 ### Function call graph
 
-The following can be used to analyze execution of the target and produce graphs
+The following can be used to analyze execution of the target and produce graphs. It requires `valgrind` and `kcachegrind` to be installed.
 
 ```bash
 valgrind --callgrind-out-file=callgrind_vis2 --tool=callgrind 7zz e files.zip -ofiles_extracted
