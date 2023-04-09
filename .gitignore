@@ -60,3 +60,4 @@ p7zip
 .gdb_history
 venv
 callgrind_*
+rop_*.txt

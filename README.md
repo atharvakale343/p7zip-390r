@@ -30,18 +30,37 @@ cd playground
 7zz e files.zip -ofiles_extracted
 ```
 
+## Target analysis
+
+### File format
+
+![File format](screenshots/file_format.png)
+
+### Mitigations
+
+![Checksec mitigations](screenshots/checksec_mitigations.png)
+
+### ROP Gadgets
+
+![List of ROP Gadgets](screenshots/rop_gadgets.png)
+
+All of the gadgets are available [here](rop_out.txt)
+
+## One Gadgets
+
+![List of One Gadgets](screenshots/one_gadgets.png)
+
 ### Function call graph
 
-```bash
-# Get info from elf
-valgrind --callgrind-out-file=callgrind_vis2 --tool=callgrind 7zz e files.zip -ofiles_extracted
+The following can be used to analyze execution of the target and produce graphs
 
-# Visualize
+```bash
+valgrind --callgrind-out-file=callgrind_vis2 --tool=callgrind 7zz e files.zip -ofiles_extracted
 kcachegrind callgrind_vis2
 ```
 
-Below are some example call graphs produced for the above two commands:
+Below are two call graphs produced for the archive and extract commands:
 
-![Zip files](pictures/func_call_graph1.png)
+![Zip files](screenshots/func_call_graph1.png)
 
-![Extract files](pictures/func_call_graph2.png)
+![Extract files](screenshots/func_call_graph2.png)
