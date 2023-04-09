@@ -5,6 +5,7 @@
 ## Build target
 
 ```bash
+git clone git@github.com:jinfeihan57/p7zip.git
 cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
 PATH=$PATH:$PWD/p7zip/CPP/7zip/Bundles/Alone2/_o/bin
 ```
