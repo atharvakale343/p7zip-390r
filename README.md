@@ -44,8 +44,6 @@ cd playground
 
 ![List of ROP Gadgets](screenshots/rop_gadgets.png)
 
-All of the gadgets are available [here](rop_out.txt)
-
 ## One Gadgets
 
 ![List of One Gadgets](screenshots/one_gadgets.png)
