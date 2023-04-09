@@ -5,7 +5,7 @@
 ## Build target
 
 ```bash
-# Clone target and add debugging flag
+# Clone target and update Makefile with debugging flags
 git clone git@github.com:jinfeihan57/p7zip.git
 cp 7zip_gcc_dbg.mak p7zip/CPP/7zip/7zip_gcc.mak
 
@@ -30,4 +30,18 @@ cd playground
 7zz e files.zip -ofiles_extracted
 ```
 
-###
+### Function call graph
+
+```bash
+# Get info from elf
+valgrind --callgrind-out-file=callgrind_vis2 --tool=callgrind 7zz e files.zip -ofiles_extracted
+
+# Visualize
+kcachegrind callgrind_vis2
+```
+
+Below are some example call graphs produced for the above two commands:
+
+![Zip files](pictures/func_call_graph1.png)
+
+![Extract files](pictures/func_call_graph2.png)

@@ -58,3 +58,5 @@ dkms.conf
 p7zip
 .vscode
 .gdb_history
+venv
+callgrind_*
