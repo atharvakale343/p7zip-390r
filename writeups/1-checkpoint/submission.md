@@ -16,7 +16,7 @@ header-includes:
 
 - [Overview of the Target](#overview-of-the-target)
 - [Debug Environment](#debug-environment)
-- [Target Code-Base](#target-code-base)
+- [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
 - [Future Plans](#future-plans)
 
 \newpage
@@ -135,7 +135,7 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 \newpage
 
-## Target Code-Base
+## Mapping out the Target Code-Base
 
 TODO
 
