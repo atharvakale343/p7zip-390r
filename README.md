@@ -12,6 +12,9 @@ cp 7zip_gcc_dbg.mak p7zip/CPP/7zip/7zip_gcc.mak
 # Compile target and update path
 cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
 PATH=$PATH:$PWD/p7zip/CPP/7zip/Bundles/Alone2/_o/bin
+
+# For fuzzing, use the compiled target
+cp 7zz_fuzz p7zip/CPP/7zip/Bundles/Alone2/_o/bin
 ```
 
 ## Run target
