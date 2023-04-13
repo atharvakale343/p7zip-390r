@@ -66,6 +66,14 @@ Below are two call graphs produced for the archive and extract commands:
 
 ![Extract files](screenshots/func_call_graph2.png)
 
-# Installing AFL++
+## Fuzzing
+
+### Installing AFL++
 
 Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
+
+### Using AFL compiled target
+
+```bash
+7zz_fuzz -h
+```
