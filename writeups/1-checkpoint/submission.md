@@ -234,3 +234,17 @@ A scanner is defined in ExtractCallbackConsole.cpp, and this is assumably used t
 \newpage
 
 ## Future Plans
+
+### Fuzzing
+
+```bash
+git clone https://github.com/AFLplusplus/AFLplusplus
+cd AFLplusplus
+# sudo dnf -y install gcc-plugin-devel-12.2.1
+# sudo dnf -y install llvm-devel
+make all
+sudo make install
+CC=/usr/local/bin/afl-gcc-fast CXX=/usr/local/bin/afl-g++-fast make -f -B makefile.gcc
+```
+
+![Compiling with AFL Source Code Instrumentation](screenshots/compiling-with-afl.png){width=450}
