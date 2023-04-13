@@ -62,3 +62,7 @@ Below are two call graphs produced for the archive and extract commands:
 ![Zip files](screenshots/func_call_graph1.png)
 
 ![Extract files](screenshots/func_call_graph2.png)
+
+# Installing AFL++
+
+Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
