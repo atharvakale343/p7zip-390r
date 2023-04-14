@@ -139,15 +139,15 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 TODO
 
-The functionality of the console version of this application is straightforward. The binary accepts command line arguments (main defined in MainAr.cpp), then attempts to pass them to main2() in Main.cpp (wrapped in try block). 
+The functionality of the console version of this application is straightforward. The binary accepts command line arguments (main defined in MainAr.cpp), then attempts to pass them to main2() in Main.cpp (wrapped in try block).
 
 main2() handles the bulk of all functionality.
 
-It parses command line arguments beginning at line 733. Argument length is checked, arguments are converted to Unicode and pushed to a string vector. 
+It parses command line arguments beginning at line 733. Argument length is checked, arguments are converted to Unicode and pushed to a string vector.
 
 Arguments are first parsed into the following struct using parse1() defined in the ArchiveCommandLine.cpp.
 
-```
+```c
 struct CArcCmdLineOptions
 {
   bool HelpMode;
@@ -199,7 +199,7 @@ struct CArcCmdLineOptions
   CBoolPair AltStreams;
   CBoolPair HardLinks;
   CBoolPair SymLinks;
-  
+
   CBoolPair StoreOwnerId;
   CBoolPair StoreOwnerName;
 
@@ -207,7 +207,7 @@ struct CArcCmdLineOptions
   CHashOptions HashOptions;
   UString ArcType;
   UStringVector ExcludedArcTypes;
-  
+
   unsigned Number_for_Out;
   unsigned Number_for_Errors;
   unsigned Number_for_Percents;
@@ -226,10 +226,9 @@ Then parse2() is called on the options struct.
 
 ArchiveCommandLine.cpp handles a bunch of flags that can be passed, ie. SLP mode (large pages), core affinity, etc. Also contains several other methods for parsing.
 
-Importantly, it defines the formats of arguments. Beginning on line 341, isFromExtractGroup() is defined. We see there are extract, extractFull flags. 
+Importantly, it defines the formats of arguments. Beginning on line 341, isFromExtractGroup() is defined. We see there are extract, extractFull flags.
 
 A scanner is defined in ExtractCallbackConsole.cpp, and this is assumably used to enumerate files in an archive?
-
 
 \newpage
 
@@ -248,3 +247,5 @@ CC=/usr/local/bin/afl-gcc-fast CXX=/usr/local/bin/afl-g++-fast make -f -B makefi
 ```
 
 ![Compiling with AFL Source Code Instrumentation](screenshots/compiling-with-afl.png){width=450}
+
+![Attempt to Fuzz](screenshots/fuzzing-trial.png){width=450}
