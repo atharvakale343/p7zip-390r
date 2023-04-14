@@ -88,6 +88,6 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 ### Fuzzing with dictionaries
 
 ```bash
-cd fuzzing
+cd /src/fuzzing
 afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz a @@
 ```
