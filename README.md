@@ -89,7 +89,5 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 
 ```bash
 cd fuzzing
-
-# Run the fuzzer on seeds_dir as input
-afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz
+afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz a @@
 ```
