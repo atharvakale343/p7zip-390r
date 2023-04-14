@@ -77,3 +77,16 @@ Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
 ```bash
 7zz_fuzz -h
 ```
+
+### Fuzzing with dictionaries
+
+```bash
+cd fuzzing
+
+# Set flags to avoid CPU failures
+export AFL_SKIP_CPUFREQ=1
+export AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+
+# Run the fuzzer on seeds_dir as input
+afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz
+```
