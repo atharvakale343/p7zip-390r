@@ -147,7 +147,7 @@ The functionality of the console version of this application is straightforward.
 
 It parses command line arguments beginning at line 733. Argument length is checked, arguments are converted to Unicode and pushed to a string vector.
 
-Arguments are first parsed into the following struct using parse1() defined in the _ArchiveCommandLine.cpp_.
+Arguments are first parsed into the following struct using `parse1()` defined in the _ArchiveCommandLine.cpp_.
 
 ```c
 struct CArcCmdLineOptions
