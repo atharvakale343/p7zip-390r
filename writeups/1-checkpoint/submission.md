@@ -6,32 +6,36 @@ date: "2023-04-12"
 caption-justification: centering
 titlepage: true
 header-includes:
-  - \usepackage{fvextra}
-  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+    - \usepackage{fvextra}
+    - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
 # Checkpoint 1
 
 ## Contents:
 
-- [Overview of the Target](#overview-of-the-target)
-- [Debug Environment](#debug-environment)
-- [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
-- [Future Plans](#future-plans)
+-   [Overview of the Target](#overview-of-the-target)
+-   [Debug Environment](#debug-environment)
+-   [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
+-   [Future Plans](#future-plans)
 
 \newpage
 
 ## Overview of the Target
+
+_p7zip_ is a fully compliant linux port of the open source _7zip_ tool for Windows. It is an utility used to archive and extract various compression formats. It is used primarily in Windows GUI tools as an underlying utility to support their file compression features.
+
+_p7zip_ provides the following features:
+
+1. Several compression algorithms (_lz4_, _zstd_, _Lizard_, etc...)
+2. CLI frontend
+3. Cryptographic algorithms for archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
 
 \newpage
 
 ## Debug Environment
 
 ### How to build the target
-
-Pre-requisites:
-
-1. CMake
 
 **Step 1:**
 
@@ -137,15 +141,13 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 ## Mapping out the Target Code-Base
 
-TODO
+The functionality of the console version of this application is straightforward. The binary accepts command line arguments (`main` defined in _MainAr.cpp_), then attempts to pass them to `main2()` in _Main.cpp_ (wrapped in try block).
 
-The functionality of the console version of this application is straightforward. The binary accepts command line arguments (main defined in MainAr.cpp), then attempts to pass them to main2() in Main.cpp (wrapped in try block).
-
-main2() handles the bulk of all functionality.
+`main2()` handles the bulk of all functionality.
 
 It parses command line arguments beginning at line 733. Argument length is checked, arguments are converted to Unicode and pushed to a string vector.
 
-Arguments are first parsed into the following struct using parse1() defined in the ArchiveCommandLine.cpp.
+Arguments are first parsed into the following struct using parse1() defined in the _ArchiveCommandLine.cpp_.
 
 ```c
 struct CArcCmdLineOptions
@@ -176,59 +178,17 @@ struct CArcCmdLineOptions
 
   CArcCommand Command;
   UString ArchiveName;
-
-  #ifndef _NO_CRYPTO
-  bool PasswordEnabled;
-  UString Password;
-  #endif
-
-  UStringVector HashMethods;
-  // UString HashFilePath;
-
-  bool AppendName;
-  // UStringVector ArchivePathsSorted;
-  // UStringVector ArchivePathsFullSorted;
-  NWildcard::CCensor arcCensor;
-  UString ArcName_for_StdInMode;
-
-  CObjectVector<CProperty> Properties;
-
-  CExtractOptionsBase ExtractOptions;
-
-  CBoolPair NtSecurity;
-  CBoolPair AltStreams;
-  CBoolPair HardLinks;
-  CBoolPair SymLinks;
-
-  CBoolPair StoreOwnerId;
-  CBoolPair StoreOwnerName;
-
-  CUpdateOptions UpdateOptions;
-  CHashOptions HashOptions;
-  UString ArcType;
-  UStringVector ExcludedArcTypes;
-
-  unsigned Number_for_Out;
-  unsigned Number_for_Errors;
-  unsigned Number_for_Percents;
-  unsigned LogLevel;
-
-  // bool IsOutAllowed() const { return Number_for_Out != k_OutStream_disabled; }
-
-  // Benchmark
-  UInt32 NumIterations;
-  bool NumIterations_Defined;
 ```
 
-First arguments checked are related to showing help/copyright, and calls the ShowCopyRightAndHealth() function.
+First arguments checked are related to showing _help/copyright_, and calls the `ShowCopyRightAndHealth()` function.
 
-Then parse2() is called on the options struct.
+Then `parse2()` is called on the options struct.
 
-ArchiveCommandLine.cpp handles a bunch of flags that can be passed, ie. SLP mode (large pages), core affinity, etc. Also contains several other methods for parsing.
+_ArchiveCommandLine.cpp_ handles a bunch of flags that can be passed, ie. SLP mode (large pages), core affinity, etc. Also contains several other methods for parsing.
 
-Importantly, it defines the formats of arguments. Beginning on line 341, isFromExtractGroup() is defined. We see there are extract, extractFull flags.
+Importantly, it defines the formats of arguments. Beginning on line 341, `isFromExtractGroup()` is defined. We see there are extract, and extractFull flags.
 
-A scanner is defined in ExtractCallbackConsole.cpp, and this is assumably used to enumerate files in an archive?
+A scanner is defined in _ExtractCallbackConsole.cpp_, and this is presumably used to enumerate files in an archive.
 
 \newpage
 
@@ -236,16 +196,19 @@ A scanner is defined in ExtractCallbackConsole.cpp, and this is assumably used t
 
 ### Fuzzing
 
+We plan to use fuzzing as an approach to find bugs in **p7zip**. In specific, mutational fuzzing would be a good fit, where we would use a corpus of _zip_ and regular files to test archiving/extracting features of the binary.
+
+To start with, we used the `AFL++` docker container setup:
+
 ```bash
-git clone https://github.com/AFLplusplus/AFLplusplus
-cd AFLplusplus
-# sudo dnf -y install gcc-plugin-devel-12.2.1
-# sudo dnf -y install llvm-devel
-make all
-sudo make install
-CC=/usr/local/bin/afl-gcc-fast CXX=/usr/local/bin/afl-g++-fast make -f -B makefile.gcc
+docker pull aflplusplus/aflplusplus
+docker run -ti -v .:/src aflplusplus/aflplusplus
 ```
 
+Then, we recompiled the binary with AFL instrumentation enabled.
+
 ![Compiling with AFL Source Code Instrumentation](screenshots/compiling-with-afl.png){width=450}
+
+We also started a dummy test for archive to see how fuzzing the binary works. Of course, this does not crash the binary, but we got a working template. We need to figure out ways to smarten the input and find coverage through symbolic execution.
 
 ![Attempt to Fuzz](screenshots/fuzzing-trial.png){width=450}
