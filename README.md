@@ -72,7 +72,7 @@ Below are two call graphs produced for the archive and extract commands:
 
 Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
 
-## ALF++ with Docker
+### ALF++ with Docker
 
 ```bash
 docker pull aflplusplus/aflplusplus
