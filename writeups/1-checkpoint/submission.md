@@ -23,7 +23,7 @@ header-includes:
 
 ## Overview of the Target
 
-_p7zip_ is a fully compliant linux port of the open source _7zip_ tool for Windows. It is an utility used to archive and extract various compression formats. It is used primarily in Windows GUI tools as an underlying utility to support their file compression features.
+**p7zip** is a fully compliant linux port of the open source _7zip_ tool for Windows. It is a utility used to archive and extract various compression formats. It is primarily used in Windows GUI tools as an underlying utility to support their file compression features.
 
 _p7zip_ provides the following features:
 
@@ -186,7 +186,7 @@ A scanner is defined in _ExtractCallbackConsole.cpp_, and this is presumably use
 
 ### Fuzzing
 
-We plan to use fuzzing as an approach to find bugs in **p7zip**. In specific, mutational fuzzing would be a good fit, where we would use a corpus of _zip_ and regular files to test archiving/extracting features of the binary.
+We plan to use fuzzing as an approach to find bugs in **p7zip**. In specific, mutational fuzzing would be a good fit, where we would use a corpus of ZIP and regular files to test the archiving/extracting features of the binary.
 
 To start with, we used the `AFL++` docker container setup:
 
@@ -195,7 +195,7 @@ docker pull aflplusplus/aflplusplus
 docker run -ti -v .:/src aflplusplus/aflplusplus
 ```
 
-Then, we recompiled the binary with AFL instrumentation enabled.
+Then, we re-compiled the binary with AFL instrumentation enabled.
 
 ![Compiling with AFL Source Code Instrumentation](screenshots/compiling-with-afl.png){width=450}
 
