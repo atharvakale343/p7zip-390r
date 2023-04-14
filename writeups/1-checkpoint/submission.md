@@ -89,23 +89,13 @@ cd playground
 
 ### Target analysis
 
-**File format**
-
 ![File format](screenshots/file_format.png){width=400}
-
-**Mitigations**
 
 ![`checksec` mitigations](screenshots/checksec_mitigations.png){width=400}
 
-**ROP Gadgets**
-
 ![List of ROP Gadgets](screenshots/rop_gadgets.png){width=400}
 
-**Shared Libraries**
-
 ![List of Shared Libraries](screenshots/shared_libs.png){width=400}
-
-**One Gadgets**
 
 ![List of One Gadgets](screenshots/one_gadgets.png){width=400}
 
