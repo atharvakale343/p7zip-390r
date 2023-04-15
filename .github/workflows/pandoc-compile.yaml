@@ -1,0 +1,103 @@
+name: Build PDF Document
+on:
+  push:
+    paths:
+      - "writeups/**"
+
+env:
+  INPUT_MD: "submission.md"
+  OUTPUT_TEX: "submission.tex"
+  OUTPUT_PDF_PDFLATEX: "submission.pdf"
+  OUTPUT_PDF: "checkpoint.pdf"
+  WRITEUPS_FOLDER: "writeups"
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Find matching workflow
+        uses: SamhammerAG/last-successful-build-action@v4
+        id: last-hash-step
+        continue-on-error: true
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "main"
+          workflow: "Build PDF Document"
+
+      - name: Log the last successful workflow SHA
+        run: echo "Last Build SHA = ${{ steps.last-hash-step.outputs.sha }}"
+
+      - name: Check Writeup Diffs
+        uses: tj-actions/changed-files@v35
+        id: changed-files
+        with:
+          sha: ${{ steps.last-hash-step.outputs.previous_sha }}
+          dir_names: "true"
+          dir_names_exclude_root: "true"
+          dir_names_max_depth: 2
+          files: writeups
+          json: true
+
+      - name: List all changed files
+        run: echo '**Changed Directories**<${{ steps.changed-files.outputs.all_changed_and_modified_files }}>'
+      - name: Send output
+        id: set-matrix
+        run: echo "matrix={\"container\":${{ steps.changed-files.outputs.all_changed_and_modified_files }}}" >> $GITHUB_OUTPUT
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+
+  convert_via_pandoc:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    if: ${{ needs.setup.outputs.matrix != '' && toJson(fromJSON(needs.setup.outputs.matrix).container) != '[]' }}
+    strategy:
+      matrix:
+        directory: ${{ fromJSON(needs.setup.outputs.matrix).container }}
+    steps:
+      - name: Log directory
+        run: |
+          echo "**DOING**: <${{ matrix.directory }}>"
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Install pandoc template
+        run: |
+          wget https://github.com/Wandmalfarbe/pandoc-latex-template/releases/download/v2.3.0/Eisvogel-2.3.0.zip
+          unzip -d eisvogel Eisvogel-2.3.0.zip
+          mkdir -p ~/.pandoc/templates/
+          cp eisvogel/eisvogel.latex ~/.pandoc/templates/
+      - name: MD to TEX file
+        uses: docker://pandoc/core:2.9
+        with:
+          args: >- # allows you to break string into multiple lines
+            -s
+            --template eisvogel/eisvogel.latex
+            --listings
+            -H ${{ matrix.directory }}/disable_float.tex
+            -V colorlinks=true
+            -V linkcolor=blue
+            -V urlcolor=blue
+            --output=${{ matrix.directory }}/${{ env.OUTPUT_TEX }}
+            ${{ matrix.directory }}/${{ env.INPUT_MD }}
+      - name: TEX to PDF file
+        uses: xu-cheng/latex-action@v2
+        with:
+          working_directory: ${{ matrix.directory }}
+          root_file: ${{ env.OUTPUT_TEX }}
+          post_compile: "latexmk -c"
+      - name: Rename PDF file
+        run: mv ${{ matrix.directory }}/${{ env.OUTPUT_PDF_PDFLATEX }} ${{ matrix.directory }}/${{ env.OUTPUT_PDF }}
+      - name: Remove generated TEX file
+        working-directory: ${{ matrix.directory }}
+        run: rm ${{ env.OUTPUT_TEX }}
+      - name: Cleanup
+        run: rm -rf Eisvogel-2.3.0.zip eisvogel
+      - name: Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: ${{ matrix.directory }}
