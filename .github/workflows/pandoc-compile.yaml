@@ -96,6 +96,8 @@ jobs:
         run: rm ${{ env.OUTPUT_TEX }}
       - name: Cleanup
         run: rm -rf Eisvogel-2.3.0.zip eisvogel
+      - name: Pull Changes
+        run: git pull
       - name: Push changes
         uses: actions-js/push@master
         with:
