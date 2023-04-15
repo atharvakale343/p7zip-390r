@@ -1,10 +1,10 @@
-PYFILES = $(wildcard src/*.py)
+# PYFILES = $(wildcard src/*.py)
 SC = $(wildcard screenshots/*.png)
 
 INPUT_MD = submission.md
 OUTPUT_TEX = submission.tex
-OUTPUT_PDF = Kale_Atharva_p2w.pdf
-ZIP_CMD = zip -FSr -j submission.zip src/* $(OUTPUT_PDF) screenshots/Kale_Atharvap1c2.png
+OUTPUT_PDF = checkpoint.pdf
+ZIP_CMD = zip -FSr -j submission.zip $(OUTPUT_PDF)
 
 OUTPUT_PDF_PDFLATEX = $(patsubst %.tex,%.pdf,$(OUTPUT_TEX))
 UNAME := $(shell uname)
