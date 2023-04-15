@@ -20,7 +20,7 @@ endif
 all: $(INPUT_MD) $(PYFILES) $(SC)
 	pandoc -s --template eisvogel --listings -H disable_float.tex -V colorlinks=true -V linkcolor=blue -V urlcolor=blue -o $(OUTPUT_PDF) $(INPUT_MD)
 	$(OPEN) $(OUTPUT_PDF)
-	$(ZIP_CMD)
+	$(ZIP_CMD) 
 
 fast: $(INPUT_MD) $(PYFILES) $(SC)
 	pandoc -s --template eisvogel --listings -H disable_float.tex -V colorlinks=true -V linkcolor=blue -V urlcolor=blue -o $(OUTPUT_TEX) $(INPUT_MD)
