@@ -195,7 +195,7 @@ There are a bunch of callbacks used for operating on archives. One such interfac
 
 ### Fuzzing
 
-We plan to use fuzzing as an approach to find bugs in **p7zip**. In specific, mutational fuzzing would be a good fit, where we would use a corpus of ZIP and regular files to test the archiving/extracting features of the binary.
+We plan to use fuzzing as an approach to find bugs in **p7zip**. In specific, mutational fuzzing would be a good fit, where we would use a corpus of ZIP and regular files to test the archiving/extracting features of the binary. Given that p7zip is designed to handle many file formats, it is likely we can find bugs since parsing correctly and safely is quite difficult.
 
 To start with, we used the `AFL++` docker container setup:
 
