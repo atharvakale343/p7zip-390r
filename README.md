@@ -1,6 +1,6 @@
 # 390r-debugging-setup
 
--   Link to `p7zip` repository: https://github.com/jinfeihan57/p7zip
+- Link to `p7zip` repository: https://github.com/jinfeihan57/p7zip
 
 ## Build target
 
