@@ -14,16 +14,16 @@ header-includes:
 
 ## Contents:
 
-- [Checkpoint 1](#checkpoint-1)
-  - [Contents:](#contents)
-  - [Overview of the Target](#overview-of-the-target)
-  - [Debug Environment](#debug-environment)
-    - [How to build the target](#how-to-build-the-target)
-    - [Experiment with the Target](#experiment-with-the-target)
-    - [Target analysis](#target-analysis)
-  - [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
-  - [Future Plans](#future-plans)
-    - [Fuzzing](#fuzzing)
+-   [Checkpoint 1](#checkpoint-1)
+    -   [Contents:](#contents)
+    -   [Overview of the Target](#overview-of-the-target)
+    -   [Debug Environment](#debug-environment)
+        -   [How to build the target](#how-to-build-the-target)
+        -   [Experiment with the Target](#experiment-with-the-target)
+        -   [Target analysis](#target-analysis)
+    -   [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
+    -   [Future Plans](#future-plans)
+        -   [Fuzzing](#fuzzing)
 
 \newpage
 
@@ -40,6 +40,8 @@ _p7zip_ provides the following features:
 \newpage
 
 ## Debug Environment
+
+We configured our debug environment on [Github](https://github.com/atharvakale343/390r-debugging-setup).
 
 ### How to build the target
 
@@ -137,7 +139,7 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 ## Mapping out the Target Code-Base
 
-DOC/readme.txt has some useful high level overviews of the codebase:
+[DOC/readme.txt](https://github.com/p7zip-project/p7zip/tree/master/DOC) has some useful high level overviews of the codebase:
 
 ![Code Base Overview](screenshots/codebase_overview.png){width=550}
 
