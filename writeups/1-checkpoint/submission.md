@@ -139,7 +139,7 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 DOC/readme.txt has some useful high level overviews of the codebase:
 
-![Code Base Overview](screenshots/codebase_overview.png)
+![Code Base Overview](screenshots/codebase_overview.png){width=550}
 
 The functionality of the console version of this application is straightforward. The binary accepts command line arguments (`main` defined in _MainAr.cpp_), then attempts to pass them to `main2()` in _Main.cpp_ (wrapped in try block).
 
