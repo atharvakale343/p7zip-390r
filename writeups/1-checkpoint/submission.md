@@ -14,10 +14,16 @@ header-includes:
 
 ## Contents:
 
--   [Overview of the Target](#overview-of-the-target)
--   [Debug Environment](#debug-environment)
--   [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
--   [Future Plans](#future-plans)
+- [Checkpoint 1](#checkpoint-1)
+  - [Contents:](#contents)
+  - [Overview of the Target](#overview-of-the-target)
+  - [Debug Environment](#debug-environment)
+    - [How to build the target](#how-to-build-the-target)
+    - [Experiment with the Target](#experiment-with-the-target)
+    - [Target analysis](#target-analysis)
+  - [Mapping out the Target Code-Base](#mapping-out-the-target-code-base)
+  - [Future Plans](#future-plans)
+    - [Fuzzing](#fuzzing)
 
 \newpage
 
@@ -131,6 +137,10 @@ In the next two pages, we fine two function call graphs for the `archive` and `e
 
 ## Mapping out the Target Code-Base
 
+DOC/readme.txt has some useful high level overviews of the codebase:
+
+![Code Base Overview](screenshots/codebase_overview.png)
+
 The functionality of the console version of this application is straightforward. The binary accepts command line arguments (`main` defined in _MainAr.cpp_), then attempts to pass them to `main2()` in _Main.cpp_ (wrapped in try block).
 
 `main2()` handles the bulk of all functionality.
@@ -184,11 +194,14 @@ Line 1196 in main2() defines an if statement that executes the following block i
 
 If the user doesn't use the extract command, it executes an else block at 1358.
 
-There is a `NO_CRYPTO` flag that is set, if the archive is password protected. 
+There is a `NO_CRYPTO` flag that is set, if the archive is password protected.
 
 On line 1402, an if block is executed if the user intends to update the archive. It checks whether the parsed command is part of the update group of commands: add, delete, rename, etc.
 
 There are a bunch of callbacks used for operating on archives. One such interface for the update callback is defined in update.h.
+
+Update.cpp contains several methods for archiving and updating and archive, it's called from line 1142 in CPP/7Zip/UI/Console/Main.cpp, and itself contains a method called Compress, defined at 502 and called at 1630.
+
 \newpage
 
 ## Future Plans
