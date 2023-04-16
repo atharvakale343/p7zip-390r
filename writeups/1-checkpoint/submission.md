@@ -180,6 +180,15 @@ Importantly, it defines the formats of arguments. Beginning on line 341, `isFrom
 
 A scanner is defined in _ExtractCallbackConsole.cpp_, and this is presumably used to enumerate files in an archive.
 
+Line 1196 in main2() defines an if statement that executes the following block if the user runs the "extract" command.
+
+If the user doesn't use the extract command, it executes an else block at 1358.
+
+There is a `NO_CRYPTO` flag that is set, if the archive is password protected. 
+
+On line 1402, an if block is executed if the user intends to update the archive. It checks whether the parsed command is part of the update group of commands: add, delete, rename, etc.
+
+There are a bunch of callbacks used for operating on archives. One such interface for the update callback is defined in update.h.
 \newpage
 
 ## Future Plans
