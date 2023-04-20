@@ -1,6 +1,6 @@
 # 390r-debugging-setup
 
-- Link to `p7zip` repository: https://github.com/jinfeihan57/p7zip
+-   Link to `p7zip` repository: https://github.com/jinfeihan57/p7zip
 
 ## Build target
 
@@ -96,7 +96,7 @@ afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7
 
 ### CodeQL
 
-- Installing CodeQL
+-   Installing CodeQL
 
 ```bash
 cd codeql-playground
@@ -105,7 +105,7 @@ unzip codeql-linux64.zip
 PATH=$PATH:$PWD/codeql
 ```
 
-- Creating a codeql database for p7zip
+-   Creating a codeql database for p7zip
 
 ```bash
 cd p7zip/CPP/7zip/Bundles/Alone2
@@ -113,3 +113,25 @@ codeql database create ../../../../../codeql-playground/analysis-db.codeql -l cp
 cd -
 ```
 
+-   Analyzing database with codeql
+
+```bash
+codeql pack download codeql/cpp-queries
+codeql database analyze analysis-db.codeql --format CSV --output analysis.csv
+```
+
+### Joern
+
+- Installation requires `JDK`
+
+```bash
+curl -L "https://github.com/joernio/joern/releases/latest/download/joern-install.sh" -o joern-install.sh
+chmod u+x joern-install.sh
+./joern-install.sh --interactive
+```
+
+- Basic tests
+
+```joern
+importCode(inputPath="../p7zip/CPP", projectName="p7zip-dbg")
+```
