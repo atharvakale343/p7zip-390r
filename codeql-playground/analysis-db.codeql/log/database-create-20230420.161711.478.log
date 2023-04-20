@@ -1,0 +1,160 @@
+[2023-04-20 16:17:11] This is codeql database create codeql-playground/analysis-db.codeql -l cpp -c cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
+[2023-04-20 16:17:11] Log file was started late.
+[2023-04-20 16:17:11] [PROGRESS] database create> Initializing database at /home/atharvakale/390r-debugging-setup/codeql-playground/analysis-db.codeql.
+[2023-04-20 16:17:11] Running plumbing command: codeql database init --language=cpp --qlconfig-file=/home/atharvakale/390r-debugging-setup/qlconfig.yml --source-root=/home/atharvakale/390r-debugging-setup --allow-missing-source-root=false --allow-already-existing -- /home/atharvakale/390r-debugging-setup/codeql-playground/analysis-db.codeql
+[2023-04-20 16:17:11] Calling plumbing command: codeql resolve languages --format=json
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/.codeqlmanifest.json
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/properties/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/csharp/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/python/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/html/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/java/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/xml/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/csv/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/javascript/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/go/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/ruby/codeql-extractor.yml.
+[2023-04-20 16:17:11] [DETAILS] resolve languages> Parsing /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/cpp/codeql-extractor.yml.
+[2023-04-20 16:17:11] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "properties" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/properties"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction.",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "cil" : {
+                                  "title" : "Whether to enable CIL extraction.",
+                                  "description" : "A value indicating, whether CIL extraction should be enabled. The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/python"
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/xml"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/csv"
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/javascript",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/go"
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/cpp"
+                            }
+                          ]
+                        }
+                      }
+[2023-04-20 16:17:11] [PROGRESS] database init> Calculating baseline information in /home/atharvakale/390r-debugging-setup
+[2023-04-20 16:17:11] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2023-04-20 16:17:11] [DETAILS] database init> Running command in /home/atharvakale/390r-debugging-setup: /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/tools/linux64/scc --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2023-04-20 16:17:11] [SPAMMY] database init> Found 198 baseline files for javascript.
+[2023-04-20 16:17:11] [SPAMMY] database init> Found 39 baseline files for cpp.
+[2023-04-20 16:17:11] [SPAMMY] database init> Found 15 baseline files for python.
+[2023-04-20 16:17:11] [PROGRESS] database init> Calculated baseline information for languages: cpp, javascript, python (78ms).
+[2023-04-20 16:17:11] [PROGRESS] database init> Resolving extractor cpp.
+[2023-04-20 16:17:11] [DETAILS] database init> Found candidate extractor root for cpp: /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/cpp.
+[2023-04-20 16:17:11] [PROGRESS] database init> Successfully loaded extractor C/C++ (cpp) from /home/atharvakale/390r-debugging-setup/codeql-playground/codeql/cpp.
+[2023-04-20 16:17:11] [PROGRESS] database init> Created skeleton CodeQL database at /home/atharvakale/390r-debugging-setup/codeql-playground/analysis-db.codeql. This in-progress database is ready to be populated by an extractor.
+[2023-04-20 16:17:11] Plumbing command codeql database init completed.
+[2023-04-20 16:17:11] [PROGRESS] database create> Running build command: [cd, p7zip/CPP/7zip/Bundles/Alone2, &&, make, -f, makefile.gcc, &&, cd, -]
+[2023-04-20 16:17:11] Running plumbing command: codeql database trace-command --working-dir=/home/atharvakale/390r-debugging-setup --index-traceless-dbs --no-db-cluster -- /home/atharvakale/390r-debugging-setup/codeql-playground/analysis-db.codeql cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
+[2023-04-20 16:17:11] [PROGRESS] database trace-command> Running command in /home/atharvakale/390r-debugging-setup: [cd, p7zip/CPP/7zip/Bundles/Alone2, &&, make, -f, makefile.gcc, &&, cd, -]
+[2023-04-20 16:17:11] [build-stderr] /usr/bin/cd: line 2: cd: too many arguments
+[2023-04-20 16:17:11] [ERROR] Spawned process exited abnormally (code 1; tried to run: [/home/atharvakale/390r-debugging-setup/codeql-playground/codeql/tools/linux64/preload_tracer, cd, p7zip/CPP/7zip/Bundles/Alone2, &&, make, -f, makefile.gcc, &&, cd, -])
+[2023-04-20 16:17:11] Exception caught at top level: Exit status 1 from command: [cd, p7zip/CPP/7zip/Bundles/Alone2, &&, make, -f, makefile.gcc, &&, cd, -]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:265)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:109)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:645)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:412)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:643)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:111)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:191)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:176)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:645)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:412)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:643)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:562)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:223)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:233)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:113)

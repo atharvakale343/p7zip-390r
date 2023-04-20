@@ -91,3 +91,25 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 cd /src/fuzzing
 afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz a sample.zip @@
 ```
+
+## Code Analysis
+
+### CodeQL
+
+- Installing CodeQL
+
+```bash
+cd codeql-playground
+wget https://github.com/github/codeql-cli-binaries/releases/download/v2.13.0/codeql-linux64.zip
+unzip codeql-linux64.zip
+PATH=$PATH:$PWD/codeql
+```
+
+- Creating a codeql database for p7zip
+
+```bash
+cd p7zip/CPP/7zip/Bundles/Alone2
+codeql database create ../../../../../codeql-playground/analysis-db.codeql -l cpp -c "make -B -f makefile.gcc" --overwrite
+cd -
+```
+
