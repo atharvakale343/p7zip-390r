@@ -68,3 +68,5 @@ sample.zip
 
 # CodeQL
 codeql
+analysis-db.codeql
+p7zip-dbg
