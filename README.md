@@ -85,7 +85,7 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 7zz_fuzz -h
 ```
 
-### Fuzzing with dictionaries
+### Fuzzing with dictionaries on Docker
 
 ```bash
 cd /src/fuzzing
