@@ -84,6 +84,7 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 ```bash
 7zz_fuzz -h
 ```
+Note: move 7zz_fuzz to the same directory as 7zz
 
 ### Fuzzing with dictionaries on Docker
 
