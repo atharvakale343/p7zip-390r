@@ -84,6 +84,7 @@ docker run -ti -v .:/src aflplusplus/aflplusplus
 ```bash
 7zz_fuzz -h
 ```
+
 Note: move 7zz_fuzz to the same directory as 7zz
 
 ### Fuzzing with dictionaries on Docker
@@ -91,6 +92,13 @@ Note: move 7zz_fuzz to the same directory as 7zz
 ```bash
 cd /src/fuzzing
 afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz a sample.zip @@
+```
+
+### Fuzzing with inputs on Local
+
+```bash
+mkcd fuzzing
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 afl-fuzz -i input_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz e @@
 ```
 
 ## Code Analysis
@@ -123,7 +131,7 @@ codeql database analyze analysis-db.codeql --format CSV --output analysis.csv
 
 ### Joern
 
-- Installation requires `JDK`
+-   Installation requires `JDK`
 
 ```bash
 curl -L "https://github.com/joernio/joern/releases/latest/download/joern-install.sh" -o joern-install.sh
@@ -131,7 +139,7 @@ chmod u+x joern-install.sh
 ./joern-install.sh --interactive
 ```
 
-- Basic tests
+-   Basic tests
 
 ```joern
 importCode(inputPath="../p7zip/CPP", projectName="p7zip-dbg")
