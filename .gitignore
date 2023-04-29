@@ -71,4 +71,4 @@ codeql
 analysis-db.codeql
 p7zip-dbg
 input_dir
-fuzzing
+fuzzing-work
