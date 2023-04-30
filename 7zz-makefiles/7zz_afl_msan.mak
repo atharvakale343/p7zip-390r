@@ -36,7 +36,7 @@ IS_MINGW = 1
 endif
 
 ifdef IS_MINGW
-LDFLAGS_STATIC_2 = -static -fsanitize=memory # FLAGS ADDED HERE
+LDFLAGS_STATIC_2 = -static -fsanitize=memory -fPIE -pie # FLAGS ADDED HERE
 else
 ifndef DEF_FILE
 ifndef IS_NOT_STANDALONE
@@ -51,7 +51,7 @@ endif
 endif
 endif
 
-LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2) -fsanitize=memory # FLAGS ADDED HERE
+LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2) -fsanitize=memory -fPIE -pie # FLAGS ADDED HERE
 
 ifndef O
   ifdef IS_MINGW
@@ -147,7 +147,7 @@ endif
 
 
 
-CFLAGS = -fsanitize=memory $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -o $@ # FLAGS ADDED HERE
+CFLAGS = -fsanitize=memory -fPIE -pie $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -o $@ # FLAGS ADDED HERE
 
 
 ifdef IS_MINGW
@@ -175,7 +175,7 @@ CXX_WARN_FLAGS =
 #-Wno-invalid-offsetof
 #-Wno-reorder
 
-CXXFLAGS = -fsanitize=memory $(MY_ARCH_2) $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS) # FLAGS ADDED HERE
+CXXFLAGS = -fsanitize=memory -fPIE -pie $(MY_ARCH_2) $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS) # FLAGS ADDED HERE
 
 STATIC_TARGET=
 ifdef COMPL_STATIC
