@@ -71,6 +71,11 @@ Below are two call graphs produced for the archive and extract commands:
 
 Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
 
+```c
+libasan
+libtsan
+```
+
 ### Using AFL compiled target
 
 ```bash
