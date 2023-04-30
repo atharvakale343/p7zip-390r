@@ -7,14 +7,13 @@
 ```bash
 # Clone target and update Makefile with debugging flags
 git clone git@github.com:jinfeihan57/p7zip.git
-cp 7zip_gcc_dbg.mak p7zip/CPP/7zip/7zip_gcc.mak
 
 # Compile target and update path
-cd p7zip/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc && cd -
+make default
 PATH=$PATH:$PWD/p7zip/CPP/7zip/Bundles/Alone2/_o/bin
 
 # For fuzzing, use the compiled target
-cp 7zz_fuzz p7zip/CPP/7zip/Bundles/Alone2/_o/bin
+make move-all
 ```
 
 ## Run target
@@ -72,33 +71,21 @@ Below are two call graphs produced for the archive and extract commands:
 
 Install [american-fuzzy-lop-clang](https://github.com/AFLplusplus/AFLplusplus).
 
-### ALF++ with Docker
-
-```bash
-docker pull aflplusplus/aflplusplus
-docker run -ti -v .:/src aflplusplus/aflplusplus
-```
-
 ### Using AFL compiled target
 
 ```bash
+make move-all
 7zz_fuzz -h
-```
-
-Note: move 7zz_fuzz to the same directory as 7zz
-
-### Fuzzing with dictionaries on Docker
-
-```bash
-cd /src/fuzzing
-afl-fuzz -i seeds_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz a sample.zip @@
 ```
 
 ### Fuzzing with inputs on Local
 
 ```bash
-mkcd fuzzing
-AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 afl-fuzz -i input_dir -o output_dir -- ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin/7zz_fuzz e @@
+cd fuzzing
+mkdir -p fuzzing-work && cp Makefile fuzzing-work && cd fuzzing-work
+make get-inputs
+make minimize
+make fuzz
 ```
 
 ## Code Analysis
