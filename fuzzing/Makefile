@@ -1,6 +1,6 @@
 AFL_FUZZ = /usr/local/bin/afl-fuzz
 
-BIN_OUTPUT_PATH = ../p7zip/CPP/7zip/Bundles/Alone2/_o/bin
+BIN_OUTPUT_PATH = ../../p7zip/CPP/7zip/Bundles/Alone2/_o/bin
 BIN_OUTPUT = $(BIN_OUTPUT_PATH)/7zz
 BIN_DEFAULT = $(BIN_OUTPUT_PATH)/7zz_default
 BIN_DEBUG = $(BIN_OUTPUT_PATH)/7zz_debug

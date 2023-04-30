@@ -55,7 +55,7 @@ dkms.conf
 .DS_Store
 
 # General
-p7zip
+p7zip*
 .vscode
 .gdb_history
 venv
@@ -70,5 +70,5 @@ sample.zip
 codeql
 analysis-db.codeql
 p7zip-dbg
-input_dir
 fuzzing-work
+7zz_*
