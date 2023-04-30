@@ -36,7 +36,7 @@ IS_MINGW = 1
 endif
 
 ifdef IS_MINGW
-LDFLAGS_STATIC_2 = -static -fsanitize=thread -lasan # FLAGS ADDED HERE
+LDFLAGS_STATIC_2 = -static -fsanitize=thread -ltsan # FLAGS ADDED HERE
 else
 ifndef DEF_FILE
 ifndef IS_NOT_STANDALONE
@@ -51,7 +51,7 @@ endif
 endif
 endif
 
-LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2) -fsanitize=thread -lasan # FLAGS ADDED HERE
+LDFLAGS_STATIC = -DNDEBUG $(LDFLAGS_STATIC_2) -fsanitize=thread -ltsan # FLAGS ADDED HERE
 
 ifndef O
   ifdef IS_MINGW
@@ -147,7 +147,7 @@ endif
 
 
 
-CFLAGS = -fsanitize=thread -lasan $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -o $@ # FLAGS ADDED HERE
+CFLAGS = -fsanitize=thread -ltsan $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -o $@ # FLAGS ADDED HERE
 
 
 ifdef IS_MINGW
@@ -175,7 +175,7 @@ CXX_WARN_FLAGS =
 #-Wno-invalid-offsetof
 #-Wno-reorder
 
-CXXFLAGS = -fsanitize=thread -lasan $(MY_ARCH_2) $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS) # FLAGS ADDED HERE
+CXXFLAGS = -fsanitize=thread -ltsan $(MY_ARCH_2) $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS) # FLAGS ADDED HERE
 
 STATIC_TARGET=
 ifdef COMPL_STATIC
