@@ -8,7 +8,6 @@ REPO_AFL_ASAN = 7zz_afl_asan
 BIN_AFL = ../../$(REPO_AFL)/$(BIN_OUTPUT_PATH)
 BIN_AFL_ASAN = ../../$(REPO_AFL_ASAN)/$(BIN_OUTPUT_PATH)
 
-
 get-inputs:
 	rm -rf in_raw fuzzing-corpus && mkdir in_raw
 
@@ -24,7 +23,6 @@ fuzz-afl:
 
 fuzz-afl-asan: 
 	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -t 2000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
-
 
 minimize-afl:
 	rm -rf in_unique in
