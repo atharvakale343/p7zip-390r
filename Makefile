@@ -43,12 +43,11 @@ afl-ubsan:
 	cp 7zz-makefiles/$(BIN_AFL_UBSAN).mak $(BIN_AFL_UBSAN)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_UBSAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_UBSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-# Commented below as we could not get it to compile
-# afl-cfisan:
-# 	rm -rf $(BIN_AFL_CFISAN)
-# 	git clone $(GH_URL) $(BIN_AFL_CFISAN)
-# 	cp 7zz-makefiles/$(BIN_AFL_CFISAN).mak $(BIN_AFL_CFISAN)/CPP/7zip/7zip_gcc.mak
-# 	cd $(BIN_AFL_CFISAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_CFISAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+afl-cfisan:
+	rm -rf $(BIN_AFL_CFISAN)
+	git clone $(GH_URL) $(BIN_AFL_CFISAN)
+	cp 7zz-makefiles/$(BIN_AFL_CFISAN).mak $(BIN_AFL_CFISAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_CFISAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_CFISAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 afl-tsan:
 	rm -rf $(BIN_AFL_TSAN)
