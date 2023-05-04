@@ -1,0 +1,76 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_ICompressSetCoderPropertiesOpt,IID_ICompressWriteCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_ICompressWriteCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CEncoder global:[g_AlignedAlloc] call:[Lzma2Enc_Create]
+CEncoder call:[Lzma2Enc_Destroy] noreturn:[Lzma2Enc_Destroy]
+SetLzma2Prop call:[SetLzmaProp,return] noreturn:[return]
+SetCoderProperties call:[Lzma2EncProps_Init,Lzma2Enc_SetProps,SResToHRESULT,SetLzma2Prop] noreturn:[SResToHRESULT]
+SetCoderPropertiesOpt call:[Lzma2Enc_SetDataSize,return] noreturn:[Lzma2Enc_SetDataSize,return]
+WriteCoderProperties call:[Lzma2Enc_WriteProperties,WriteStream] noreturn:[WriteStream]
+Code call:[Init,Lzma2Enc_Encode2,SResToHRESULT] noreturn:[SResToHRESULT]
+TranslateError call:[FL2_getErrorCode,return] noreturn:[return]
+FastLzma2
+FastLzma2 call:[FL2_freeCCtx] noreturn:[FL2_freeCCtx]
+SetCoderProperties call:[FL2_CCtx_getParameter,FL2_CCtx_setParameter,FL2_createCStreamMt,FL2_isError,FL2_setCStreamTimeout,Lzma2EncProps_Init,SetLzma2Prop,return] noreturn:[FL2_CCtx_getParameter,FL2_CCtx_setParameter,return]
+GetDictSize call:[FL2_CCtx_getParameter] noreturn:[FL2_CCtx_getParameter]
+Begin call:[FL2_getDictionaryBuffer,FL2_initCStream,FL2_isError,TranslateError,return,while] noreturn:[TranslateError,return]
+GetAvailableBuffer
+WaitAndReport call:[FL2_isError,FL2_isTimedOut,FL2_waitCStream,TranslateError,UpdateProgress,return,while] noreturn:[FL2_waitCStream,TranslateError,return]
+AddByteCount call:[FL2_getDictionaryBuffer,FL2_isError,FL2_isTimedOut,FL2_updateDictionary,TranslateError,UpdateProgress,WaitAndReport,WriteBuffers,return,while] noreturn:[FL2_getDictionaryBuffer,TranslateError,return,while]
+UpdateProgress call:[FL2_cancelCStream,FL2_getCStreamProgress,SetRatioInfo]
+WriteBuffers call:[FL2_getNextCompressedBuffer,FL2_isError,FL2_isTimedOut,TranslateError,WriteStream,return,while] noreturn:[FL2_getNextCompressedBuffer,TranslateError,return]
+End call:[FL2_endStream,FL2_updateDictionary,WaitAndReport,WriteBuffers,return,while] noreturn:[return,while]
+Cancel call:[FL2_cancelCStream] noreturn:[FL2_cancelCStream]
+CFastEncoder
+CFastEncoder
+SetCoderProperties call:[SetCoderProperties] noreturn:[SetCoderProperties]
+WriteCoderProperties call:[GetDictSize,WriteStream] noreturn:[WriteStream]
+Code call:[AddByteCount,Begin,Cancel,End,GetAvailableBuffer,ReadStream,return,while] noreturn:[return,while]

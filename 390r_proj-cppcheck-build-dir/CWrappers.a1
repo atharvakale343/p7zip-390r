@@ -1,0 +1,722 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10048519952225875565">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Cur&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Cur&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Cur</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Lim&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Lim&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Lim</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Size&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Size&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Stream&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Stream&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Stream</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Processed&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Processed&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Processed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteInBufWrap::Extra&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteInBufWrap::Extra&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="199" column="17"/>
+            <symbol>CByteInBufWrap::Extra</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteOutBufWrap::Cur&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteOutBufWrap::Cur&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="294" column="18"/>
+            <symbol>CByteOutBufWrap::Cur</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteOutBufWrap::Lim&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteOutBufWrap::Lim&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="294" column="18"/>
+            <symbol>CByteOutBufWrap::Lim</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteOutBufWrap::Stream&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteOutBufWrap::Stream&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="294" column="18"/>
+            <symbol>CByteOutBufWrap::Stream</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CByteOutBufWrap::Processed&apos; is not initialized in the constructor." verbose="Member variable &apos;CByteOutBufWrap::Processed&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="294" column="18"/>
+            <symbol>CByteOutBufWrap::Processed</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::Len&apos;" verbose="Unused private function: &apos;CMyComBSTR::Len&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="142" column="12"/>
+            <symbol>CMyComBSTR::Len</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" verbose="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="144" column="8"/>
+            <symbol>CMyComBSTR::MyCopy</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="107" column="3"/>
+            <symbol>CMyComBSTR</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="71" column="36"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="62" column="30"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="78" column="25"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="90" column="26"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="123" column="26"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="132" column="26"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="193" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\CWrappers.cpp" line="286" column="24"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="2577629746655184459"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="12291923408535137195"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="13674670278034828868"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="857779337165381670"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="17263595942437269284"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="15764094405673869816"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="2577629746655184459"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="12291923408535137195"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="13674670278034828868"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="857779337165381670"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="17263595942437269284"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="15764094405673869816"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="17310176687120749122"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="8914001795450445840"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CNewException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/NewHandler.h" line="50" col="1" hash="7322455032005079616"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="16160304702049348652"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="2577629746655184459"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="2199716487981491119"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="13674670278034828868"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="5603386456933451450"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="11115854603516436268"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="17334847162316276704"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_str&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_str&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="107" column="31"/>
+            <symbol>m_str</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="ISequentialInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="14" col="1" hash="10994916213051209789"/>
+<class name="ISequentialOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="44" col="1" hash="521078502919004752"/>
+<class name="IInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="91" col="1" hash="1492196731614188107"/>
+<class name="IOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="96" col="1" hash="18293929224520634630"/>
+<class name="IStreamGetSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="102" col="1" hash="3301623996606123674"/>
+<class name="IOutStreamFinish" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="107" col="1" hash="6348486032498881929"/>
+<class name="IStreamGetProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="113" col="1" hash="14134821071503624810"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="13977064270859795190"/>
+<class name="IStreamGetProps2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="131" col="1" hash="14792139865074523012"/>
+<class name="IStreamGetProp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="137" col="1" hash="10599457081239484134"/>
+<class name="ICompressProgressInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="10" col="1" hash="10077537563009697792"/>
+<class name="ICompressCoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="24" col="1" hash="282625723998868305"/>
+<class name="ICompressCoder2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="31" col="1" hash="9471558007542261390"/>
+<class name="ICompressSetCoderPropertiesOpt" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="164" col="1" hash="18155234480862615705"/>
+<class name="ICompressSetCoderProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="169" col="1" hash="16497499952939375585"/>
+<class name="ICompressSetDecoderProperties2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="181" col="1" hash="7838090017788805902"/>
+<class name="ICompressWriteCoderProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="192" col="1" hash="15938653381427524511"/>
+<class name="ICompressGetInStreamProcessedSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="197" col="1" hash="15077883488012116204"/>
+<class name="ICompressSetCoderMt" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="202" col="1" hash="8959347412608060320"/>
+<class name="ICompressSetFinishMode" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="207" col="1" hash="18255634023316362036"/>
+<class name="ICompressGetInStreamProcessedSize2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="216" col="1" hash="8779020015667763461"/>
+<class name="ICompressSetMemLimit" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="221" col="1" hash="9886421416288383397"/>
+<class name="ICompressReadUnusedFromInBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="237" col="1" hash="16800456489109797071"/>
+<class name="ICompressGetSubStreamSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="244" col="1" hash="7983607128013406352"/>
+<class name="ICompressSetInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="264" col="1" hash="12200649959887533022"/>
+<class name="ICompressSetOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="270" col="1" hash="16156807766008521827"/>
+<class name="ICompressSetOutStreamSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="283" col="1" hash="1638310391908551957"/>
+<class name="ICompressSetBufSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="293" col="1" hash="12474218749295056873"/>
+<class name="ICompressInitEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="299" col="1" hash="12651632791600356391"/>
+<class name="ICompressSetInStream2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="307" col="1" hash="3779494810259791186"/>
+<class name="ICompressFilter" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="357" col="1" hash="11330124409846804824"/>
+<class name="ICompressCodecsInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="363" col="1" hash="11626652535359661425"/>
+<class name="ISetCompressCodecsInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="371" col="1" hash="6837638731512821752"/>
+<class name="ICryptoProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="376" col="1" hash="8689787145058343634"/>
+<class name="ICryptoResetInitVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="389" col="1" hash="7632787729834369422"/>
+<class name="ICryptoSetPassword" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="398" col="1" hash="16223386005180360528"/>
+<class name="ICryptoSetCRC" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="403" col="1" hash="11053674664721408308"/>
+<class name="IHasher" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="434" col="1" hash="4344153471895165905"/>
+<class name="IHashers" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="439" col="1" hash="2864042104640001424"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="18159799236847254330"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="10964356975072820774"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="13187358672813679059"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="1624612348679712158"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="4886043488538042421"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="1896801072417728380"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="17064669367063166479"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="14380500595775703494"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="5605243939076924204"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="2577629746655184459"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="12291923408535137195"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="13674670278034828868"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="857779337165381670"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="5657195160885250055"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="15764094405673869816"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="2577629746655184459"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="12291923408535137195"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="13674670278034828868"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="857779337165381670"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="17263595942437269284"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="15764094405673869816"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamUtils.h:11:9" call-funcname="WriteStream" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="93" col="14" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:88:15" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="ISequentialInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="14" col="1" hash="10994916213051209789"/>
+<class name="ISequentialOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="44" col="1" hash="521078502919004752"/>
+<class name="IInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="91" col="1" hash="1492196731614188107"/>
+<class name="IOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="96" col="1" hash="18293929224520634630"/>
+<class name="IStreamGetSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="102" col="1" hash="3301623996606123674"/>
+<class name="IOutStreamFinish" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="107" col="1" hash="6348486032498881929"/>
+<class name="IStreamGetProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="113" col="1" hash="14134821071503624810"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="13977064270859795190"/>
+<class name="IStreamGetProps2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="131" col="1" hash="14792139865074523012"/>
+<class name="IStreamGetProp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="137" col="1" hash="10599457081239484134"/>
+<class name="ICompressProgressInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="10" col="1" hash="10077537563009697792"/>
+<class name="ICompressCoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="24" col="1" hash="282625723998868305"/>
+<class name="ICompressCoder2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="31" col="1" hash="9471558007542261390"/>
+<class name="ICompressSetCoderPropertiesOpt" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="164" col="1" hash="18155234480862615705"/>
+<class name="ICompressSetCoderProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="169" col="1" hash="16497499952939375585"/>
+<class name="ICompressSetDecoderProperties2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="181" col="1" hash="7838090017788805902"/>
+<class name="ICompressWriteCoderProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="192" col="1" hash="15938653381427524511"/>
+<class name="ICompressGetInStreamProcessedSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="197" col="1" hash="15077883488012116204"/>
+<class name="ICompressSetCoderMt" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="202" col="1" hash="8959347412608060320"/>
+<class name="ICompressSetFinishMode" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="207" col="1" hash="18255634023316362036"/>
+<class name="ICompressGetInStreamProcessedSize2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="216" col="1" hash="8779020015667763461"/>
+<class name="ICompressSetMemLimit" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="221" col="1" hash="9886421416288383397"/>
+<class name="ICompressReadUnusedFromInBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="237" col="1" hash="16800456489109797071"/>
+<class name="ICompressGetSubStreamSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="244" col="1" hash="7983607128013406352"/>
+<class name="ICompressSetInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="264" col="1" hash="12200649959887533022"/>
+<class name="ICompressSetOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="270" col="1" hash="16156807766008521827"/>
+<class name="ICompressSetOutStreamSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="283" col="1" hash="1638310391908551957"/>
+<class name="ICompressSetBufSize" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="293" col="1" hash="12474218749295056873"/>
+<class name="ICompressInitEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="299" col="1" hash="12651632791600356391"/>
+<class name="ICompressSetInStream2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="307" col="1" hash="3779494810259791186"/>
+<class name="ICompressFilter" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="357" col="1" hash="11330124409846804824"/>
+<class name="ICompressCodecsInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="363" col="1" hash="11626652535359661425"/>
+<class name="ISetCompressCodecsInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="371" col="1" hash="6837638731512821752"/>
+<class name="ICryptoProperties" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="376" col="1" hash="8689787145058343634"/>
+<class name="ICryptoResetInitVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="389" col="1" hash="7632787729834369422"/>
+<class name="ICryptoSetPassword" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="398" col="1" hash="16223386005180360528"/>
+<class name="ICryptoSetCRC" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="403" col="1" hash="11053674664721408308"/>
+<class name="IHasher" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="434" col="1" hash="4344153471895165905"/>
+<class name="IHashers" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/ICoder.h" line="439" col="1" hash="2864042104640001424"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="18159799236847254330"/>
+<class name="CCompressProgressWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="12" col="1" hash="10964356975072820774"/>
+<class name="CSeqInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="22" col="1" hash="13187358672813679059"/>
+<class name="CSeekInStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="33" col="1" hash="1624612348679712158"/>
+<class name="CSeqOutStreamWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="43" col="1" hash="4886043488538042421"/>
+<class name="CByteInBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="54" col="1" hash="1896801072417728380"/>
+<class name="CByteOutBufWrap" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.h" line="127" col="1" hash="17064669367063166479"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:76:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="79" col="23" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp:121:13" my-argnr="3" my-argname="size" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/CWrappers.cpp" line="124" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functiondecl functionName="HRESULT_To_SRes" lineNumber="11"/>
+    <functiondecl functionName="SResToHRESULT" lineNumber="26"/>
+    <functiondecl functionName="CompressProgress" lineNumber="60"/>
+    <functiondecl functionName="Init" lineNumber="67"/>
+    <functiondecl functionName="MyRead" lineNumber="76"/>
+    <functiondecl functionName="MyWrite" lineNumber="88"/>
+    <functiondecl functionName="Init" lineNumber="104"/>
+    <functiondecl functionName="Init" lineNumber="112"/>
+    <functiondecl functionName="InStreamWrap_Read" lineNumber="121"/>
+    <functiondecl functionName="InStreamWrap_Seek" lineNumber="130"/>
+    <functiondecl functionName="Init" lineNumber="147"/>
+    <functiondecl functionName="Free" lineNumber="158"/>
+    <functiondecl functionName="Alloc" lineNumber="164"/>
+    <functiondecl functionName="Free" lineNumber="253"/>
+    <functiondecl functionName="Alloc" lineNumber="259"/>
+    <functiondecl functionName="Flush" lineNumber="270"/>
+    <functiondecl functionName="Wrap_WriteByte" lineNumber="284"/>
+    <functioncall functionName="AddRef"/>
+    <functioncall functionName="Byte"/>
+    <functioncall functionName="CBoolPair"/>
+    <functioncall functionName="CByteInBufWrap"/>
+    <functioncall functionName="CByteOutBufWrap"/>
+    <functioncall functionName="CLSCTX_ALL"/>
+    <functioncall functionName="CMyComBSTR"/>
+    <functioncall functionName="CMyComPtr"/>
+    <functioncall functionName="CMyUnknownImp"/>
+    <functioncall functionName="CoCreateInstance"/>
+    <functioncall functionName="Code"/>
+    <functioncall functionName="CompressProgress"/>
+    <functioncall functionName="CreateDecoder"/>
+    <functioncall functionName="CreateEncoder"/>
+    <functioncall functionName="CreateHasher"/>
+    <functioncall functionName="CryptoSetCRC"/>
+    <functioncall functionName="CryptoSetPassword"/>
+    <functioncall functionName="DEFINE_GUID"/>
+    <functioncall functionName="E_OUTOFMEMORY"/>
+    <functioncall functionName="Empty"/>
+    <functioncall functionName="Filter"/>
+    <functioncall functionName="Final"/>
+    <functioncall functionName="Flush"/>
+    <functioncall functionName="Free"/>
+    <functioncall functionName="GetDigestSize"/>
+    <functioncall functionName="GetHasherProp"/>
+    <functioncall functionName="GetInStreamProcessedSize"/>
+    <functioncall functionName="GetInStreamProcessedSize2"/>
+    <functioncall functionName="GetNumHashers"/>
+    <functioncall functionName="GetNumMethods"/>
+    <functioncall functionName="GetProperty"/>
+    <functioncall functionName="GetProps"/>
+    <functioncall functionName="GetProps2"/>
+    <functioncall functionName="GetSize"/>
+    <functioncall functionName="GetSubStreamSize"/>
+    <functioncall functionName="HRESULT_To_SRes"/>
+    <functioncall functionName="IID_ICompressCodecsInfo"/>
+    <functioncall functionName="IID_ICompressCoder"/>
+    <functioncall functionName="IID_ICompressCoder2"/>
+    <functioncall functionName="IID_ICompressFilter"/>
+    <functioncall functionName="IID_ICompressGetInStreamProcessedSize"/>
+    <functioncall functionName="IID_ICompressGetInStreamProcessedSize2"/>
+    <functioncall functionName="IID_ICompressGetSubStreamSize"/>
+    <functioncall functionName="IID_ICompressInitEncoder"/>
+    <functioncall functionName="IID_ICompressProgressInfo"/>
+    <functioncall functionName="IID_ICompressReadUnusedFromInBuf"/>
+    <functioncall functionName="IID_ICompressSetBufSize"/>
+    <functioncall functionName="IID_ICompressSetCoderMt"/>
+    <functioncall functionName="IID_ICompressSetCoderProperties"/>
+    <functioncall functionName="IID_ICompressSetCoderPropertiesOpt"/>
+    <functioncall functionName="IID_ICompressSetDecoderProperties2"/>
+    <functioncall functionName="IID_ICompressSetFinishMode"/>
+    <functioncall functionName="IID_ICompressSetInStream"/>
+    <functioncall functionName="IID_ICompressSetInStream2"/>
+    <functioncall functionName="IID_ICompressSetMemLimit"/>
+    <functioncall functionName="IID_ICompressSetOutStream"/>
+    <functioncall functionName="IID_ICompressSetOutStreamSize"/>
+    <functioncall functionName="IID_ICompressWriteCoderProperties"/>
+    <functioncall functionName="IID_ICryptoProperties"/>
+    <functioncall functionName="IID_ICryptoResetInitVector"/>
+    <functioncall functionName="IID_ICryptoSetCRC"/>
+    <functioncall functionName="IID_ICryptoSetPassword"/>
+    <functioncall functionName="IID_IHasher"/>
+    <functioncall functionName="IID_IHashers"/>
+    <functioncall functionName="IID_IInStream"/>
+    <functioncall functionName="IID_IOutStream"/>
+    <functioncall functionName="IID_IOutStreamFinish"/>
+    <functioncall functionName="IID_ISequentialInStream"/>
+    <functioncall functionName="IID_ISequentialOutStream"/>
+    <functioncall functionName="IID_ISetCompressCodecsInfo"/>
+    <functioncall functionName="IID_IStreamGetProp"/>
+    <functioncall functionName="IID_IStreamGetProps"/>
+    <functioncall functionName="IID_IStreamGetProps2"/>
+    <functioncall functionName="IID_IStreamGetSize"/>
+    <functioncall functionName="INT32"/>
+    <functioncall functionName="InStreamWrap_Read"/>
+    <functioncall functionName="InStreamWrap_Seek"/>
+    <functioncall functionName="Init"/>
+    <functioncall functionName="InitEncoder"/>
+    <functioncall functionName="MidAlloc"/>
+    <functioncall functionName="MidFree"/>
+    <functioncall functionName="MyAlloc"/>
+    <functioncall functionName="MyFree"/>
+    <functioncall functionName="MyRead"/>
+    <functioncall functionName="MyWrite"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="OutStreamFinish"/>
+    <functioncall functionName="PURE"/>
+    <functioncall functionName="QueryInterface"/>
+    <functioncall functionName="Read"/>
+    <functioncall functionName="ReadByteFromNewBlock"/>
+    <functioncall functionName="ReadUnusedFromInBuf"/>
+    <functioncall functionName="Release"/>
+    <functioncall functionName="ReleaseInStream"/>
+    <functioncall functionName="ReleaseInStream2"/>
+    <functioncall functionName="ReleaseOutStream"/>
+    <functioncall functionName="ReloadProps"/>
+    <functioncall functionName="ResetInitVector"/>
+    <functioncall functionName="SRes"/>
+    <functioncall functionName="STDMETHOD"/>
+    <functioncall functionName="STDMETHOD_"/>
+    <functioncall functionName="STREAM_SEEK_CUR"/>
+    <functioncall functionName="STREAM_SEEK_END"/>
+    <functioncall functionName="STREAM_SEEK_SET"/>
+    <functioncall functionName="S_OK"/>
+    <functioncall functionName="Seek"/>
+    <functioncall functionName="SetCoderProperties"/>
+    <functioncall functionName="SetCoderPropertiesOpt"/>
+    <functioncall functionName="SetCompressCodecsInfo"/>
+    <functioncall functionName="SetDecoderProperties2"/>
+    <functioncall functionName="SetFinishMode"/>
+    <functioncall functionName="SetInBufSize"/>
+    <functioncall functionName="SetInStream"/>
+    <functioncall functionName="SetInStream2"/>
+    <functioncall functionName="SetInitVector"/>
+    <functioncall functionName="SetKey"/>
+    <functioncall functionName="SetMemLimit"/>
+    <functioncall functionName="SetNumberOfThreads"/>
+    <functioncall functionName="SetOutBufSize"/>
+    <functioncall functionName="SetOutStream"/>
+    <functioncall functionName="SetOutStreamSize"/>
+    <functioncall functionName="SetRatioInfo"/>
+    <functioncall functionName="SetSize"/>
+    <functioncall functionName="SysAllocString"/>
+    <functioncall functionName="SysAllocStringLen"/>
+    <functioncall functionName="SysFreeString"/>
+    <functioncall functionName="SysStringLen"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="Update"/>
+    <functioncall functionName="Wipe_and_Free"/>
+    <functioncall functionName="Wrap_ReadByte"/>
+    <functioncall functionName="Wrap_WriteByte"/>
+    <functioncall functionName="Write"/>
+    <functioncall functionName="WriteCoderProperties"/>
+    <functioncall functionName="WriteStream"/>
+    <functioncall functionName="__int64"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="operatorLPCOLESTR"/>
+    <functioncall functionName="operatorT*"/>
+    <functioncall functionName="operatorconstwchar_t*"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vt"/>
+  </FileInfo>
+</analyzerinfo>

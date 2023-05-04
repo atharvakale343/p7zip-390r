@@ -1,0 +1,112 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+CSystemException
+COutBufferException
+COutBuffer
+COutBuffer call:[Free] noreturn:[Free]
+SetMemStream
+SetStream
+WriteByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+WriteBytes call:[WriteByte] noreturn:[WriteByte]
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+GetProcessedSize call:[GetProcessedSize]
+Init call:[Init]
+Flush call:[Flush,FlushByte] noreturn:[Flush]
+FlushByte call:[WriteByte] noreturn:[WriteByte]
+WriteBits call:[WriteByte]
+WriteByte call:[WriteByte] noreturn:[WriteByte]
+SubClear
+SetFixedLevels
+SetAsLiteral
+IsLiteral call:[return] noreturn:[return]
+CEncProps
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCOMCoder
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCOMCoder64
+CFastPosInit
+GetPosSlot
+Normalize
+SetProps call:[Normalize]
+CCoder call:[MatchFinder_Construct,SetProps] noreturn:[MatchFinder_Construct,SetProps]
+Create global:[g_Alloc] call:[Create,MatchFinder_Create,MyAlloc,return,sizeof] noreturn:[return]
+BaseSetEncoderProperties2 call:[SetProps,return] noreturn:[return]
+Free call:[MyFree]
+CCoder global:[g_Alloc] call:[Free,MatchFinder_Free] noreturn:[MatchFinder_Free]
+GetMatches call:[Bt3Zip_MatchFinder_GetMatches,Hc3Zip_MatchFinder_GetMatches]
+MovePos call:[Bt3Zip_MatchFinder_Skip,Hc3Zip_MatchFinder_Skip] noreturn:[Bt3Zip_MatchFinder_Skip,Hc3Zip_MatchFinder_Skip]
+Backward call:[while]
+GetOptimal call:[Backward,GetMatches,GetPosSlot,MovePos] noreturn:[Backward]
+GetOptimalFast call:[GetMatches,MovePos]
+InitStructures
+LevelTableDummy
+WriteBits call:[WriteBits] noreturn:[WriteBits]
+LevelTableCode call:[WriteBits] noreturn:[WriteBits]
+MakeTables call:[Huffman_Generate] noreturn:[Huffman_Generate]
+Huffman_GetPrice
+Huffman_GetPrice_Spec call:[Huffman_GetPrice] noreturn:[Huffman_GetPrice]
+GetLzBlockPrice call:[Huffman_GetPrice_Spec] noreturn:[Huffman_GetPrice_Spec]
+TryBlock call:[GetOptimal,GetOptimalFast,GetPosSlot,SetAsLiteral,memset,sizeof] noreturn:[GetOptimal,GetOptimalFast]
+SetPrices
+Huffman_ReverseBits
+WriteBlock call:[GetPosSlot,Huffman_ReverseBits,IsLiteral,WriteBits] noreturn:[WriteBits]
+GetStorePrice call:[while]
+WriteStoreBlock call:[FlushByte,WriteBits,WriteByte,while] noreturn:[WriteByte,while]
+TryDynBlock call:[GetLzBlockPrice,Huffman_Generate,Huffman_GetPrice_Spec,LevelTableDummy,MakeTables,SetPrices,TryBlock,memset,sizeof] noreturn:[SetPrices]
+TryFixedBlock call:[GetLzBlockPrice,SetFixedLevels,SetPrices,TryBlock] noreturn:[GetLzBlockPrice]
+GetBlockPrice call:[GetBlockPrice,GetStorePrice,TryDynBlock,TryFixedBlock]
+CodeBlock call:[CodeBlock,Huffman_ReverseBits,LevelTableCode,MakeTables,TryDynBlock,TryFixedBlock,WriteBits,WriteBlock,WriteStoreBlock] noreturn:[CodeBlock,LevelTableCode,MakeTables,TryDynBlock,WriteBits,WriteBlock,WriteStoreBlock]
+CodeReal call:[CodeBlock,Create,Flush,GetBlockPrice,GetProcessedSize,Init,InitStructures,MatchFinder_Init,SResToHRESULT,SetRatioInfo,SetStream,while] noreturn:[Flush,SResToHRESULT]
+BaseCode call:[CodeReal,return] noreturn:[CodeReal,return]
+Code call:[BaseCode] noreturn:[BaseCode]
+SetCoderProperties call:[BaseSetEncoderProperties2] noreturn:[BaseSetEncoderProperties2]
+Code call:[BaseCode] noreturn:[BaseCode]
+SetCoderProperties call:[BaseSetEncoderProperties2] noreturn:[BaseSetEncoderProperties2]

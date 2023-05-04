@@ -1,0 +1,17 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+Build
+Decode call:[GetValue,MovePos]
+GetValue call:[return]
+MovePos
+Decode call:[BuildFull,DecodeFull,return,while] noreturn:[return,while]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]

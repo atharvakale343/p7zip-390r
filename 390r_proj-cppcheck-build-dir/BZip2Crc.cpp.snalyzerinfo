@@ -1,0 +1,19 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CBZip2Crc
+Init
+UpdateByte
+UpdateByte
+GetDigest
+CBZip2CombinedCrc
+Init
+Update
+GetDigest
+InitTable global:[kBZip2CrcPoly]
+CBZip2CrcTableInit call:[InitTable] noreturn:[InitTable]

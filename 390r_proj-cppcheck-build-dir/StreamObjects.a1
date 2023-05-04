@@ -1,0 +1,916 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9101237651317061207">
+        <error id="noConstructor" severity="style" msg="The class &apos;CBufferInStream&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CBufferInStream&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="12" column="1"/>
+            <symbol>CBufferInStream</symbol>
+        </error>
+        <error id="noConstructor" severity="style" msg="The class &apos;CBufInStream&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CBufInStream&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="37" column="1"/>
+            <symbol>CBufInStream</symbol>
+        </error>
+        <error id="noConstructor" severity="style" msg="The class &apos;CBufPtrSeqOutStream&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CBufPtrSeqOutStream&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="104" column="1"/>
+            <symbol>CBufPtrSeqOutStream</symbol>
+        </error>
+        <error id="noConstructor" severity="style" msg="The class &apos;CSequentialOutStreamSizeCount&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CSequentialOutStreamSizeCount&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="125" column="1"/>
+            <symbol>CSequentialOutStreamSizeCount</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCachedInStream::_dataSize&apos; is not initialized in the constructor." verbose="Member variable &apos;CCachedInStream::_dataSize&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="155" column="3"/>
+            <symbol>CCachedInStream::_dataSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCachedInStream::_blockSizeLog&apos; is not initialized in the constructor." verbose="Member variable &apos;CCachedInStream::_blockSizeLog&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="155" column="3"/>
+            <symbol>CCachedInStream::_blockSizeLog</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCachedInStream::_numBlocksLog&apos; is not initialized in the constructor." verbose="Member variable &apos;CCachedInStream::_numBlocksLog&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="155" column="3"/>
+            <symbol>CCachedInStream::_numBlocksLog</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCachedInStream::_size&apos; is not initialized in the constructor." verbose="Member variable &apos;CCachedInStream::_size&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="155" column="3"/>
+            <symbol>CCachedInStream::_size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCachedInStream::_pos&apos; is not initialized in the constructor." verbose="Member variable &apos;CCachedInStream::_pos&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="155" column="3"/>
+            <symbol>CCachedInStream::_pos</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::Len&apos;" verbose="Unused private function: &apos;CMyComBSTR::Len&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="142" column="12"/>
+            <symbol>CMyComBSTR::Len</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" verbose="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="144" column="8"/>
+            <symbol>CMyComBSTR::MyCopy</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CByteBuffer_Wipe&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CByteBuffer_Wipe&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="142" column="3"/>
+            <symbol>CByteBuffer_Wipe</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CObjArray&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CObjArray&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="162" column="3"/>
+            <symbol>CObjArray</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="107" column="3"/>
+            <symbol>CMyComBSTR</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr &lt; IUnknown &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr &lt; IUnknown &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr &lt; IUnknown &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr &lt; ISequentialOutStream &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr &lt; ISequentialOutStream &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr &lt; ISequentialOutStream &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr &lt; ISequentialInStream &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr &lt; ISequentialInStream &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr &lt; ISequentialInStream &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CBuffer &lt; unsigned char &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CBuffer &lt; unsigned char &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="29" column="3"/>
+            <symbol>CBuffer &lt; unsigned char &gt;</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="21" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="21" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="21" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="23" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="16" column="3" info="Virtual function in base class"/>
+            <symbol>Read</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="24" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="93" column="3" info="Virtual function in base class"/>
+            <symbol>Seek</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="55" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="55" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="55" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="56" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="16" column="3" info="Virtual function in base class"/>
+            <symbol>Read</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="57" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="93" column="3" info="Virtual function in base class"/>
+            <symbol>Seek</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="99" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="99" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="99" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="100" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="46" column="3" info="Virtual function in base class"/>
+            <symbol>Write</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="120" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="120" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="120" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="121" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="46" column="3" info="Virtual function in base class"/>
+            <symbol>Write</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="136" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="136" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="136" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Write&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="137" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="46" column="3" info="Virtual function in base class"/>
+            <symbol>Write</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="161" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="161" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="161" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="162" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="16" column="3" info="Virtual function in base class"/>
+            <symbol>Read</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Seek&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="163" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="93" column="3" info="Virtual function in base class"/>
+            <symbol>Seek</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="498" column="56"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="499" column="56"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="502" column="36"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="503" column="36"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="565" column="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="577" column="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="585" column="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="592" column="14"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="598" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="604" column="12"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="21" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="33" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="55" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="99" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="120" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="136" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="161" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="22" column="17"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="86" column="23"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="95" column="31"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="115" column="15"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="135" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="198" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="206" column="13"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="269" column="22"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="71" column="36"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:17:8" call-funcname="MoveItems" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="155" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:281:7" call-funcname="FindInSorted" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="318" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:298:7" call-funcname="FindInSorted2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="400" col="18" call-argexpr="param" call-argvaluetype="0" call-argvalue="0">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="698" col="45" info="Calling function &apos;Sort&apos;, 2nd argument &apos;NULL&apos; value is 0"/>
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="386" col="14" info="Assuming condition is Assuming condition is false"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="500" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="501" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="197" col="5" call-argexpr="_data" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="195" col="7" info="Assuming that condition &apos;!_data&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="205" col="11" call-argexpr="_tags" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="203" col="7" info="Assuming that condition &apos;!_tags&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:47:8" call-funcname="Alloc" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="72" col="10" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="73" col="14" info="Assuming that condition &apos;size!=0&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" call-funcname="Create_BufInStream_WithNewBuffer" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="64" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:63:13" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CRecordVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="11" col="1" hash="4875499578347935588"/>
+<class name="CObjectVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="453" col="1" hash="4296327461423428301"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CBufferInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="12" col="1" hash="4715351436915534168"/>
+<class name="CReferenceBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="28" col="1" hash="10341214896691386963"/>
+<class name="CBufInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="37" col="1" hash="16232510019002917701"/>
+<class name="CDynBufSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="84" col="1" hash="9490063733486690959"/>
+<class name="CBufPtrSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="104" col="1" hash="9595668182003887911"/>
+<class name="CSequentialOutStreamSizeCount" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="125" col="1" hash="13067945848586457437"/>
+<class name="CMyComPtr &lt; IUnknown &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="11807805326895857265"/>
+<class name="CMyComPtr &lt; ISequentialOutStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="3437362086082606441"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+<class name="CBuffer &lt; unsigned char &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="12" col="20" hash="575390372176414185"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:21:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:53:8" my-argnr="1" my-argname="ref" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="53" col="40" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:55:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="55" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:99:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:120:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="120" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:136:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="136" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:161:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="161" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:61:6" my-argnr="4" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="83" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" my-argnr="3" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="92" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="112" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="113" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="124" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:51:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="53" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:197:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="199" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:321:7" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:464:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="466" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:483:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="485" col="30" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:507:12" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="510" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:523:12" my-argnr="1" my-argname="ptr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="525" col="29" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:695:14" my-argnr="1" my-argname="a1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="696" col="37" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:95:8" my-argnr="1" my-argname="dest" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="135" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:30:3" my-argnr="1" my-argname="buffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="32" col="19" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:17:8" call-funcname="MoveItems" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="155" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:281:7" call-funcname="FindInSorted" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="318" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:298:7" call-funcname="FindInSorted2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="400" col="18" call-argexpr="param" call-argvaluetype="0" call-argvalue="0">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="698" col="45" info="Calling function &apos;Sort&apos;, 2nd argument &apos;NULL&apos; value is 0"/>
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="386" col="14" info="Assuming condition is Assuming condition is false"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="500" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="501" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="197" col="5" call-argexpr="_data" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="195" col="7" info="Assuming that condition &apos;!_data&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="205" col="11" call-argexpr="_tags" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="203" col="7" info="Assuming that condition &apos;!_tags&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:47:8" call-funcname="Alloc" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="72" col="10" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="73" col="14" info="Assuming that condition &apos;size!=0&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" call-funcname="Create_BufInStream_WithNewBuffer" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="64" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:63:13" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CRecordVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="11" col="1" hash="4875499578347935588"/>
+<class name="CObjectVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="453" col="1" hash="4296327461423428301"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CBufferInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="12" col="1" hash="4715351436915534168"/>
+<class name="CReferenceBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="28" col="1" hash="10341214896691386963"/>
+<class name="CBufInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="37" col="1" hash="16232510019002917701"/>
+<class name="CDynBufSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="84" col="1" hash="9490063733486690959"/>
+<class name="CBufPtrSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="104" col="1" hash="9595668182003887911"/>
+<class name="CSequentialOutStreamSizeCount" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="125" col="1" hash="13067945848586457437"/>
+<class name="CMyComPtr &lt; IUnknown &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="11807805326895857265"/>
+<class name="CMyComPtr &lt; ISequentialOutStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="3437362086082606441"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+<class name="CBuffer &lt; unsigned char &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="12" col="20" hash="575390372176414185"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:21:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:53:8" my-argnr="1" my-argname="ref" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="53" col="40" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:55:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="55" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:99:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:120:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="120" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:136:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="136" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:161:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="161" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:61:6" my-argnr="4" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="83" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" my-argnr="3" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="92" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="112" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="113" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="124" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:51:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="53" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:197:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="199" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:321:7" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:464:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="466" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:483:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="485" col="30" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:507:12" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="510" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:523:12" my-argnr="1" my-argname="ptr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="525" col="29" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:695:14" my-argnr="1" my-argname="a1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="696" col="37" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:95:8" my-argnr="1" my-argname="dest" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="135" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:30:3" my-argnr="1" my-argname="buffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="32" col="19" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:17:8" call-funcname="MoveItems" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="155" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:281:7" call-funcname="FindInSorted" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="318" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:298:7" call-funcname="FindInSorted2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="400" col="18" call-argexpr="param" call-argvaluetype="0" call-argvalue="0">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="698" col="45" info="Calling function &apos;Sort&apos;, 2nd argument &apos;NULL&apos; value is 0"/>
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="386" col="14" info="Assuming condition is Assuming condition is false"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="500" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="501" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="197" col="5" call-argexpr="_data" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="195" col="7" info="Assuming that condition &apos;!_data&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="205" col="11" call-argexpr="_tags" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="203" col="7" info="Assuming that condition &apos;!_tags&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:47:8" call-funcname="Alloc" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="72" col="10" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="73" col="14" info="Assuming that condition &apos;size!=0&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" call-funcname="Create_BufInStream_WithNewBuffer" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="64" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:63:13" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="17310176687120749122"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="8914001795450445840"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CNewException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/NewHandler.h" line="50" col="1" hash="7322455032005079616"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CRecordVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="11" col="1" hash="4875499578347935588"/>
+<class name="CObjectVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="453" col="1" hash="4296327461423428301"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="16160304702049348652"/>
+<class name="CBufferInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="12" col="1" hash="7152725548353053559"/>
+<class name="CReferenceBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="28" col="1" hash="10341214896691386963"/>
+<class name="CBufInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="37" col="1" hash="16648831886423017728"/>
+<class name="CDynBufSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="84" col="1" hash="9490063733486690959"/>
+<class name="CBufPtrSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="104" col="1" hash="9595668182003887911"/>
+<class name="CSequentialOutStreamSizeCount" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="125" col="1" hash="3694837974288056917"/>
+<class name="CMyComPtr &lt; IUnknown &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="11807805326895857265"/>
+<class name="CMyComPtr &lt; ISequentialOutStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="3437362086082606441"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+<class name="CBuffer &lt; unsigned char &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="12" col="20" hash="575390372176414185"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:21:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:53:8" my-argnr="1" my-argname="ref" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="53" col="40" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:55:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="55" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:99:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:120:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="120" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:136:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="136" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:161:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="161" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:61:6" my-argnr="4" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="83" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" my-argnr="3" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="92" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="112" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="113" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="124" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:51:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="53" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:197:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="199" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:321:7" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:464:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="466" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:483:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="485" col="30" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:507:12" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="510" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:523:12" my-argnr="1" my-argname="ptr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="525" col="29" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:695:14" my-argnr="1" my-argname="a1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="696" col="37" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:95:8" my-argnr="1" my-argname="dest" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="135" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:30:3" my-argnr="1" my-argname="buffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="32" col="19" value="0"/>
+  </FileInfo>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.h" line="21" column="3"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:17:8" call-funcname="MoveItems" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="155" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:281:7" call-funcname="FindInSorted" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="318" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:298:7" call-funcname="FindInSorted2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="400" col="18" call-argexpr="param" call-argvaluetype="0" call-argvalue="0">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="698" col="45" info="Calling function &apos;Sort&apos;, 2nd argument &apos;NULL&apos; value is 0"/>
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="386" col="14" info="Assuming condition is Assuming condition is false"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="500" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="501" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="197" col="5" call-argexpr="_data" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="195" col="7" info="Assuming that condition &apos;!_data&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="205" col="11" call-argexpr="_tags" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="203" col="7" info="Assuming that condition &apos;!_tags&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:47:8" call-funcname="Alloc" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="72" col="10" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="73" col="14" info="Assuming that condition &apos;size!=0&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" call-funcname="Create_BufInStream_WithNewBuffer" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="64" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:63:13" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="14380500595775703494"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CRecordVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="11" col="1" hash="4875499578347935588"/>
+<class name="CObjectVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="453" col="1" hash="4296327461423428301"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="5605243939076924204"/>
+<class name="CBufferInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="12" col="1" hash="2106437104927584318"/>
+<class name="CReferenceBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="28" col="1" hash="10341214896691386963"/>
+<class name="CBufInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="37" col="1" hash="8749000682439304615"/>
+<class name="CDynBufSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="84" col="1" hash="8588900154976175821"/>
+<class name="CBufPtrSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="104" col="1" hash="11483593660657073062"/>
+<class name="CSequentialOutStreamSizeCount" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="125" col="1" hash="14290570132694835836"/>
+<class name="CMyComPtr &lt; IUnknown &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="11807805326895857265"/>
+<class name="CMyComPtr &lt; ISequentialOutStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="3437362086082606441"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+<class name="CBuffer &lt; unsigned char &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="12" col="20" hash="575390372176414185"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:21:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:53:8" my-argnr="1" my-argname="ref" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="53" col="40" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:55:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="55" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:99:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:120:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="120" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:136:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="136" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:161:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="161" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:61:6" my-argnr="4" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="83" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" my-argnr="3" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="92" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="112" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="113" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="124" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:51:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="53" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:197:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="199" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:321:7" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:464:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="466" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:483:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="485" col="30" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:507:12" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="510" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:523:12" my-argnr="1" my-argname="ptr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="525" col="29" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:695:14" my-argnr="1" my-argname="a1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="696" col="37" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:95:8" my-argnr="1" my-argname="dest" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="135" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:30:3" my-argnr="1" my-argname="buffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="32" col="19" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:17:8" call-funcname="MoveItems" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="155" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:281:7" call-funcname="FindInSorted" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="318" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:298:7" call-funcname="FindInSorted2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="400" col="18" call-argexpr="param" call-argvaluetype="0" call-argvalue="0">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="698" col="45" info="Calling function &apos;Sort&apos;, 2nd argument &apos;NULL&apos; value is 0"/>
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyVector.h" line="386" col="14" info="Assuming condition is Assuming condition is false"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="500" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:498:12" call-funcname="operator[]" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="501" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="197" col="5" call-argexpr="_data" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="195" col="7" info="Assuming that condition &apos;!_data&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h:12:6" call-funcname="MyFree" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="205" col="11" call-argexpr="_tags" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\StreamObjects.cpp" line="203" col="7" info="Assuming that condition &apos;!_tags&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:47:8" call-funcname="Alloc" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="72" col="10" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyBuffer.h" line="73" col="14" info="Assuming that condition &apos;size!=0&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" call-funcname="SortRefDown" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="392" col="9" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:383:8" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" call-funcname="Create_BufInStream_WithNewBuffer" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="64" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:63:13" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CRecordVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="11" col="1" hash="4875499578347935588"/>
+<class name="CObjectVector" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="453" col="1" hash="4296327461423428301"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CBufferInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="12" col="1" hash="4715351436915534168"/>
+<class name="CReferenceBuf" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="28" col="1" hash="10341214896691386963"/>
+<class name="CBufInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="37" col="1" hash="16232510019002917701"/>
+<class name="CDynBufSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="84" col="1" hash="9490063733486690959"/>
+<class name="CBufPtrSeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="104" col="1" hash="9595668182003887911"/>
+<class name="CSequentialOutStreamSizeCount" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="125" col="1" hash="13067945848586457437"/>
+<class name="CMyComPtr &lt; IUnknown &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="11807805326895857265"/>
+<class name="CMyComPtr &lt; ISequentialOutStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="3437362086082606441"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+<class name="CBuffer &lt; unsigned char &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="12" col="20" hash="575390372176414185"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:21:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:53:8" my-argnr="1" my-argname="ref" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="53" col="40" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:55:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="55" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:99:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:120:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="120" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:136:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="136" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:161:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h" line="161" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:61:6" my-argnr="4" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="83" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:62:6" my-argnr="3" my-argname="stream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="92" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="112" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:110:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="113" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="1" my-argname="b1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:121:6" my-argnr="2" my-argname="b2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="124" col="16" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:51:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="53" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:197:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="199" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:321:7" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="323" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:365:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="367" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:405:15" my-argnr="1" my-argname="p" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="407" col="14" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:464:3" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="466" col="27" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:483:18" my-argnr="1" my-argname="v" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="485" col="30" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:507:12" my-argnr="1" my-argname="item" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="510" col="26" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:523:12" my-argnr="1" my-argname="ptr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="525" col="29" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h:695:14" my-argnr="1" my-argname="a1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyVector.h" line="696" col="37" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.h:95:8" my-argnr="1" my-argname="dest" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/StreamObjects.cpp" line="135" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h:30:3" my-argnr="1" my-argname="buffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyBuffer.h" line="32" col="19" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Read" lineNumber="11"/>
+    <functiondecl functionName="Seek" lineNumber="29"/>
+    <functiondecl functionName="Read" lineNumber="46"/>
+    <functiondecl functionName="Seek" lineNumber="64"/>
+    <functiondecl functionName="Create_BufInStream_WithReference" lineNumber="81"/>
+    <functiondecl functionName="Create_BufInStream_WithNewBuffer" lineNumber="90"/>
+    <functiondecl functionName="Free" lineNumber="100"/>
+    <functiondecl functionName="EnsureCapacity" lineNumber="107"/>
+    <functiondecl functionName="CopyToBuffer" lineNumber="133"/>
+    <functiondecl functionName="Write" lineNumber="138"/>
+    <functiondecl functionName="Write" lineNumber="154"/>
+    <functiondecl functionName="Write" lineNumber="169"/>
+    <functiondecl functionName="Free" lineNumber="181"/>
+    <functiondecl functionName="Alloc" lineNumber="189"/>
+    <functiondecl functionName="Init" lineNumber="215"/>
+    <functiondecl functionName="Read" lineNumber="224"/>
+    <functiondecl functionName="Seek" lineNumber="278"/>
+    <functiondecl functionName="Read" lineNumber="11"/>
+    <functiondecl functionName="Seek" lineNumber="29"/>
+    <functiondecl functionName="Read" lineNumber="46"/>
+    <functiondecl functionName="Seek" lineNumber="64"/>
+    <functiondecl functionName="Create_BufInStream_WithReference" lineNumber="81"/>
+    <functiondecl functionName="Create_BufInStream_WithNewBuffer" lineNumber="90"/>
+    <functiondecl functionName="Free" lineNumber="100"/>
+    <functiondecl functionName="EnsureCapacity" lineNumber="107"/>
+    <functiondecl functionName="CopyToBuffer" lineNumber="133"/>
+    <functiondecl functionName="Write" lineNumber="138"/>
+    <functiondecl functionName="Write" lineNumber="154"/>
+    <functiondecl functionName="Write" lineNumber="169"/>
+    <functiondecl functionName="Free" lineNumber="181"/>
+    <functiondecl functionName="Alloc" lineNumber="189"/>
+    <functiondecl functionName="Init" lineNumber="215"/>
+    <functiondecl functionName="Read" lineNumber="224"/>
+    <functiondecl functionName="Seek" lineNumber="278"/>
+    <functiondecl functionName="Read" lineNumber="11"/>
+    <functiondecl functionName="Seek" lineNumber="29"/>
+    <functiondecl functionName="Read" lineNumber="46"/>
+    <functiondecl functionName="Seek" lineNumber="64"/>
+    <functiondecl functionName="Create_BufInStream_WithReference" lineNumber="81"/>
+    <functiondecl functionName="Create_BufInStream_WithNewBuffer" lineNumber="90"/>
+    <functiondecl functionName="Free" lineNumber="100"/>
+    <functiondecl functionName="EnsureCapacity" lineNumber="107"/>
+    <functiondecl functionName="CopyToBuffer" lineNumber="133"/>
+    <functiondecl functionName="Write" lineNumber="138"/>
+    <functiondecl functionName="Write" lineNumber="154"/>
+    <functiondecl functionName="Write" lineNumber="169"/>
+    <functiondecl functionName="Free" lineNumber="181"/>
+    <functiondecl functionName="Alloc" lineNumber="189"/>
+    <functiondecl functionName="Init" lineNumber="215"/>
+    <functiondecl functionName="Read" lineNumber="224"/>
+    <functiondecl functionName="Seek" lineNumber="278"/>
+    <functiondecl functionName="Read" lineNumber="11"/>
+    <functiondecl functionName="Seek" lineNumber="29"/>
+    <functiondecl functionName="Read" lineNumber="46"/>
+    <functiondecl functionName="Seek" lineNumber="64"/>
+    <functiondecl functionName="Create_BufInStream_WithReference" lineNumber="81"/>
+    <functiondecl functionName="Create_BufInStream_WithNewBuffer" lineNumber="90"/>
+    <functiondecl functionName="Free" lineNumber="100"/>
+    <functiondecl functionName="EnsureCapacity" lineNumber="107"/>
+    <functiondecl functionName="CopyToBuffer" lineNumber="133"/>
+    <functiondecl functionName="Write" lineNumber="138"/>
+    <functiondecl functionName="Write" lineNumber="154"/>
+    <functiondecl functionName="Write" lineNumber="169"/>
+    <functiondecl functionName="Free" lineNumber="181"/>
+    <functiondecl functionName="Alloc" lineNumber="189"/>
+    <functiondecl functionName="Init" lineNumber="215"/>
+    <functiondecl functionName="Read" lineNumber="224"/>
+    <functiondecl functionName="Seek" lineNumber="278"/>
+    <functiondecl functionName="Read" lineNumber="11"/>
+    <functiondecl functionName="Seek" lineNumber="29"/>
+    <functiondecl functionName="Read" lineNumber="46"/>
+    <functiondecl functionName="Seek" lineNumber="64"/>
+    <functiondecl functionName="Create_BufInStream_WithReference" lineNumber="81"/>
+    <functiondecl functionName="Create_BufInStream_WithNewBuffer" lineNumber="90"/>
+    <functiondecl functionName="Free" lineNumber="100"/>
+    <functiondecl functionName="EnsureCapacity" lineNumber="107"/>
+    <functiondecl functionName="CopyToBuffer" lineNumber="133"/>
+    <functiondecl functionName="Write" lineNumber="138"/>
+    <functiondecl functionName="Write" lineNumber="154"/>
+    <functiondecl functionName="Write" lineNumber="169"/>
+    <functiondecl functionName="Free" lineNumber="181"/>
+    <functiondecl functionName="Alloc" lineNumber="189"/>
+    <functiondecl functionName="Init" lineNumber="215"/>
+    <functiondecl functionName="Read" lineNumber="224"/>
+    <functiondecl functionName="Seek" lineNumber="278"/>
+    <functioncall functionName="AddInReserved"/>
+    <functioncall functionName="AddRef"/>
+    <functioncall functionName="Alloc"/>
+    <functioncall functionName="Back"/>
+    <functioncall functionName="Byte"/>
+    <functioncall functionName="CBoolPair"/>
+    <functioncall functionName="CBuffer"/>
+    <functioncall functionName="CMyComBSTR"/>
+    <functioncall functionName="CMyComPtr"/>
+    <functioncall functionName="CMyUnknownImp"/>
+    <functioncall functionName="CObjArray"/>
+    <functioncall functionName="CObjArray2"/>
+    <functioncall functionName="CObjectVector"/>
+    <functioncall functionName="CRecordVector"/>
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClearAndFree"/>
+    <functioncall functionName="ClearAndReserve"/>
+    <functioncall functionName="Compare"/>
+    <functioncall functionName="CompareObjectItems"/>
+    <functioncall functionName="ConstructReserve"/>
+    <functioncall functionName="CopyFrom"/>
+    <functioncall functionName="Create_BufInStream_WithNewBuffer"/>
+    <functioncall functionName="Delete"/>
+    <functioncall functionName="DeleteBack"/>
+    <functioncall functionName="DeleteFrom"/>
+    <functioncall functionName="DeleteFrontal"/>
+    <functioncall functionName="Detach"/>
+    <functioncall functionName="Empty"/>
+    <functioncall functionName="EnsureCapacity"/>
+    <functioncall functionName="FindInSorted"/>
+    <functioncall functionName="FindInSorted2"/>
+    <functioncall functionName="Free"/>
+    <functioncall functionName="Front"/>
+    <functioncall functionName="GetBufPtrForWriting"/>
+    <functioncall functionName="INT32"/>
+    <functioncall functionName="Init"/>
+    <functioncall functionName="Insert"/>
+    <functioncall functionName="InsertInReserved"/>
+    <functioncall functionName="IsEmpty"/>
+    <functioncall functionName="MoveItems"/>
+    <functioncall functionName="MoveToFront"/>
+    <functioncall functionName="MyAlloc"/>
+    <functioncall functionName="MyFree"/>
+    <functioncall functionName="MyMin"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="QueryInterface"/>
+    <functioncall functionName="ReAllocForNewCapacity"/>
+    <functioncall functionName="ReadBlock"/>
+    <functioncall functionName="Release"/>
+    <functioncall functionName="Reserve"/>
+    <functioncall functionName="ReserveDown"/>
+    <functioncall functionName="ReserveOnePosition"/>
+    <functioncall functionName="SRes"/>
+    <functioncall functionName="Size"/>
+    <functioncall functionName="Sort"/>
+    <functioncall functionName="SortRefDown"/>
+    <functioncall functionName="SortRefDown2"/>
+    <functioncall functionName="SysAllocString"/>
+    <functioncall functionName="SysAllocStringLen"/>
+    <functioncall functionName="SysFreeString"/>
+    <functioncall functionName="SysStringLen"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="UpdateSize"/>
+    <functioncall functionName="Wipe"/>
+    <functioncall functionName="Wipe_and_Free"/>
+    <functioncall functionName="Write"/>
+    <functioncall functionName="__int64"/>
+    <functioncall functionName="compare"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="operatorT*"/>
+    <functioncall functionName="operator[]"/>
+    <functioncall functionName="operatorchar*"/>
+    <functioncall functionName="operatorconstT*"/>
+    <functioncall functionName="operatorconstchar*"/>
+    <functioncall functionName="operatorconstwchar_t*"/>
+    <functioncall functionName="realloc"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

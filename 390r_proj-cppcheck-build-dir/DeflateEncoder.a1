@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7207473885127759582">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;COutBuffer::_limitPos&apos; is not initialized in the constructor." verbose="Member variable &apos;COutBuffer::_limitPos&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="36" column="3"/>
+            <symbol>COutBuffer::_limitPos</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;COutBuffer::_streamPos&apos; is not initialized in the constructor." verbose="Member variable &apos;COutBuffer::_streamPos&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="36" column="3"/>
+            <symbol>COutBuffer::_streamPos</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;COutBuffer::_bufSize&apos; is not initialized in the constructor." verbose="Member variable &apos;COutBuffer::_bufSize&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="36" column="3"/>
+            <symbol>COutBuffer::_bufSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;COutBuffer::_processedSize&apos; is not initialized in the constructor." verbose="Member variable &apos;COutBuffer::_processedSize&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="36" column="3"/>
+            <symbol>COutBuffer::_processedSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;COutBuffer::_overDict&apos; is not initialized in the constructor." verbose="Member variable &apos;COutBuffer::_overDict&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="36" column="3"/>
+            <symbol>COutBuffer::_overDict</symbol>
+        </error>
+        <error id="noConstructor" severity="style" msg="The class &apos;CBitlEncoder&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CBitlEncoder&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\BitlEncoder.h" line="8" column="1"/>
+            <symbol>CBitlEncoder</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_OutStream&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_OutStream&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_OutStream</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_MatchDistances&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_MatchDistances&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_MatchDistances</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_Pos&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_Pos&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_Pos</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_CheckStatic&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_CheckStatic&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_CheckStatic</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_IsMultiPass&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_IsMultiPass&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_IsMultiPass</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_ValueBlockSize&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_ValueBlockSize&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_ValueBlockSize</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_LevelLevels&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_LevelLevels&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_LevelLevels</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_NumLitLenLevels&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_NumLitLenLevels&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_NumLitLenLevels</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_NumDistLevels&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_NumDistLevels&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_NumDistLevels</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_NumLevelCodes&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_NumLevelCodes&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_NumLevelCodes</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_ValueIndex&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_ValueIndex&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_ValueIndex</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_SecondPass&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_SecondPass&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_SecondPass</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_AdditionalOffset&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_AdditionalOffset&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_AdditionalOffset</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_OptimumEndIndex&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_OptimumEndIndex&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_OptimumEndIndex</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_OptimumCurrentIndex&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_OptimumCurrentIndex&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_OptimumCurrentIndex</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_LiteralPrices&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_LiteralPrices&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_LiteralPrices</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_LenPrices&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_LenPrices&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_LenPrices</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_PosPrices&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_PosPrices&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_PosPrices</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_NewLevels&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_NewLevels&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_NewLevels</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::mainFreqs&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::mainFreqs&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::mainFreqs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::distFreqs&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::distFreqs&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::distFreqs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::mainCodes&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::mainCodes&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::mainCodes</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::distCodes&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::distCodes&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::distCodes</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::levelCodes&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::levelCodes&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::levelCodes</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::levelLens&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::levelLens&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::levelLens</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::BlockSizeRes&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::BlockSizeRes&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::BlockSizeRes</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CCoder::m_Optimum&apos; is not initialized in the constructor." verbose="Member variable &apos;CCoder::m_Optimum&apos; is not initialized in the constructor." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="139" column="9"/>
+            <symbol>CCoder::m_Optimum</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::Len&apos;" verbose="Unused private function: &apos;CMyComBSTR::Len&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="142" column="12"/>
+            <symbol>CMyComBSTR::Len</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" verbose="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="144" column="8"/>
+            <symbol>CMyComBSTR::MyCopy</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="107" column="3"/>
+            <symbol>CMyComBSTR</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CSystemException&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CSystemException&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyException.h" line="11" column="3"/>
+            <symbol>CSystemException</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;COutBufferException&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;COutBufferException&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="13" column="3"/>
+            <symbol>COutBufferException</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CCoder&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CCoder&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="166" column="3"/>
+            <symbol>CCoder</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="186" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="186" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="186" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="188" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="26" column="3" info="Virtual function in base class"/>
+            <symbol>Code</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="190" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="171" column="3" info="Virtual function in base class"/>
+            <symbol>SetCoderProperties</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="200" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="200" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="200" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="202" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="26" column="3" info="Virtual function in base class"/>
+            <symbol>Code</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="204" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="171" column="3" info="Virtual function in base class"/>
+            <symbol>SetCoderProperties</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="71" column="36"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\OutBuffer.h" line="60" column="19"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="186" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="200" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="163" column="16"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="169" column="16"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="187" column="26"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="286" column="25"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="363" column="44"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="408" column="64"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="666" column="18"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="768" column="24"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;count&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;count&apos; is reassigned a value before the old one has been used." cwe="563" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="508" column="11" info="count is overwritten"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="499" column="14" info="count is assigned"/>
+            <symbol>count</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;t&apos; can be declared as reference to const" verbose="Variable &apos;t&apos; can be declared as reference to const" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="830" column="12" info="Variable &apos;t&apos; can be declared as reference to const"/>
+            <symbol>t</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="COutBufferException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/OutBuffer.h" line="11" col="1" hash="1245938077412037164"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="644210627629635168"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="COutBufferException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/OutBuffer.h" line="11" col="1" hash="1245938077412037164"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="644210627629635168"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="17310176687120749122"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="8914001795450445840"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CNewException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/NewHandler.h" line="50" col="1" hash="7322455032005079616"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="16160304702049348652"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="COutBufferException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/OutBuffer.h" line="11" col="1" hash="1245938077412037164"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="6599892327220174420"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.h" line="186" column="3"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="14380500595775703494"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="5605243939076924204"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="COutBufferException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/OutBuffer.h" line="11" col="1" hash="1245938077412037164"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="3988993621800782080"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="644210627629635168"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="153" col="13" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" call-funcname="SetProps" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="236" col="11" call-argexpr="&amp;props" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="580" col="16" call-argexpr="count-11" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\DeflateEncoder.cpp" line="572" col="20" info="Assuming that condition &apos;count&lt;=10&apos; is not redundant"/>
+</function-call><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" call-funcname="Huffman_GetPrice_Spec" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="629" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="764" col="14" call-argexpr="NBlockType::kStored" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:741:15" call-funcname="GetStorePrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="857" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:162:8" call-funcname="CodeBlock" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="897" col="14" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:140:8" call-funcname="WriteBits" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="906" col="16" call-argexpr="finalBlock?NFinalBlockField::kFinalBlock:NFinalBlockField::kNotFinalBlock" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="621" col="10" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:610:25" call-funcname="Huffman_GetPrice" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="622" col="5" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp:619:25" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:169:11" call-funcname="CodeReal" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="997" col="16" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1004" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:188:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1007" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:190:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="2"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="3" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="3"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="4" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="4"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:172:11" call-funcname="BaseCode" call-argnr="5" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1011" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:202:3" my-argnr="5"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="1"/>
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:175:11" call-funcname="BaseSetEncoderProperties2" call-argnr="2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="1014" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:204:3" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CAlignOffsetAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Alloc.h" line="45" col="9" hash="5555667345312633138"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CMyComPtr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="10541588896082080869"/>
+<class name="_CMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="13" col="9" hash="1886980329056298575"/>
+<class name="_IMatchFinder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzFind.h" line="110" col="9" hash="8049729900579847108"/>
+<class name="CSystemException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyException.h" line="8" col="1" hash="5191892114495444254"/>
+<class name="COutBufferException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/OutBuffer.h" line="11" col="1" hash="1245938077412037164"/>
+<class name="CBitlEncoder" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/BitlEncoder.h" line="8" col="1" hash="644210627629635168"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:186:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="186" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:200:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h" line="200" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:164:8" my-argnr="1" my-argname="props2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="110" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:138:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="473" col="22" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.h:141:8" my-argnr="1" my-argname="levels" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/DeflateEncoder.cpp" line="540" col="22" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functiondecl functionName="Normalize" lineNumber="96"/>
+    <functiondecl functionName="SetProps" lineNumber="108"/>
+    <functiondecl functionName="Create" lineNumber="158"/>
+    <functiondecl functionName="BaseSetEncoderProperties2" lineNumber="213"/>
+    <functiondecl functionName="Free" lineNumber="240"/>
+    <functiondecl functionName="GetMatches" lineNumber="254"/>
+    <functiondecl functionName="MovePos" lineNumber="300"/>
+    <functiondecl functionName="InitStructures" lineNumber="458"/>
+    <functiondecl functionName="LevelTableDummy" lineNumber="470"/>
+    <functiondecl functionName="WriteBits" lineNumber="529"/>
+    <functiondecl functionName="LevelTableCode" lineNumber="537"/>
+    <functiondecl functionName="MakeTables" lineNumber="604"/>
+    <functiondecl functionName="TryBlock" lineNumber="632"/>
+    <functiondecl functionName="SetPrices" lineNumber="679"/>
+    <functiondecl functionName="Huffman_ReverseBits" lineNumber="704"/>
+    <functiondecl functionName="WriteBlock" lineNumber="716"/>
+    <functiondecl functionName="WriteStoreBlock" lineNumber="757"/>
+    <functiondecl functionName="CodeBlock" lineNumber="892"/>
+    <functiondecl functionName="CodeReal" lineNumber="942"/>
+    <functiondecl functionName="BaseCode" lineNumber="994"/>
+    <functiondecl functionName="Code" lineNumber="1002"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1006"/>
+    <functiondecl functionName="Code" lineNumber="1009"/>
+    <functiondecl functionName="SetCoderProperties" lineNumber="1013"/>
+    <functioncall functionName="AddRef"/>
+    <functioncall functionName="Backward"/>
+    <functioncall functionName="BaseCode"/>
+    <functioncall functionName="BaseSetEncoderProperties2"/>
+    <functioncall functionName="Bt3Zip_MatchFinder_GetMatches"/>
+    <functioncall functionName="Bt3Zip_MatchFinder_Skip"/>
+    <functioncall functionName="Byte"/>
+    <functioncall functionName="CBoolPair"/>
+    <functioncall functionName="CByteInBufWrap"/>
+    <functioncall functionName="CByteOutBufWrap"/>
+    <functioncall functionName="CCOMCoder"/>
+    <functioncall functionName="CCOMCoder64"/>
+    <functioncall functionName="CCodeValue"/>
+    <functioncall functionName="CCoder"/>
+    <functioncall functionName="CEncProps"/>
+    <functioncall functionName="CMyComBSTR"/>
+    <functioncall functionName="CMyComPtr"/>
+    <functioncall functionName="CMyUnknownImp"/>
+    <functioncall functionName="COutBuffer"/>
+    <functioncall functionName="COutBufferException"/>
+    <functioncall functionName="CSystemException"/>
+    <functioncall functionName="CTables"/>
+    <functioncall functionName="CodeBlock"/>
+    <functioncall functionName="CodeReal"/>
+    <functioncall functionName="Create"/>
+    <functioncall functionName="Empty"/>
+    <functioncall functionName="Flush"/>
+    <functioncall functionName="FlushByte"/>
+    <functioncall functionName="FlushWithCheck"/>
+    <functioncall functionName="Free"/>
+    <functioncall functionName="GetBlockPrice"/>
+    <functioncall functionName="GetLzBlockPrice"/>
+    <functioncall functionName="GetMatches"/>
+    <functioncall functionName="GetOptimal"/>
+    <functioncall functionName="GetOptimalFast"/>
+    <functioncall functionName="GetPosSlot"/>
+    <functioncall functionName="GetProcessedSize"/>
+    <functioncall functionName="GetStorePrice"/>
+    <functioncall functionName="Hc3Zip_MatchFinder_GetMatches"/>
+    <functioncall functionName="Hc3Zip_MatchFinder_Skip"/>
+    <functioncall functionName="Huffman_Generate"/>
+    <functioncall functionName="Huffman_GetPrice"/>
+    <functioncall functionName="Huffman_GetPrice_Spec"/>
+    <functioncall functionName="Huffman_ReverseBits"/>
+    <functioncall functionName="INT32"/>
+    <functioncall functionName="Init"/>
+    <functioncall functionName="InitStructures"/>
+    <functioncall functionName="IsLiteral"/>
+    <functioncall functionName="LevelTableCode"/>
+    <functioncall functionName="LevelTableDummy"/>
+    <functioncall functionName="MakeTables"/>
+    <functioncall functionName="MatchFinder_Construct"/>
+    <functioncall functionName="MatchFinder_Create"/>
+    <functioncall functionName="MatchFinder_Free"/>
+    <functioncall functionName="MatchFinder_Init"/>
+    <functioncall functionName="MovePos"/>
+    <functioncall functionName="MyAlloc"/>
+    <functioncall functionName="MyFree"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="Normalize"/>
+    <functioncall functionName="QueryInterface"/>
+    <functioncall functionName="ReadByteFromNewBlock"/>
+    <functioncall functionName="Release"/>
+    <functioncall functionName="SRes"/>
+    <functioncall functionName="SResToHRESULT"/>
+    <functioncall functionName="SetAsLiteral"/>
+    <functioncall functionName="SetFixedLevels"/>
+    <functioncall functionName="SetPrices"/>
+    <functioncall functionName="SetProps"/>
+    <functioncall functionName="SetRatioInfo"/>
+    <functioncall functionName="SetStream"/>
+    <functioncall functionName="SysAllocString"/>
+    <functioncall functionName="SysAllocStringLen"/>
+    <functioncall functionName="SysFreeString"/>
+    <functioncall functionName="SysStringLen"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="TryBlock"/>
+    <functioncall functionName="TryDynBlock"/>
+    <functioncall functionName="TryFixedBlock"/>
+    <functioncall functionName="Wipe_and_Free"/>
+    <functioncall functionName="WriteBits"/>
+    <functioncall functionName="WriteBlock"/>
+    <functioncall functionName="WriteByte"/>
+    <functioncall functionName="WriteStoreBlock"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="kBlockTypeFieldSize"/>
+    <functioncall functionName="kDistDirectBits"/>
+    <functioncall functionName="kDistTableSize64"/>
+    <functioncall functionName="kDynamicHuffman"/>
+    <functioncall functionName="kFinalBlock"/>
+    <functioncall functionName="kFinalBlockFieldSize"/>
+    <functioncall functionName="kFixedHuffman"/>
+    <functioncall functionName="kFixedMainTableSize"/>
+    <functioncall functionName="kHistorySize32"/>
+    <functioncall functionName="kHistorySize64"/>
+    <functioncall functionName="kLenDirectBits32"/>
+    <functioncall functionName="kLenDirectBits64"/>
+    <functioncall functionName="kLenStart32"/>
+    <functioncall functionName="kLenStart64"/>
+    <functioncall functionName="kLevelDirectBits"/>
+    <functioncall functionName="kLevelFieldSize"/>
+    <functioncall functionName="kLevelTableSize"/>
+    <functioncall functionName="kMainTableSize"/>
+    <functioncall functionName="kMatchMaxLen"/>
+    <functioncall functionName="kMatchMaxLen32"/>
+    <functioncall functionName="kMatchMaxLen64"/>
+    <functioncall functionName="kMatchMinLen"/>
+    <functioncall functionName="kNotFinalBlock"/>
+    <functioncall functionName="kNumDistCodesFieldSize"/>
+    <functioncall functionName="kNumDistCodesMin"/>
+    <functioncall functionName="kNumLenCodesFieldSize"/>
+    <functioncall functionName="kNumLenSymbols32"/>
+    <functioncall functionName="kNumLenSymbols64"/>
+    <functioncall functionName="kNumLenSymbolsMax"/>
+    <functioncall functionName="kNumLevelCodesFieldSize"/>
+    <functioncall functionName="kNumLevelCodesMin"/>
+    <functioncall functionName="kNumLitLenCodesMin"/>
+    <functioncall functionName="kNumOpts"/>
+    <functioncall functionName="kStored"/>
+    <functioncall functionName="kStoredBlockLengthFieldSize"/>
+    <functioncall functionName="kSymbolEndOfBlock"/>
+    <functioncall functionName="kSymbolMatch"/>
+    <functioncall functionName="kTableDirectLevels"/>
+    <functioncall functionName="kTableLevel0Number"/>
+    <functioncall functionName="kTableLevel0Number2"/>
+    <functioncall functionName="kTableLevelRepNumber"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="operatorT*"/>
+    <functioncall functionName="operatorconstwchar_t*"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,116 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+MyMin
+MyMax
+MyCompare
+BoolToInt call:[return] noreturn:[return]
+BoolToUInt call:[return] noreturn:[return]
+IntToBool call:[return] noreturn:[return]
+operator== call:[Size,memcmp,sizeof]
+operator!= call:[Size,memcmp,sizeof]
+CByteBuffer_Wipe
+CByteBuffer_Wipe call:[Wipe] noreturn:[Wipe]
+Free
+CObjArray
+CObjArray
+CObjArray
+operatorT*
+operatorconstT*
+Alloc
+Free
+CObjArray2
+CObjArray2
+operatorT*
+operatorconstT*
+Size call:[return]
+IsEmpty
+SetSize
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CSystemException
+CInBufferException
+GetStreamSize
+GetProcessedSize
+WasFinished
+SetStream
+SetBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+ReadByte_FromBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+CInBuffer call:[Free] noreturn:[Free]
+COutBufferException
+COutBuffer
+COutBuffer call:[Free] noreturn:[Free]
+SetMemStream
+SetStream
+WriteByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+WriteBytes call:[WriteByte] noreturn:[WriteByte]
+CopyBlock call:[FlushWithCheck,while] noreturn:[FlushWithCheck,while]
+PutByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+PutBytes call:[FlushWithCheck,while] noreturn:[while]
+GetByte
+CCoderReleaser
+CCoderReleaser call:[Flush] noreturn:[Flush]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+GetUInt32 call:[ReadByte,return] noreturn:[return]
+DecodeUncompressed call:[PutBytes,ReadBytes,return] noreturn:[return]
+DecodeLzvn call:[CopyBlock,GetUInt32,PutByte,ReadByte,return,while] noreturn:[return]
+SumFreqs
+CountZeroBits
+InitLitTable call:[CountZeroBits,while]
+InitExtraDecoderTable call:[CountZeroBits,while]
+FseInStream_Init
+BitStream_Pull
+FseDecodeExtra call:[BitStream_Pull]
+DecodeLzfse call:[AllocAtLeast,BitStream_Pull,CopyBlock,FseDecodeExtra,FseInStream_Init,InitExtraDecoderTable,InitLitTable,PutBytes,ReadByte,ReadBytes,SumFreqs,memset,return] noreturn:[return]
+CodeReal call:[Create,DecodeLzfse,DecodeLzvn,DecodeUncompressed,Flush,GetProcessedSize,GetUInt32,Init,SetRatioInfo,SetStream,coderReleaser,return] noreturn:[DecodeLzfse,DecodeLzvn,DecodeUncompressed,return]
+Code call:[CodeReal,return] noreturn:[CodeReal,return]
+Free
+CBuffer < unsigned char >
+CBuffer < unsigned char >
+CBuffer < unsigned char > call:[memcpy,sizeof]
+CBuffer < unsigned char >
+operatorT*
+operatorconstT*
+Size
+Alloc call:[Free]
+AllocAtLeast call:[Free]
+CopyFrom call:[Alloc,memcpy,sizeof] noreturn:[memcpy]
+ChangeSize_KeepData call:[MyMin,memcpy,sizeof] noreturn:[memcpy]
+Wipe call:[memset,sizeof] noreturn:[memset]
+operator= call:[CopyFrom] noreturn:[CopyFrom]

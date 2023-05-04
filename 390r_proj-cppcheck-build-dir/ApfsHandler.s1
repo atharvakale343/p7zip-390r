@@ -1,0 +1,1114 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+MyMin
+MyMax
+MyCompare
+BoolToInt call:[return] noreturn:[return]
+BoolToUInt call:[return] noreturn:[return]
+IntToBool call:[return] noreturn:[return]
+operator== call:[Size,memcmp,sizeof]
+operator!= call:[Size,memcmp,sizeof]
+CByteBuffer_Wipe
+CByteBuffer_Wipe call:[Wipe] noreturn:[Wipe]
+Free
+CObjArray2
+CObjArray2
+operatorT*
+operatorconstT*
+Size call:[return]
+IsEmpty
+SetSize
+IsPathSepar call:[return] noreturn:[return]
+IsPathSepar call:[return] noreturn:[return]
+MyStringLen
+MyStringCopy
+MyStpCpy
+MyStringLen
+MyStringCopy
+MyStringCat call:[MyStringCopy,MyStringLen] noreturn:[MyStringCopy]
+MyCharUpper_Ascii call:[return]
+MyCharLower_Ascii call:[return]
+MyCharLower_Ascii call:[return]
+MyCharUpper call:[return,towupper] noreturn:[towupper]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+operator+ call:[AString] noreturn:[AString]
+AString
+Len
+IsEmpty
+Empty
+operatorconstchar*
+Ptr_non_const
+Ptr
+Ptr
+RightPtr
+Back
+ReplaceOneCharAtPos
+GetBuf
+GetBuf call:[ReAlloc2] noreturn:[ReAlloc2]
+GetBuf_SetEnd call:[ReAlloc2] noreturn:[ReAlloc2]
+ReleaseBuf_SetLen
+ReleaseBuf_SetEnd
+ReleaseBuf_CalcLen call:[MyStringLen] noreturn:[MyStringLen]
+operator+= call:[Grow_1] noreturn:[Grow_1]
+Add_PathSepar call:[operator+=] noreturn:[operator+=]
+Mid call:[AString] noreturn:[AString]
+Left call:[AString] noreturn:[AString]
+MakeLower_Ascii call:[MyStringLower_Ascii] noreturn:[MyStringLower_Ascii]
+IsEqualTo call:[strcmp]
+IsEqualTo_Ascii_NoCase call:[StringsAreEqualNoCase_Ascii] noreturn:[StringsAreEqualNoCase_Ascii]
+IsPrefixedBy call:[IsString1PrefixedByString2] noreturn:[IsString1PrefixedByString2]
+IsAscii call:[Len]
+Find call:[FindCharPosInString] noreturn:[FindCharPosInString]
+Find call:[FindCharPosInString]
+ReverseFind_Dot call:[ReverseFind] noreturn:[ReverseFind]
+Find call:[Find] noreturn:[Find]
+Trim call:[TrimLeft,TrimRight] noreturn:[TrimLeft]
+DeleteBack
+DeleteFrom
+Wipe_and_Empty call:[memset,sizeof]
+AString_Wipe
+AString_Wipe call:[Wipe_and_Empty] noreturn:[Wipe_and_Empty]
+operator== call:[Len,strcmp]
+operator== call:[strcmp]
+operator== call:[strcmp]
+operator!= call:[Len,strcmp]
+operator!= call:[strcmp]
+operator!= call:[strcmp]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+operator+ call:[UString] noreturn:[UString]
+UString
+Len
+IsEmpty
+Empty
+operatorconstwchar_t*
+Ptr_non_const
+Ptr
+Ptr
+RightPtr
+Back
+ReplaceOneCharAtPos
+GetBuf
+GetBuf call:[ReAlloc2] noreturn:[ReAlloc2]
+GetBuf_SetEnd call:[ReAlloc2] noreturn:[ReAlloc2]
+ReleaseBuf_SetLen
+ReleaseBuf_SetEnd
+ReleaseBuf_CalcLen call:[MyStringLen] noreturn:[MyStringLen]
+operator= call:[return]
+operator= call:[Ptr,operator=] noreturn:[operator=]
+operator+= call:[Grow_1] noreturn:[Grow_1]
+operator+= call:[return]
+Add_PathSepar call:[operator+=] noreturn:[operator+=]
+operator+= call:[Ptr,operator+=] noreturn:[operator+=]
+Mid call:[UString] noreturn:[UString]
+Left call:[UString] noreturn:[UString]
+MakeLower_Ascii call:[MyStringLower_Ascii] noreturn:[MyStringLower_Ascii]
+IsEqualTo call:[StringsAreEqual_Ascii] noreturn:[StringsAreEqual_Ascii]
+IsEqualTo_NoCase call:[StringsAreEqualNoCase] noreturn:[StringsAreEqualNoCase]
+IsEqualTo_Ascii_NoCase call:[StringsAreEqualNoCase_Ascii] noreturn:[StringsAreEqualNoCase_Ascii]
+Compare call:[wcscmp] noreturn:[wcscmp]
+IsPrefixedBy call:[IsString1PrefixedByString2] noreturn:[IsString1PrefixedByString2]
+IsPrefixedBy_NoCase call:[IsString1PrefixedByString2_NoCase] noreturn:[IsString1PrefixedByString2_NoCase]
+IsAscii call:[Len]
+Find call:[FindCharPosInString] noreturn:[FindCharPosInString]
+Find call:[FindCharPosInString]
+ReverseFind_Dot call:[ReverseFind] noreturn:[ReverseFind]
+Find call:[Find] noreturn:[Find]
+Trim call:[TrimLeft,TrimRight] noreturn:[TrimLeft]
+DeleteBack
+DeleteFrom
+Wipe_and_Empty call:[memset,sizeof]
+UString_Wipe
+UString_Wipe call:[Wipe_and_Empty] noreturn:[Wipe_and_Empty]
+operator== call:[Len,wcscmp]
+operator== call:[wcscmp]
+operator== call:[wcscmp]
+operator!= call:[Len,wcscmp]
+operator!= call:[wcscmp]
+operator!= call:[wcscmp]
+UString2
+UString2
+Len
+IsEmpty
+GetRawPtr
+Compare call:[wcscmp] noreturn:[wcscmp]
+GetBuf call:[ReAlloc2] noreturn:[ReAlloc2]
+ReleaseBuf_SetLen
+operator!=
+operator!=
+operator!=
+CUtf8Check call:[Clear] noreturn:[Clear]
+Clear
+Update
+PrintStatus call:[Add_OptSpaced,Add_UInt32,Empty] noreturn:[Add_OptSpaced,Add_UInt32]
+IsOK
+Check_AString call:[Check_Buf,Len,Ptr] noreturn:[Check_Buf]
+ConvertPropVariantToUInt64
+PropVarEm_Set_UInt32
+PropVarEm_Set_UInt64
+PropVarEm_Set_FileTime64_Prec
+PropVarEm_Set_Bool
+CPropVariant
+Set_FtPrec
+SetAsTimeFrom_FT_Prec call:[Set_FtPrec,operator=] noreturn:[Set_FtPrec]
+SetAsTimeFrom_Ft64_Prec call:[Set_FtPrec,operator=] noreturn:[Set_FtPrec]
+SetAsTimeFrom_FT_Prec_Ns100 call:[operator=]
+Get_Ns100
+CPropVariant
+CPropVariant
+CPropVariant
+CPropVariant
+CPropVariant
+operator= call:[return]
+FILETIME_To_UInt64 call:[return]
+FILETIME_Clear
+FILETIME_IsZero call:[return] noreturn:[return]
+FiTime_Clear
+PropVariant_SetFrom_UnixTime call:[SetAsTimeFrom_FT_Prec,UnixTime_To_FileTime] noreturn:[SetAsTimeFrom_FT_Prec]
+PropVariant_SetFrom_NtfsTime call:[SetAsTimeFrom_FT_Prec] noreturn:[SetAsTimeFrom_FT_Prec]
+PropVariant_SetFrom_FiTime call:[FiTime_To_FILETIME_ns100,SetAsTimeFrom_FT_Prec_Ns100] noreturn:[SetAsTimeFrom_FT_Prec_Ns100]
+PropVariant_SetFrom_DosTime call:[DosTime_To_FileTime,LocalFileTimeToFileTime,SetAsTimeFrom_FT_Prec]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+SetStream
+ReleaseStream call:[Release] noreturn:[Release]
+Init
+QueryInterface global:[IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+GetSize
+GetRem
+WasFinished
+SeekToPhys call:[Seek] noreturn:[Seek]
+SetStream
+InitAndSeek call:[SeekToPhys] noreturn:[SeekToPhys]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SeekToStart call:[Seek] noreturn:[Seek]
+SeekToPhys call:[Seek] noreturn:[Seek]
+InitAndSeek call:[SeekToPhys,Size,return] noreturn:[SeekToPhys,return]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetAs_ZeroFill global:[k_SeekExtent_Phy_Type_ZeroFill]
+Is_ZeroFill global:[k_SeekExtent_Phy_Type_ZeroFill]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+ReleaseStream call:[Release] noreturn:[Release]
+Init
+QueryInterface global:[IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetStream
+ReleaseStream call:[Release] noreturn:[Release]
+Init
+IsFinishedOK call:[return] noreturn:[return]
+GetRem
+Init
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SeekToStart call:[Seek] noreturn:[Seek]
+SeekToPhys call:[Seek] noreturn:[Seek]
+SetStream
+SetCache
+InitAndSeek call:[SeekToPhys] noreturn:[SeekToPhys]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SeekToStart call:[Seek] noreturn:[Seek]
+CTailOutStream
+QueryInterface global:[IID_IOutStream,IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Init
+QueryInterface global:[IID_ICompressProgressInfo,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+IsMultiSignature call:[return]
+Init
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Init
+Init call:[Init,Size] noreturn:[Init]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Create_BufInStream_WithNewBuffer call:[Create_BufInStream_WithNewBuffer,Size] noreturn:[Create_BufInStream_WithNewBuffer]
+CByteDynBuffer
+CByteDynBuffer call:[Free] noreturn:[Free]
+GetCapacity
+operatorchar*
+operatorconstchar*
+CDynBufSeqOutStream
+Init
+GetSize
+GetBuffer
+UpdateSize
+QueryInterface global:[IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Init
+GetPos
+QueryInterface global:[IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetStream
+Init
+GetSize
+QueryInterface global:[IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCachedInStream
+CCachedInStream call:[Free] noreturn:[Free]
+QueryInterface global:[IID_IInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCopyCoder
+QueryInterface global:[IID_ICompressCoder,IID_ICompressGetInStreamProcessedSize,IID_ICompressSetFinishMode,IID_ICompressSetInStream,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+ConvertByteToHex
+SetHex_To_str call:[ConvertByteToHex] noreturn:[ConvertByteToHex]
+AddHexToString call:[SetHex_To_str]
+SetFrom call:[memcpy] noreturn:[memcpy]
+GetType
+Parse
+Parse
+Fletcher64 call:[return]
+CheckFletcher64 call:[Fletcher64,return] noreturn:[return]
+GetLogSize
+Parse call:[CheckFletcher64,GetLogSize,GetType,Parse,SetFrom,memcmp]
+Parse call:[CheckFletcher64,GetType,Parse]
+Parse
+GetEnd call:[return]
+CheckOverLimit
+Parse call:[Parse] noreturn:[Parse]
+Parse
+Is_FIXED_KV_SIZE call:[return]
+Parse call:[CheckFletcher64,Parse]
+Parse
+Is_EPHEMERAL call:[return]
+Is_PHYSICAL call:[return]
+Parse call:[Parse]
+Parse call:[memcpy]
+GetTotalItems
+IsHashedName call:[return]
+Parse call:[CheckFletcher64,GetType,Parse,SetFrom,memcpy]
+Parse
+GetType call:[return]
+GetID
+IsFlags_Unknown
+IsFlags_Dir
+Parse
+CItem
+Parse
+Parse
+Is_dstream_OK_for_SymLink
+CAttr
+Is_STREAM call:[return]
+Is_EMBEDDED call:[return]
+CNode
+IsDir call:[return] noreturn:[return]
+IsSymLink call:[return] noreturn:[return]
+Get_Type_From_mode
+GetSize call:[IsSymLink,Size] noreturn:[Size]
+GetPackSize call:[IsSymLink,Size] noreturn:[Size]
+Parse
+IsAltStream call:[return] noreturn:[return]
+GetAttrIndex
+ThereAreErrors
+CVol
+ApfsTimeToFileTime call:[UnixTime64_To_FileTime64]
+AddComment_Name
+AddComment_UInt64 call:[AddComment_Name,Add_LF,Add_UInt64] noreturn:[Add_LF]
+AddComment_Time call:[AddComment_Name,Add_LF,ApfsTimeToFileTime,ConvertUtcFileTimeToString2] noreturn:[Add_LF]
+AddComment_modified_by_t call:[AddComment_Name,AddComment_Time,AddComment_UInt64,Add_LF,SetFrom_CalcLen,sizeof] noreturn:[AddComment_UInt64]
+AddVolInternalName_toString call:[ConvertUTF8ToUnicode,SetFrom_CalcLen,sizeof]
+AddComment call:[AddComment_Name,AddComment_Time,AddComment_UInt64,AddComment_modified_by_t,AddHexToString,AddVolInternalName_toString,Add_LF,Add_UInt32,FlagsToString,Ptr,name,sizeof] noreturn:[AddComment_modified_by_t,Add_LF]
+Parse
+Parse
+FindKey call:[FindInSorted] noreturn:[FindInSorted]
+Parse call:[Add,Parse,Size] noreturn:[Add]
+CheckAtFinish call:[Size]
+CMap
+Clear call:[Clear] noreturn:[Clear]
+SeekReadBlock_FALSE call:[ReadStream_FALSE,Seek,SetCompleted,return] noreturn:[ReadStream_FALSE,return]
+IsArc_APFS call:[Parse]
+ReadMap global:[k_VectorSizeMax] call:[Add,AddNew,Alloc,Back,CheckAtFinish,CheckOverLimit,CopyFrom,FindKey,GetEnd,GetType,Is_EPHEMERAL,Is_FIXED_KV_SIZE,Is_PHYSICAL,Parse,ReadMap,SeekReadBlock_FALSE,Size,return] noreturn:[Alloc,return]
+ReadObjectMap call:[Alloc,Parse,ReadMap,SeekReadBlock_FALSE,return] noreturn:[return]
+Open2 call:[Add,Add_UInt32,Back,Clear,OpenVolume,Parse,ReadObjectMap,ReadStream_FALSE,Reserve,Size,return] noreturn:[Add,Parse,Reserve,return]
+OpenVolume call:[Add,AddNew,Alloc,Back,ClearAndReserve,CopyFrom,FillRefs,FindInSorted,FindKey,GetID,GetStream2,GetTotalItems,GetType,IsEmpty,IsEqualTo,IsHashedName,Is_EMBEDDED,Is_STREAM,Is_dstream_OK_for_SymLink,Len,Parse,ReadMap,ReadObjectMap,ReadStream_FAIL,SeekReadBlock_FALSE,SetCompleted,SetFrom_CalcLen,SetTotal,Size,ThereAreErrors,return] noreturn:[AddNew,ClearAndReserve,CopyFrom,Size,return]
+FillRefs call:[Add,Alloc,Back,FindInSorted,Get_Type_From_mode,IsDir,IsFlags_Unknown,Size,return] noreturn:[Add,return]
+QueryInterface global:[IID_IArchiveGetRawProps,IID_IInArchive,IID_IInArchiveGetStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Open call:[Close,Open2,return] noreturn:[return]
+Close call:[Clear,Release,return] noreturn:[return]
+GetNumberOfProperties call:[return,sizeof] noreturn:[return]
+GetPropertyInfo call:[AllocBstrFromAscii,return,sizeof] noreturn:[return]
+GetNumberOfArchiveProperties call:[return,sizeof] noreturn:[return]
+GetArchivePropertyInfo global:[k7z_PROPID_To_VARTYPE] call:[return,sizeof] noreturn:[return]
+ApfsTimeToProp call:[ApfsTimeToFileTime,SetAsTimeFrom_FT_Prec_Ns100] noreturn:[SetAsTimeFrom_FT_Prec_Ns100]
+GetArchiveProperty global:[kpv_ErrorFlags_HeadersError,kpv_ErrorFlags_UnsupportedFeature] call:[AddComment,AddComment_UInt64,AddVolInternalName_toString,Add_LF,ApfsTimeToProp,Detach,SetHex_To_str,Size,return] noreturn:[AddComment,AddComment_UInt64,Add_LF,ApfsTimeToProp,return]
+GetNumRawProps call:[return] noreturn:[return]
+GetRawPropInfo call:[return] noreturn:[return]
+GetParent call:[IsAltStream,return] noreturn:[return]
+GetRawProp call:[return] noreturn:[return]
+Utf8Name_to_InterName call:[ConvertUTF8ToUnicode,NormalizeSlashes_in_FileName_for_OsPath] noreturn:[NormalizeSlashes_in_FileName_for_OsPath]
+AddNodeName call:[Add_UInt64,IsEmpty,Utf8Name_to_InterName]
+GetItemPath call:[AddNodeName,Insert,InsertAtFront,IsEmpty,Len,UString,Utf8Name_to_InterName] noreturn:[AddNodeName,Insert,InsertAtFront]
+GetProperty call:[AddNodeName,ApfsTimeToProp,ConvertUTF8ToUnicode,Detach,FlagsToProp,GetAttrIndex,GetItemPath,GetPackSize,GetSize,IsAltStream,IsDir,IsEmpty,IsFlags_Dir,IsFlags_Unknown,IsSymLink,Len,SetFrom_CalcLen,Size,return,sizeof] noreturn:[AddNodeName,ApfsTimeToProp,ConvertUTF8ToUnicode,FlagsToProp,IsDir,IsFlags_Dir,return]
+GetSize call:[GetAttrIndex,GetSize]
+Extract call:[CCopyCoder,Code,GetSize,GetStream,Init,IsAltStream,IsDir,IsFlags_Dir,PrepareOperation,Release,SetCur,SetOperationResult,SetTotal,Size,return] noreturn:[GetSize,IsDir,IsFlags_Dir,Size,return]
+GetNumberOfItems call:[Size,return] noreturn:[return]
+GetStream call:[Detach,FindInSorted,GetAttrIndex,GetStream2,Init,IsDir,IsFlags_Dir,IsSymLink,Size,return] noreturn:[GetStream2,return]
+GetStream2 call:[Add,CExtentsStream,Detach,Init,Size,return] noreturn:[return]
+CreateArc call:[CHandler] noreturn:[CHandler]
+CRegisterArc call:[RegisterArc] noreturn:[RegisterArc]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < IInStream >
+CMyComPtr < IInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ISequentialOutStream >
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < IOutStream >
+CMyComPtr < IOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IOutStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < IProgress >
+CMyComPtr < IProgress > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IProgress > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IProgress > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressProgressInfo >
+CMyComPtr < ICompressProgressInfo > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressProgressInfo > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressProgressInfo > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < IUnknown >
+CMyComPtr < IUnknown > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IUnknown > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IUnknown > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressCoder >
+CMyComPtr < ICompressCoder > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressCoder > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressCoder > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CAttr >
+CObjectVector < CAttr > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CAttr] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CAttr,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CAttr > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CNode >
+CObjectVector < CNode > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CNode] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CNode,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CNode > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CItem >
+CObjectVector < CItem > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CItem] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CItem,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CItem > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CSmallNode >
+CObjectVector < CSmallNode > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CSmallNode] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CSmallNode,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CSmallNode > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CKeyValPair >
+CObjectVector < CKeyValPair > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CKeyValPair] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CKeyValPair,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CKeyValPair > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CVol >
+CObjectVector < CVol > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CVol] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CVol,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CVol > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector < CBuffer < unsigned char > >
+CObjectVector < CBuffer < unsigned char > > call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,CBuffer < unsigned char >] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[CBuffer < unsigned char >,InsertInReserved,ReserveOnePosition] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector < CBuffer < unsigned char > > call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < unsigned int >
+CRecordVector < unsigned int > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < unsigned int >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CSeekExtent >
+CRecordVector < CSeekExtent > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CSeekExtent >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CExtent >
+CRecordVector < CExtent > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CExtent >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < unsigned long long >
+CRecordVector < unsigned long long > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < unsigned long long >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CRef >
+CRecordVector < CRef > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CRef >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < omap_val >
+CRecordVector < omap_val > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < omap_val >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CRef2 >
+CRecordVector < CRef2 > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CRef2 >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < void * >
+CRecordVector < void * > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < void * >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+Free
+CObjArray < unsigned int >
+CObjArray < unsigned int >
+CObjArray < unsigned int >
+operatorT*
+operatorconstT*
+Alloc
+Free
+CBuffer < unsigned char >
+CBuffer < unsigned char >
+CBuffer < unsigned char > call:[memcpy,sizeof]
+CBuffer < unsigned char >
+operatorT*
+operatorconstT*
+Size
+Alloc call:[Free]
+AllocAtLeast call:[Free]
+CopyFrom call:[Alloc,memcpy,sizeof] noreturn:[memcpy]
+ChangeSize_KeepData call:[MyMin,memcpy,sizeof] noreturn:[memcpy]
+Wipe call:[memset,sizeof] noreturn:[memset]
+operator= call:[CopyFrom] noreturn:[CopyFrom]

@@ -1,0 +1,51 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+SubstLong call:[return]
+CData call:[Wipe] noreturn:[Wipe]
+Wipe call:[memset,sizeof] noreturn:[memset]
+EncryptBlock call:[CryptBlock] noreturn:[CryptBlock]
+DecryptBlock call:[CryptBlock] noreturn:[CryptBlock]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+UpdateKeys global:[g_CrcTable]
+Swap
+SetPassword global:[g_CrcTable] call:[EncryptBlock,Swap,memcpy,memset,sizeof] noreturn:[EncryptBlock,Swap,memcpy]
+CryptBlock call:[SubstLong,UpdateKeys,memcpy,sizeof] noreturn:[UpdateKeys,memcpy]
+Init call:[return] noreturn:[return]
+Filter call:[DecryptBlock] noreturn:[DecryptBlock]

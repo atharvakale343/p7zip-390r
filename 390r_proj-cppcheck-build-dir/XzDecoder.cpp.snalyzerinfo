@@ -1,0 +1,58 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+CDecoder
+CDecoder call:[XzDecMt_Destroy] noreturn:[XzDecMt_Destroy]
+QueryInterface global:[IID_ICompressCoder,IID_ICompressGetInStreamProcessedSize,IID_ICompressSetCoderMt,IID_ICompressSetFinishMode,IID_ICompressSetMemLimit,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CComDecoder
+SResToHRESULT_Code call:[return] noreturn:[return]
+Decode global:[g_AlignedAlloc,g_Alloc] call:[Init,SResToHRESULT_Code,XzDecMtProps_Init,XzDecMt_Create,XzDecMt_Decode,XzStatInfo_Clear,return] noreturn:[SResToHRESULT_Code,return]
+Code call:[Decode] noreturn:[Decode]
+SetFinishMode call:[return] noreturn:[return]
+GetInStreamProcessedSize call:[return] noreturn:[return]
+SetNumberOfThreads call:[return] noreturn:[return]
+SetMemLimit call:[return] noreturn:[return]

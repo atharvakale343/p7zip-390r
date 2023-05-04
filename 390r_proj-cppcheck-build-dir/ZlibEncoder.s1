@@ -1,0 +1,95 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CSystemException
+COutBufferException
+COutBuffer
+COutBuffer call:[Free] noreturn:[Free]
+SetMemStream
+SetStream
+WriteByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+WriteBytes call:[WriteByte] noreturn:[WriteByte]
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+GetProcessedSize call:[GetProcessedSize]
+Init call:[Init]
+Flush call:[Flush,FlushByte] noreturn:[Flush]
+FlushByte call:[WriteByte] noreturn:[WriteByte]
+WriteBits call:[WriteByte]
+WriteByte call:[WriteByte] noreturn:[WriteByte]
+SubClear
+SetFixedLevels
+SetAsLiteral
+IsLiteral call:[return] noreturn:[return]
+CEncProps
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCOMCoder
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CCOMCoder64
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetStream
+ReleaseStream call:[Release] noreturn:[Release]
+Init
+GetAdler
+GetSize
+GetInputProcessedSize call:[GetSize] noreturn:[GetSize]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Read call:[Adler32_Update,Read]
+Create
+Code call:[Code,Create,GetAdler,Init,ReleaseStream,SetStream,WriteStream,return] noreturn:[WriteStream,return]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressCoder >
+CMyComPtr < ICompressCoder > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressCoder > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressCoder > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

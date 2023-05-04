@@ -1,0 +1,68 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMidBuffer
+CMidBuffer call:[MyFree] noreturn:[MyFree]
+Free call:[MyFree]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc call:[MyAlloc,MyFree]
+AllocAtLeast call:[MyAlloc,MyFree]
+CAlignedBuffer
+CAlignedBuffer global:[g_AlignedAlloc] call:[Free] noreturn:[Free]
+CAlignedBuffer global:[g_AlignedAlloc] call:[Alloc]
+Free global:[g_AlignedAlloc] call:[Free]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc global:[g_AlignedAlloc] call:[Alloc,Free]
+AllocAtLeast global:[g_AlignedAlloc] call:[Alloc,Free]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+Sha call:[return]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+COutStreamWithSha1
+SetStream
+ReleaseStream call:[Release] noreturn:[Release]
+Init call:[Sha,Sha1_Init] noreturn:[Sha1_Init]
+InitSha1 call:[Sha,Sha1_Init] noreturn:[Sha1_Init]
+GetSize
+Final call:[Sha,Sha1_Final] noreturn:[Sha1_Final]
+Write call:[Sha,Sha1_Update,Write] noreturn:[Sha1_Update,Write]
+CMyComPtr < ISequentialOutStream >
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

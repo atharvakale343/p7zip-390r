@@ -1,0 +1,55 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+CEncProps
+QueryInterface global:[IID_ICompressCoder,IID_ICompressSetCoderProperties,IID_ICompressWriteCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+Normalize
+CEncoder call:[Normalize,Ppmd7_Construct]
+CEncoder global:[g_AlignedAlloc] call:[MyFree,Ppmd7_Free] noreturn:[Ppmd7_Free]
+SetCoderProperties call:[Normalize,return] noreturn:[return]
+WriteCoderProperties call:[WriteStream] noreturn:[WriteStream]
+Code global:[g_AlignedAlloc] call:[Alloc,Flush,GetProcessed,Init,MyAlloc,Ppmd7_Alloc,Ppmd7_Init,Ppmd7z_EncodeSymbols,Ppmd7z_Flush_RangeEnc,Ppmd7z_Init_RangeEnc,Read,SetRatioInfo,return] noreturn:[Flush,return]

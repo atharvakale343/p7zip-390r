@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="18277131275045632047">
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::Len&apos;" verbose="Unused private function: &apos;CMyComBSTR::Len&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="142" column="12"/>
+            <symbol>CMyComBSTR::Len</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" verbose="Unused private function: &apos;CMyComBSTR::MyCopy&apos;" cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="144" column="8"/>
+            <symbol>CMyComBSTR::MyCopy</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComBSTR&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="107" column="3"/>
+            <symbol>CMyComBSTR</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CMyComPtr &lt; ISequentialInStream &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CMyComPtr &lt; ISequentialInStream &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="19" column="3"/>
+            <symbol>CMyComPtr &lt; ISequentialInStream &gt;</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="41" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="59" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="59" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="61" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="26" column="3" info="Virtual function in base class"/>
+            <symbol>Code</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetDecoderProperties2&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetDecoderProperties2&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="63" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="189" column="3" info="Virtual function in base class"/>
+            <symbol>SetDecoderProperties2</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetFinishMode&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetFinishMode&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="64" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="209" column="3" info="Virtual function in base class"/>
+            <symbol>SetFinishMode</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;GetInStreamProcessedSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;GetInStreamProcessedSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="65" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="199" column="3" info="Virtual function in base class"/>
+            <symbol>GetInStreamProcessedSize</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetInBufSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetInBufSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="66" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="295" column="3" info="Virtual function in base class"/>
+            <symbol>SetInBufSize</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetOutBufSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetOutBufSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="67" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="296" column="3" info="Virtual function in base class"/>
+            <symbol>SetOutBufSize</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetNumberOfThreads&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetNumberOfThreads&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="75" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="204" column="3" info="Virtual function in base class"/>
+            <symbol>SetNumberOfThreads</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetMemLimit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetMemLimit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="76" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="223" column="3" info="Virtual function in base class"/>
+            <symbol>SetMemLimit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetOutStreamSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetOutStreamSize&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="84" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="285" column="3" info="Virtual function in base class"/>
+            <symbol>SetOutStreamSize</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetInStream&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetInStream&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="85" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="266" column="3" info="Virtual function in base class"/>
+            <symbol>SetInStream</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;ReleaseInStream&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;ReleaseInStream&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="86" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="267" column="3" info="Virtual function in base class"/>
+            <symbol>ReleaseInStream</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Read&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="87" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\IStream.h" line="16" column="3" info="Virtual function in base class"/>
+            <symbol>Read</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="33" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="39" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="26" column="3" info="Virtual function in base class"/>
+            <symbol>Code</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="41" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="171" column="3" info="Virtual function in base class"/>
+            <symbol>SetCoderProperties</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;WriteCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;WriteCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="42" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="194" column="3" info="Virtual function in base class"/>
+            <symbol>WriteCoderProperties</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetCoderPropertiesOpt&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetCoderPropertiesOpt&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="43" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="166" column="3" info="Virtual function in base class"/>
+            <symbol>SetCoderPropertiesOpt</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;QueryInterface&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="85" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="121" column="3" info="Virtual function in base class"/>
+            <symbol>QueryInterface</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;AddRef&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="85" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="122" column="3" info="Virtual function in base class"/>
+            <symbol>AddRef</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Release&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="85" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyWindows.h" line="123" column="3" info="Virtual function in base class"/>
+            <symbol>Release</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;Code&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="90" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="26" column="3" info="Virtual function in base class"/>
+            <symbol>Code</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;SetCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="92" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="171" column="3" info="Virtual function in base class"/>
+            <symbol>SetCoderProperties</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;WriteCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;WriteCoderProperties&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="93" column="3" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\ICoder.h" line="194" column="3" info="Virtual function in base class"/>
+            <symbol>WriteCoderProperties</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="41" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="42" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="43" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="44" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="45" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="48" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="49" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="50" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="54" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="55" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="33" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Encoder.h" line="85" column="3"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\FastLzma2Register.cpp" line="13" column="1"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Common\MyCom.h" line="71" column="36"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="15614218878103848369"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="1419844483192737193"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="15614218878103848369"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="1419844483192737193"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="15614218878103848369"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="1419844483192737193"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="15614218878103848369"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="1419844483192737193"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="17310176687120749122"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="8914001795450445840"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CNewException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/NewHandler.h" line="50" col="1" hash="7322455032005079616"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="16160304702049348652"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="13396797688989836237"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="3617470444915453589"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If STDMETHOD_ is a macro then please configure it." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Compress\Lzma2Decoder.h" line="59" column="3"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="14380500595775703494"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="5605243939076924204"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="1302929246026610052"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="10200618501618940652"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h:22:6" call-funcname="RegisterCodec" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" call-argexpr="&amp;g_CodecInfo_FLZMA2" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CStreamFileProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/IStream.h" line="118" col="1" hash="9318778959548778604"/>
+<class name="CCodecInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="12" col="1" hash="15614218878103848369"/>
+<class name="CHasherInfo" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/RegisterCodec.h" line="87" col="1" hash="1419844483192737193"/>
+<class name="CLzma2DecMtProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2DecMt.h" line="11" col="9" hash="6153774718150867968"/>
+<class name="_CLzmaEncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/LzmaEnc.h" line="13" col="9" hash="12679452704747729509"/>
+<class name="CLzma2EncProps" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Lzma2Enc.h" line="14" col="9" hash="2137092891691459222"/>
+<class name="FL2_inBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="203" col="9" hash="12648628501530369140"/>
+<class name="FL2_outBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="209" col="9" hash="3019184358809931775"/>
+<class name="FL2_dictBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="217" col="9" hash="3329701967398108184"/>
+<class name="FL2_cBuffer" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="222" col="9" hash="14577734834333422645"/>
+<class name="FL2_compressionParameters" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/fast-lzma2/fast-lzma2.h" line="488" col="9" hash="12651700421949040239"/>
+<class name="CRegisterCodecFLZMA2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/FastLzma2Register.cpp" line="13" col="1" hash="2391898577207524290"/>
+<class name="CMyComPtr &lt; ISequentialInStream &gt;" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="14" col="1" hash="13498414564050303713"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:77:16" my-argnr="2" my-argname="bstr" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="79" col="4" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h:41:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Decoder.h" line="41" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:33:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="33" col="3" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h:85:3" my-argnr="2" my-argname="outObject" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Compress/Lzma2Encoder.h" line="85" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:20:3" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="20" col="57" value="0"/>
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h:36:6" my-argnr="1" my-argname="lp" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyCom.h" line="36" col="58" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functiondecl functionName="CreateDec" lineNumber="13"/>
+    <functiondecl functionName="CreateEnc" lineNumber="13"/>
+    <functioncall functionName="AddRef"/>
+    <functioncall functionName="Byte"/>
+    <functioncall functionName="CBoolPair"/>
+    <functioncall functionName="CByteInBufWrap"/>
+    <functioncall functionName="CByteOutBufWrap"/>
+    <functioncall functionName="CDecoder"/>
+    <functioncall functionName="CEncoder"/>
+    <functioncall functionName="CFastEncoder"/>
+    <functioncall functionName="CMyComBSTR"/>
+    <functioncall functionName="CMyComPtr"/>
+    <functioncall functionName="CMyUnknownImp"/>
+    <functioncall functionName="CRegisterCodecFLZMA2"/>
+    <functioncall functionName="CreateDec"/>
+    <functioncall functionName="CreateEnc"/>
+    <functioncall functionName="Empty"/>
+    <functioncall functionName="FastLzma2"/>
+    <functioncall functionName="Flush"/>
+    <functioncall functionName="Free"/>
+    <functioncall functionName="INT32"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="QueryInterface"/>
+    <functioncall functionName="ReadByteFromNewBlock"/>
+    <functioncall functionName="RegisterCodec"/>
+    <functioncall functionName="Release"/>
+    <functioncall functionName="SRes"/>
+    <functioncall functionName="SysAllocString"/>
+    <functioncall functionName="SysAllocStringLen"/>
+    <functioncall functionName="SysFreeString"/>
+    <functioncall functionName="SysStringLen"/>
+    <functioncall functionName="Wipe_and_Free"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="operatorT*"/>
+    <functioncall functionName="operatorconstwchar_t*"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

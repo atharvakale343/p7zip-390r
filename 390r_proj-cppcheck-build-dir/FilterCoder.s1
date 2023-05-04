@@ -1,0 +1,207 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+MyMin
+MyMax
+MyCompare
+BoolToInt call:[return] noreturn:[return]
+BoolToUInt call:[return] noreturn:[return]
+IntToBool call:[return] noreturn:[return]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CAlignedMidBuffer
+InitSpecVars
+C_InStream_Releaser
+C_InStream_Releaser call:[ReleaseInStream] noreturn:[ReleaseInStream]
+C_OutStream_Releaser
+C_OutStream_Releaser call:[ReleaseOutStream] noreturn:[ReleaseOutStream]
+C_Filter_Releaser
+C_Filter_Releaser call:[Release] noreturn:[Release]
+QueryInterface global:[IID_ICompressCoder,IID_ICompressInitEncoder,IID_ICompressSetBufSize,IID_ICompressSetCoderProperties,IID_ICompressSetDecoderProperties2,IID_ICompressSetInStream,IID_ICompressSetOutStream,IID_ICompressSetOutStreamSize,IID_ICompressWriteCoderProperties,IID_ICryptoProperties,IID_ICryptoResetInitVector,IID_ICryptoSetPassword,IID_IOutStreamFinish,IID_ISequentialInStream,IID_ISequentialOutStream,IID_IUnknown] call:[QueryInterface,return] noreturn:[return]
+AddRef
+Release
+CAlignedMidBuffer global:[g_AlignedAlloc] call:[Free] noreturn:[Free]
+AllocAligned global:[g_AlignedAlloc] call:[Alloc,Free] noreturn:[Alloc]
+SetInBufSize call:[return] noreturn:[return]
+SetOutBufSize call:[return] noreturn:[return]
+Alloc call:[AllocAligned,MyMin,return] noreturn:[return]
+Init_and_Alloc call:[Alloc,Init] noreturn:[Alloc]
+CFilterCoder
+CFilterCoder
+Code call:[Filter,Init_and_Alloc,ReadStream,SetRatioInfo,WriteStream,return,while] noreturn:[return]
+SetOutStream call:[return] noreturn:[return]
+ReleaseOutStream call:[Release,return] noreturn:[return]
+Flush2 global:[k_My_HRESULT_WritingWasCut] call:[Write,return] noreturn:[return]
+Write call:[Filter,Flush2,MyMin,memcpy,return] noreturn:[return]
+OutStreamFinish global:[IID_IOutStreamFinish] call:[Filter,Flush2,OutStreamFinish,QueryInterface,return] noreturn:[OutStreamFinish,return]
+InitEncoder call:[InitSpecVars,Init_and_Alloc] noreturn:[Init_and_Alloc]
+Init_NoSubFilterInit call:[Alloc,InitSpecVars] noreturn:[Alloc]
+SetOutStreamSize call:[InitSpecVars,Init_and_Alloc] noreturn:[Init_and_Alloc]
+SetInStream call:[return] noreturn:[return]
+ReleaseInStream call:[Release,return] noreturn:[return]
+Read call:[Filter,ReadStream,memcpy,return,while] noreturn:[return]
+CryptoSetPassword call:[CryptoSetPassword] noreturn:[CryptoSetPassword]
+SetKey call:[SetKey] noreturn:[SetKey]
+SetInitVector call:[SetInitVector] noreturn:[SetInitVector]
+SetCoderProperties call:[SetCoderProperties] noreturn:[SetCoderProperties]
+WriteCoderProperties call:[WriteCoderProperties] noreturn:[WriteCoderProperties]
+ResetInitVector call:[ResetInitVector] noreturn:[ResetInitVector]
+SetDecoderProperties2 call:[SetDecoderProperties2] noreturn:[SetDecoderProperties2]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ISequentialOutStream >
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICryptoSetPassword >
+CMyComPtr < ICryptoSetPassword > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoSetPassword > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoSetPassword > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICryptoProperties >
+CMyComPtr < ICryptoProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoProperties > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressSetCoderProperties >
+CMyComPtr < ICompressSetCoderProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressSetCoderProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressSetCoderProperties > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressWriteCoderProperties >
+CMyComPtr < ICompressWriteCoderProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressWriteCoderProperties > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressWriteCoderProperties > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICryptoResetInitVector >
+CMyComPtr < ICryptoResetInitVector > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoResetInitVector > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICryptoResetInitVector > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressSetDecoderProperties2 >
+CMyComPtr < ICompressSetDecoderProperties2 > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressSetDecoderProperties2 > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressSetDecoderProperties2 > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressFilter >
+CMyComPtr < ICompressFilter > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressFilter > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressFilter > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < IOutStreamFinish >
+CMyComPtr < IOutStreamFinish > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IOutStreamFinish > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < IOutStreamFinish > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

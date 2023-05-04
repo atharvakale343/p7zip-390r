@@ -1,0 +1,62 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+BOOLToBool call:[return] noreturn:[return]
+BoolToVARIANT_BOOL call:[return] noreturn:[return]
+VARIANT_BOOLToBool call:[return] noreturn:[return]
+SetPropFromAscii call:[SysAllocStringLen,strlen]
+SetPropGUID call:[SysAllocStringByteLen,return,sizeof] noreturn:[return]
+MethodToClassID call:[SetPropGUID] noreturn:[SetPropGUID]
+FindCodecClassId global:[g_Codecs,g_NumCodecs] call:[return] noreturn:[return]
+CreateCoderMain global:[g_Codecs] call:[AddRef,CreateDecoder,CreateEncoder,return] noreturn:[CreateDecoder,CreateEncoder,return]
+CreateCoder2 global:[IID_ICompressCoder,IID_ICompressCoder2,IID_ICompressFilter,g_Codecs] call:[CreateCoderMain,return] noreturn:[CreateCoderMain,return]
+CreateDecoder call:[CreateCoder2] noreturn:[CreateCoder2]
+CreateEncoder call:[CreateCoder2] noreturn:[CreateCoder2]
+CreateCoder global:[IID_ICompressCoder,IID_ICompressCoder2,IID_ICompressFilter] call:[CreateCoderMain,FindCodecClassId,return] noreturn:[CreateCoderMain,return]
+GetMethodProperty global:[g_Codecs] call:[BoolToVARIANT_BOOL,MethodToClassID,SetPropFromAscii,VariantClear,return] noreturn:[BoolToVARIANT_BOOL,MethodToClassID,return]
+GetNumberOfMethods global:[g_NumCodecs] call:[return] noreturn:[return]
+FindHasherClassId global:[g_Hashers,g_NumCodecs]
+CreateHasher2 global:[g_Hashers] call:[AddRef,CreateHasher,return] noreturn:[AddRef,return]
+CreateHasher call:[CreateHasher2,FindHasherClassId,return] noreturn:[CreateHasher2,return]
+GetHasherProp global:[g_Hashers] call:[MethodToClassID,SetPropFromAscii,VariantClear,return] noreturn:[MethodToClassID,return]
+QueryInterface global:[IID_IHashers,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+GetHashers call:[AddRef,return] noreturn:[AddRef,return]
+GetNumHashers global:[g_NumHashers]
+GetHasherProp call:[GetHasherProp] noreturn:[GetHasherProp]
+CreateHasher call:[CreateHasher2] noreturn:[CreateHasher2]

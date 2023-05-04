@@ -1,0 +1,120 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+BOOLToBool call:[return] noreturn:[return]
+BoolToVARIANT_BOOL call:[return] noreturn:[return]
+VARIANT_BOOLToBool call:[return] noreturn:[return]
+IsCreated call:[return]
+CBaseEvent
+CBaseEvent call:[Close] noreturn:[Close]
+Close call:[Event_Close] noreturn:[Event_Close]
+Set call:[Event_Set] noreturn:[Event_Set]
+Reset call:[Event_Reset] noreturn:[Event_Reset]
+Lock call:[Event_Wait] noreturn:[Event_Wait]
+Create call:[ManualResetEvent_Create] noreturn:[ManualResetEvent_Create]
+CreateIfNotCreated_Reset call:[IsCreated,ManualResetEvent_CreateNotSignaled,Reset] noreturn:[ManualResetEvent_CreateNotSignaled,Reset]
+Create call:[AutoResetEvent_CreateNotSignaled] noreturn:[AutoResetEvent_CreateNotSignaled]
+CreateIfNotCreated_Reset call:[AutoResetEvent_CreateNotSignaled,IsCreated,Reset] noreturn:[AutoResetEvent_CreateNotSignaled,Reset]
+_CSemaphore
+Close call:[Semaphore_Close] noreturn:[Semaphore_Close]
+Create call:[Semaphore_Create] noreturn:[Semaphore_Create]
+OptCreateInit call:[Semaphore_OptCreateInit] noreturn:[Semaphore_OptCreateInit]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Lock call:[Semaphore_Wait] noreturn:[Semaphore_Wait]
+_CCriticalSection call:[CriticalSection_Init] noreturn:[CriticalSection_Init]
+Enter call:[CriticalSection_Enter] noreturn:[CriticalSection_Enter]
+Leave call:[CriticalSection_Leave] noreturn:[CriticalSection_Leave]
+Unlock call:[Leave] noreturn:[Leave]
+CCriticalSectionLock call:[Enter] noreturn:[Enter]
+CCriticalSectionLock call:[Unlock] noreturn:[Unlock]
+CSynchro
+CSynchro call:[pthread_cond_destroy,pthread_mutex_destroy] noreturn:[pthread_cond_destroy]
+Create call:[pthread_cond_init,pthread_mutex_init]
+Enter call:[pthread_mutex_lock] noreturn:[pthread_mutex_lock]
+Leave call:[pthread_mutex_unlock] noreturn:[pthread_mutex_unlock]
+WaitCond call:[pthread_cond_wait] noreturn:[pthread_cond_wait]
+LeaveAndSignal call:[pthread_cond_broadcast,pthread_mutex_unlock,return] noreturn:[return]
+CBaseHandle_WFMO
+operatorNWindows::NSynchronization::CBaseHandle_WFMO*
+CBaseEvent_WFMO call:[Close] noreturn:[Close]
+Close
+Create
+Set call:[Enter,LeaveAndSignal] noreturn:[LeaveAndSignal]
+Reset call:[Enter,Leave] noreturn:[Leave]
+IsSignaledAndUpdate
+Create call:[Create] noreturn:[Create]
+Create call:[Create] noreturn:[Create]
+CreateIfNotCreated_Reset call:[Create] noreturn:[Create]
+CSemaphore_WFMO
+Close
+Create
+Release call:[Enter,Leave,LeaveAndSignal,return] noreturn:[LeaveAndSignal,return]
+IsSignaledAndUpdate
+CloseRead_CallOnce call:[Release] noreturn:[Release]
+CloseWrite call:[Set] noreturn:[Set]
+QueryInterface global:[IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CBinderInStream call:[CloseRead_CallOnce] noreturn:[CloseRead_CallOnce]
+CBinderInStream
+Read call:[Read] noreturn:[Read]
+QueryInterface global:[IID_ISequentialOutStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CBinderOutStream call:[CloseWrite] noreturn:[CloseWrite]
+CBinderOutStream
+Write call:[Write] noreturn:[Write]
+Event__Create_or_Reset call:[Create,IsCreated,Reset,return] noreturn:[Create,Reset,return]
+Create_ReInit call:[Event__Create_or_Reset,OptCreateInit,return] noreturn:[return]
+CreateStreams2 call:[CBinderInStream,CBinderOutStream] noreturn:[CBinderOutStream]
+Read call:[Lock,Release,memcpy,return] noreturn:[Release,return]
+Write global:[k_My_HRESULT_WritingWasCut] call:[Lock,Set,return] noreturn:[return]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ISequentialOutStream >
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialOutStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

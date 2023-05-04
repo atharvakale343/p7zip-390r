@@ -1,0 +1,76 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+MyMin
+MyMax
+MyCompare
+BoolToInt call:[return] noreturn:[return]
+BoolToUInt call:[return] noreturn:[return]
+IntToBool call:[return] noreturn:[return]
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CSystemException
+COutBufferException
+COutBuffer
+COutBuffer call:[Free] noreturn:[Free]
+SetMemStream
+SetStream
+WriteByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+WriteBytes call:[WriteByte] noreturn:[WriteByte]
+CopyBlock call:[FlushWithCheck,while] noreturn:[FlushWithCheck,while]
+PutByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+PutBytes call:[FlushWithCheck,while] noreturn:[while]
+GetByte
+SetStreamAndInit
+WasExtraRead
+WasFinishedOK
+ReadBit
+ReadStart16Bits
+ReadBits call:[ReadBit,while] noreturn:[ReadBit]
+Init call:[ReadStart16Bits] noreturn:[ReadStart16Bits]
+Finish call:[ReadBit,WasFinishedOK] noreturn:[WasFinishedOK]
+GetThreshold call:[return]
+Decode call:[ReadBit] noreturn:[ReadBit]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CDecoder
+CDecoder
+Init
+Decode call:[Decode,GetThreshold,while] noreturn:[while]
+Init call:[Init,MyMin] noreturn:[Init]
+CodeSpec call:[CopyBlock,Decode,Finish,Init,PutByte,ReadBits,SetStreamAndInit,WasExtraRead,return] noreturn:[ReadBits,return]
+Code call:[CodeSpec,Flush,Init,SetStream,return] noreturn:[Init,return]
+SetParams call:[Create,return] noreturn:[return]

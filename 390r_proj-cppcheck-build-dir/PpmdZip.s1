@@ -1,0 +1,65 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+CBuf
+CBuf call:[MyFree] noreturn:[MyFree]
+Alloc call:[MyAlloc,return] noreturn:[MyAlloc,return]
+QueryInterface global:[IID_ICompressGetInStreamProcessedSize,IID_ICompressSetFinishMode,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CEncProps
+QueryInterface global:[IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CDecoder call:[Ppmd8_Construct]
+CDecoder global:[g_AlignedAlloc] call:[Ppmd8_Free] noreturn:[Ppmd8_Free]
+Code global:[g_AlignedAlloc] call:[Alloc,GetProcessed,Init,Ppmd8_Alloc,Ppmd8_DecodeSymbol,Ppmd8_Init,Ppmd8_Init_RangeDec,ReadByte,SetRatioInfo,WriteStream,return,while] noreturn:[Ppmd8_Init,ReadByte,return]
+SetFinishMode call:[return] noreturn:[return]
+GetInStreamProcessedSize call:[GetProcessed,return] noreturn:[return]
+Normalize
+CEncoder global:[g_AlignedAlloc] call:[Ppmd8_Free] noreturn:[Ppmd8_Free]
+SetCoderProperties call:[Normalize,return] noreturn:[return]
+CEncoder call:[Normalize,Ppmd8_Construct] noreturn:[Ppmd8_Construct]
+Code global:[g_AlignedAlloc] call:[Alloc,Flush,GetProcessed,Init,Ppmd8_Alloc,Ppmd8_EncodeSymbol,Ppmd8_Flush_RangeEnc,Ppmd8_Init,Read,SetRatioInfo,WriteByte,return,while] noreturn:[Flush,WriteByte,return]

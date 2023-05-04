@@ -1,0 +1,11 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+RegisterCodec global:[g_Codecs,g_NumCodecs,kNumCodecsMax]
+RegisterHasher global:[g_Hashers,g_NumHashers,kNumHashersMax]
+CreateObject call:[CreateCoder] noreturn:[CreateCoder]

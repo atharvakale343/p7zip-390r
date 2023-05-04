@@ -1,0 +1,301 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CSystemException
+CInBufferException
+GetStreamSize
+GetProcessedSize
+WasFinished
+SetStream
+SetBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+ReadByte_FromBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+CInBuffer call:[Free] noreturn:[Free]
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+Init call:[Init,Normalize] noreturn:[Normalize]
+GetStreamSize call:[GetStreamSize] noreturn:[GetStreamSize]
+GetProcessedSize call:[GetProcessedSize]
+ExtraBitsWereRead call:[return] noreturn:[return]
+ExtraBitsWereRead_Fast call:[return] noreturn:[return]
+Normalize call:[ReadByte] noreturn:[ReadByte]
+GetValue call:[return]
+MovePos call:[Normalize] noreturn:[Normalize]
+ReadBits call:[GetValue,MovePos]
+AlignToByte call:[MovePos] noreturn:[MovePos]
+ReadAlignBits call:[ReadBits] noreturn:[ReadBits]
+Build
+Decode call:[GetValue,MovePos]
+Size call:[Size] noreturn:[Size]
+IsEmpty call:[IsEmpty] noreturn:[IsEmpty]
+ReserveDown call:[ReserveDown] noreturn:[ReserveDown]
+ClearAndReserve call:[Clear,ClearAndReserve] noreturn:[ClearAndReserve]
+CObjectVector
+CObjectVector call:[AddInReserved,ConstructReserve,Size] noreturn:[AddInReserved]
+operator= call:[AddInReserved,Clear,Reserve,Size] noreturn:[AddInReserved]
+operator+= global:[k_VectorSizeMax] call:[AddInReserved,Reserve,Size] noreturn:[AddInReserved]
+operator[]
+operator[]
+Front call:[operator[]] noreturn:[operator[]]
+Front call:[operator[]] noreturn:[operator[]]
+Back call:[Back] noreturn:[Back]
+Back call:[Back] noreturn:[Back]
+MoveToFront call:[MoveToFront] noreturn:[MoveToFront]
+Add call:[AddInReserved,ReserveOnePosition] noreturn:[AddInReserved]
+AddInReserved call:[AddInReserved,T] noreturn:[AddInReserved]
+ReserveOnePosition call:[ReserveOnePosition] noreturn:[ReserveOnePosition]
+AddInReserved_Ptr_of_new call:[AddInReserved] noreturn:[AddInReserved]
+AddNew call:[AddInReserved,ReserveOnePosition]
+AddNewInReserved call:[AddInReserved]
+Insert call:[InsertInReserved,ReserveOnePosition,T] noreturn:[InsertInReserved]
+InsertNew call:[InsertInReserved,ReserveOnePosition]
+CObjectVector call:[Size,delete]
+ClearAndFree call:[Clear,ClearAndFree] noreturn:[ClearAndFree]
+Clear call:[Clear,Size,delete] noreturn:[Clear]
+DeleteFrom call:[DeleteFrom,Size,delete] noreturn:[DeleteFrom]
+DeleteFrontal call:[DeleteFrontal,delete] noreturn:[DeleteFrontal]
+DeleteBack call:[Back,DeleteBack,delete] noreturn:[DeleteBack]
+Delete call:[Delete,delete] noreturn:[Delete]
+FindInSorted call:[Compare,Size,return]
+AddToUniqueSorted call:[Compare,Insert,Size]
+Sort call:[Sort] noreturn:[Sort]
+CompareObjectItems call:[Compare,return] noreturn:[Compare]
+Sort call:[Sort] noreturn:[Sort]
+Init
+Avail call:[return] noreturn:[return]
+GetValue32 call:[return] noreturn:[return]
+SetValue32
+AllocateEmptyFixedGlobal call:[ClearAndSetSize,memset] noreturn:[memset]
+GetValue call:[return] noreturn:[return]
+SetValue
+GetFixedGlobalValue32 call:[GetValue] noreturn:[GetValue]
+SetBlockSize call:[SetValue] noreturn:[SetValue]
+SetBlockPos call:[SetValue] noreturn:[SetValue]
+SetValue call:[SetValue] noreturn:[SetValue]
+GetDataPointer
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+Init call:[Init]
+ExtraBitsWereRead call:[return] noreturn:[return]
+GetProcessedSize call:[GetProcessedSize]
+AlignToByte
+GetValue call:[ReadByte] noreturn:[ReadByte]
+MovePos
+ReadBits call:[GetValue,MovePos]
+ReadBits_upto8 call:[ReadByte] noreturn:[ReadByte]
+ReadByteFromAligned call:[ReadByte] noreturn:[ReadByte]
+CFilter
+CTempFilter call:[AllocateEmptyFixedGlobal] noreturn:[AllocateEmptyFixedGlobal]
+InputEofError call:[ExtraBitsWereRead] noreturn:[ExtraBitsWereRead]
+InputEofError_Fast call:[return] noreturn:[return]
+QueryInterface global:[IID_ICompressSetDecoderProperties2,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CopyBlock call:[while]
+PutByte
+Wrap_ReadByte call:[ReadByte] noreturn:[ReadByte]
+Wrap_ReadBits8 call:[ReadByteFromAligned,return] noreturn:[ReadByteFromAligned]
+CDecoder call:[Ppmd7_Construct]
+CDecoder global:[g_AlignedAlloc] call:[InitFilters,MyFree,Ppmd7_Free] noreturn:[Ppmd7_Free]
+WriteDataToStream call:[WriteStream] noreturn:[WriteStream]
+WriteData call:[WriteDataToStream] noreturn:[WriteDataToStream]
+WriteArea call:[WriteData] noreturn:[WriteData]
+ExecuteFilter call:[Execute,SetValue32]
+WriteBuf call:[ExecuteFilter,GetDataPointer,SetMemory,Size,WriteArea,WriteDataToStream,return] noreturn:[ExecuteFilter,SetMemory,WriteArea,return]
+InitFilters call:[Clear,Size] noreturn:[Clear]
+AddVmCode call:[Add,ChangeSize_KeepData,DeleteFrom,Front,Init,InitFilters,PrepareProgram,ReadBits,ReadEncodedUInt32,SetValue32,Size,memset,sizeof] noreturn:[Add,ChangeSize_KeepData,InitFilters,PrepareProgram,ReadBits,ReadEncodedUInt32,SetValue32]
+ReadVmCodeLZ call:[AddVmCode,ReadBits] noreturn:[AddVmCode,ReadBits]
+ReadVmCodePPM call:[AddVmCode,InputEofError_Fast,Ppmd7a_DecodeSymbol] noreturn:[AddVmCode]
+ReadBits call:[ReadBits] noreturn:[ReadBits]
+InitPPM global:[g_AlignedAlloc] call:[Ppmd7_Alloc,Ppmd7_Free,Ppmd7_Init,Ppmd7a_RangeDec_Init,ReadBits,Wrap_ReadBits8,return] noreturn:[Wrap_ReadBits8,return]
+DecodePPM call:[CopyBlock,InputEofError_Fast,Ppmd7a_DecodeSymbol,PutByte,ReadTables,ReadVmCodePPM,WriteBuf,return,while] noreturn:[ReadTables,return]
+ReadTables call:[AlignToByte,Build,Decode,InitPPM,InputEofError,ReadBits,char,memcpy,memset,return,while] noreturn:[InitPPM,memset,return,while]
+ReadEndOfBlock call:[ReadBits,ReadTables,return] noreturn:[ReadTables,return]
+DecodeLZ call:[CopyBlock,Decode,InputEofError_Fast,PutByte,ReadBits,ReadBits_upto8,ReadEndOfBlock,ReadVmCodeLZ,WriteBuf,return] noreturn:[CopyBlock,ReadBits_upto8,return]
+CodeReal call:[DecodeLZ,DecodePPM,GetProcessedSize,InitFilters,InputEofError,ReadTables,SetRatioInfo,WriteBuf,memset,return] noreturn:[InitFilters,return]
+Code call:[CodeReal,Create,Init,MyAlloc,SetStream,return] noreturn:[CodeReal,return]
+SetDecoderProperties2 call:[return] noreturn:[return]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < unsigned char >
+CRecordVector < unsigned char > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < unsigned char >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CFilter * >
+CRecordVector < CFilter * > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CFilter * >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+MoveItems call:[memmove,sizeof] noreturn:[memmove]
+ReAllocForNewCapacity call:[memcpy,sizeof] noreturn:[memcpy]
+ReserveOnePosition global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+CRecordVector < CTempFilter * >
+CRecordVector < CTempFilter * > call:[Size,memcpy,sizeof] noreturn:[memcpy]
+Size
+IsEmpty
+ConstructReserve
+Reserve global:[k_VectorSizeMax] call:[ReAllocForNewCapacity] noreturn:[ReAllocForNewCapacity]
+ChangeSize_KeepData call:[Reserve]
+ClearAndReserve global:[k_VectorSizeMax] call:[Clear]
+ClearAndSetSize call:[ClearAndReserve]
+ReserveDown call:[memcpy,sizeof] noreturn:[memcpy]
+CRecordVector < CTempFilter * >
+ClearAndFree
+Clear
+DeleteBack
+DeleteFrom
+DeleteFrontal call:[MoveItems]
+Delete call:[MoveItems]
+operator= call:[Size,memcpy,sizeof] noreturn:[memcpy]
+operator+= global:[k_VectorSizeMax] call:[Reserve,Size,memcpy,sizeof]
+Add call:[ReserveOnePosition]
+AddInReserved
+Insert call:[MoveItems,ReserveOnePosition]
+InsertInReserved call:[MoveItems]
+MoveToFront call:[memmove,sizeof]
+operator[]
+operator[]
+Front
+Front
+Back
+Back
+FindInSorted call:[return]
+FindInSorted2 call:[Compare,return]
+FindInSorted call:[FindInSorted] noreturn:[FindInSorted]
+FindInSorted2 call:[FindInSorted2] noreturn:[FindInSorted2]
+AddToUniqueSorted call:[Insert]
+AddToUniqueSorted2 call:[Compare,Insert]
+SortRefDown call:[compare]
+Sort call:[Front,SortRefDown,while] noreturn:[SortRefDown,while]
+SortRefDown2 call:[Compare]
+Sort2 call:[Front,SortRefDown2,while] noreturn:[SortRefDown2,while]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]

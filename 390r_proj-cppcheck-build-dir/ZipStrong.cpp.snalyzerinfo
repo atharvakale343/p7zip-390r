@@ -1,0 +1,84 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+Init call:[Sha1_Init] noreturn:[Sha1_Init]
+Update call:[Sha1_Update] noreturn:[Sha1_Update]
+Final call:[Sha1_Final] noreturn:[Sha1_Final]
+PrepareBlock call:[Sha1_PrepareBlock] noreturn:[Sha1_PrepareBlock]
+GetBlockDigest call:[Sha1_GetBlockDigest] noreturn:[Sha1_GetBlockDigest]
+CMidBuffer
+CMidBuffer call:[MyFree] noreturn:[MyFree]
+Free call:[MyFree]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc call:[MyAlloc,MyFree]
+AllocAtLeast call:[MyAlloc,MyFree]
+CAlignedBuffer
+CAlignedBuffer global:[g_AlignedAlloc] call:[Free] noreturn:[Free]
+CAlignedBuffer global:[g_AlignedAlloc] call:[Alloc]
+Free global:[g_AlignedAlloc] call:[Free]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc global:[g_AlignedAlloc] call:[Alloc,Free]
+AllocAtLeast global:[g_AlignedAlloc] call:[Alloc,Free]
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+Aes call:[return]
+CAesCoder
+QueryInterface global:[IID_ICompressFilter,IID_ICompressSetCoderProperties,IID_ICryptoProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetKeySize
+CAesCbcEncoder
+CAesCbcDecoder
+CKeyInfo call:[Wipe] noreturn:[Wipe]
+Wipe call:[memset,sizeof] noreturn:[memset]
+QueryInterface global:[IID_ICryptoSetPassword,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+GetPadSize
+CDecoder call:[Wipe] noreturn:[Wipe]
+Wipe call:[memset,sizeof] noreturn:[memset]
+DeriveKey2 call:[Final,Init,Update,memset] noreturn:[Final]
+DeriveKey call:[DeriveKey2,Final,memcpy] noreturn:[memcpy]
+SetPassword call:[DeriveKey,Init,Update] noreturn:[DeriveKey]
+CryptoSetPassword call:[SetPassword,return] noreturn:[return]
+Init call:[return] noreturn:[return]
+ReadHeader call:[AllocAtLeast,ReadStream_FALSE,Size,memset,return] noreturn:[ReadStream_FALSE,return]
+Init_and_CheckPassword call:[CrcCalc,DeriveKey,Filter,Init,SetInitVector,SetKey,Update,memmove,return] noreturn:[return]

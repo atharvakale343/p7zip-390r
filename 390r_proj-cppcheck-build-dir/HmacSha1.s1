@@ -1,0 +1,17 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+Init call:[Sha1_Init] noreturn:[Sha1_Init]
+Update call:[Sha1_Update] noreturn:[Sha1_Update]
+Final call:[Sha1_Final] noreturn:[Sha1_Final]
+PrepareBlock call:[Sha1_PrepareBlock] noreturn:[Sha1_PrepareBlock]
+GetBlockDigest call:[Sha1_GetBlockDigest] noreturn:[Sha1_GetBlockDigest]
+Update call:[Update] noreturn:[Update]
+SetKey call:[Final,Init,Update,memcpy] noreturn:[Final,Update,memcpy]
+Final call:[Final,Update] noreturn:[Final]
+GetLoopXorDigest1 call:[GetBlockDigest,PrepareBlock]

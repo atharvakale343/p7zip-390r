@@ -1,0 +1,71 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+BOOLToBool call:[return] noreturn:[return]
+BoolToVARIANT_BOOL call:[return] noreturn:[return]
+VARIANT_BOOLToBool call:[return] noreturn:[return]
+IsCreated call:[return]
+CBaseEvent
+CBaseEvent call:[Close] noreturn:[Close]
+Close call:[Event_Close] noreturn:[Event_Close]
+Set call:[Event_Set] noreturn:[Event_Set]
+Reset call:[Event_Reset] noreturn:[Event_Reset]
+Lock call:[Event_Wait] noreturn:[Event_Wait]
+Create call:[ManualResetEvent_Create] noreturn:[ManualResetEvent_Create]
+CreateIfNotCreated_Reset call:[IsCreated,ManualResetEvent_CreateNotSignaled,Reset] noreturn:[ManualResetEvent_CreateNotSignaled,Reset]
+Create call:[AutoResetEvent_CreateNotSignaled] noreturn:[AutoResetEvent_CreateNotSignaled]
+CreateIfNotCreated_Reset call:[AutoResetEvent_CreateNotSignaled,IsCreated,Reset] noreturn:[AutoResetEvent_CreateNotSignaled,Reset]
+_CSemaphore
+Close call:[Semaphore_Close] noreturn:[Semaphore_Close]
+Create call:[Semaphore_Create] noreturn:[Semaphore_Create]
+OptCreateInit call:[Semaphore_OptCreateInit] noreturn:[Semaphore_OptCreateInit]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Lock call:[Semaphore_Wait] noreturn:[Semaphore_Wait]
+_CCriticalSection call:[CriticalSection_Init] noreturn:[CriticalSection_Init]
+Enter call:[CriticalSection_Enter] noreturn:[CriticalSection_Enter]
+Leave call:[CriticalSection_Leave] noreturn:[CriticalSection_Leave]
+Unlock call:[Leave] noreturn:[Leave]
+CCriticalSectionLock call:[Enter] noreturn:[Enter]
+CCriticalSectionLock call:[Unlock] noreturn:[Unlock]
+CSynchro
+CSynchro call:[pthread_cond_destroy,pthread_mutex_destroy] noreturn:[pthread_cond_destroy]
+Create call:[pthread_cond_init,pthread_mutex_init]
+Enter call:[pthread_mutex_lock] noreturn:[pthread_mutex_lock]
+Leave call:[pthread_mutex_unlock] noreturn:[pthread_mutex_unlock]
+WaitCond call:[pthread_cond_wait] noreturn:[pthread_cond_wait]
+LeaveAndSignal call:[pthread_cond_broadcast,pthread_mutex_unlock,return] noreturn:[return]
+CBaseHandle_WFMO
+operatorNWindows::NSynchronization::CBaseHandle_WFMO*
+CBaseEvent_WFMO call:[Close] noreturn:[Close]
+Close
+Create
+Set call:[Enter,LeaveAndSignal] noreturn:[LeaveAndSignal]
+Reset call:[Enter,Leave] noreturn:[Leave]
+IsSignaledAndUpdate
+Create call:[Create] noreturn:[Create]
+Create call:[Create] noreturn:[Create]
+CreateIfNotCreated_Reset call:[Create] noreturn:[Create]
+CSemaphore_WFMO
+Close
+Create
+Release call:[Enter,Leave,LeaveAndSignal,return] noreturn:[LeaveAndSignal,return]
+IsSignaledAndUpdate
+_CThread
+IsCreated call:[return]
+Close call:[Thread_Close] noreturn:[Thread_Close]
+Wait_Close call:[Thread_Wait_Close] noreturn:[Thread_Wait_Close]
+Create call:[Thread_Create] noreturn:[Thread_Create]
+Create_With_Affinity call:[Thread_Create_With_Affinity] noreturn:[Thread_Create_With_Affinity]
+Create_With_CpuSet call:[Thread_Create_With_CpuSet] noreturn:[Thread_Create_With_CpuSet]
+CVirtThread call:[WaitThreadFinish] noreturn:[WaitThreadFinish]
+WaitExecuteFinish call:[Lock] noreturn:[Lock]
+CoderThread call:[Execute,Lock,Set] noreturn:[Set]
+Create call:[Create,CreateIfNotCreated_Reset,IsCreated,return] noreturn:[Create,return]
+Start call:[Set] noreturn:[Set]
+WaitThreadFinish call:[IsCreated,Set,Wait_Close] noreturn:[Set,Wait_Close]

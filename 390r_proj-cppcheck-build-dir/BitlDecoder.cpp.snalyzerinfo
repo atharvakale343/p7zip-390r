@@ -1,0 +1,28 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+Init call:[Init]
+GetStreamSize call:[ExtraBitsWereRead,GetProcessedSize,GetStreamSize] noreturn:[GetProcessedSize]
+GetProcessedSize call:[GetProcessedSize]
+ThereAreDataInBitsBuffer
+Normalize call:[ReadByte]
+ReadBits call:[Normalize]
+ExtraBitsWereRead call:[return] noreturn:[return]
+ExtraBitsWereRead_Fast call:[return] noreturn:[return]
+Init call:[Init]
+Normalize call:[ReadByte]
+GetValue call:[Normalize,return]
+MovePos
+ReadBits call:[MovePos,Normalize]
+AlignToByte call:[MovePos] noreturn:[MovePos]
+ReadDirectByte call:[ReadByte] noreturn:[ReadByte]
+ReadAlignedByte call:[MovePos,ReadByte] noreturn:[ReadByte]
+ReadAlignedByte_FromBuf call:[MovePos,ReadByte_FromBuf] noreturn:[ReadByte_FromBuf]
+CInverterTableInitializer

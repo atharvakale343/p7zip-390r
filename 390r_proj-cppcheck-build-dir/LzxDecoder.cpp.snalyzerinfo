@@ -1,0 +1,85 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+Init
+GetRem call:[return]
+WasExtraReadError_Fast
+WasFinishedOK call:[return] noreturn:[return]
+NormalizeSmall
+NormalizeBig
+GetValue call:[return]
+MovePos call:[NormalizeSmall] noreturn:[NormalizeSmall]
+ReadBitsSmall call:[NormalizeSmall]
+ReadBitsBig call:[NormalizeBig]
+PrepareUncompressed
+ReadUInt32
+CopyTo call:[memcpy]
+IsOneDirectByteLeft
+DirectReadByte
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetExternalWindow call:[SetParams2] noreturn:[SetParams2]
+SetKeepHistory
+WasBlockFinished
+GetUnpackData
+GetUnpackSize
+x86_Filter
+CDecoder
+CDecoder call:[MyFree] noreturn:[MyFree]
+Flush call:[MyAlloc,memcpy,return,x86_Filter] noreturn:[return]
+ReadBits call:[ReadBitsSmall] noreturn:[ReadBitsSmall]
+ReadTable call:[Build,Decode,ReadBits,while] noreturn:[ReadBits,while]
+ReadTables call:[Build,DirectReadByte,GetRem,NormalizeBig,PrepareUncompressed,ReadBits,ReadTable,ReadUInt32,memset] noreturn:[Build,ReadBits]
+CodeSpec call:[CopyTo,Decode,DirectReadByte,GetRem,IsOneDirectByteLeft,NormalizeBig,ReadBits,ReadBitsBig,ReadBitsSmall,ReadTables,WasExtraReadError_Fast,WasFinishedOK,memset,return,while] noreturn:[NormalizeBig,ReadBitsBig,return,while]
+Code call:[CodeSpec,Flush,Init,return] noreturn:[return]
+SetParams2 call:[return] noreturn:[return]
+SetParams_and_Alloc call:[MyAlloc,MyFree,SetParams2,return] noreturn:[return]
+Build
+Decode call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]

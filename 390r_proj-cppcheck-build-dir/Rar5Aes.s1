@@ -1,0 +1,171 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+BOOLToBool call:[return] noreturn:[return]
+BoolToVARIANT_BOOL call:[return] noreturn:[return]
+VARIANT_BOOLToBool call:[return] noreturn:[return]
+IsCreated call:[return]
+CBaseEvent
+CBaseEvent call:[Close] noreturn:[Close]
+Close call:[Event_Close] noreturn:[Event_Close]
+Set call:[Event_Set] noreturn:[Event_Set]
+Reset call:[Event_Reset] noreturn:[Event_Reset]
+Lock call:[Event_Wait] noreturn:[Event_Wait]
+Create call:[ManualResetEvent_Create] noreturn:[ManualResetEvent_Create]
+CreateIfNotCreated_Reset call:[IsCreated,ManualResetEvent_CreateNotSignaled,Reset] noreturn:[ManualResetEvent_CreateNotSignaled,Reset]
+Create call:[AutoResetEvent_CreateNotSignaled] noreturn:[AutoResetEvent_CreateNotSignaled]
+CreateIfNotCreated_Reset call:[AutoResetEvent_CreateNotSignaled,IsCreated,Reset] noreturn:[AutoResetEvent_CreateNotSignaled,Reset]
+CSemaphore
+CSemaphore call:[Close] noreturn:[Close]
+Close call:[Semaphore_Close] noreturn:[Semaphore_Close]
+Create call:[Semaphore_Create] noreturn:[Semaphore_Create]
+OptCreateInit call:[Semaphore_OptCreateInit] noreturn:[Semaphore_OptCreateInit]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Release call:[Semaphore_ReleaseN] noreturn:[Semaphore_ReleaseN]
+Lock call:[Semaphore_Wait] noreturn:[Semaphore_Wait]
+CCriticalSection call:[CriticalSection_Init] noreturn:[CriticalSection_Init]
+CCriticalSection call:[CriticalSection_Delete] noreturn:[CriticalSection_Delete]
+Enter call:[CriticalSection_Enter] noreturn:[CriticalSection_Enter]
+Leave call:[CriticalSection_Leave] noreturn:[CriticalSection_Leave]
+Unlock call:[Leave] noreturn:[Leave]
+CCriticalSectionLock call:[Enter] noreturn:[Enter]
+CCriticalSectionLock call:[Unlock] noreturn:[Unlock]
+CSynchro
+CSynchro call:[pthread_cond_destroy,pthread_mutex_destroy] noreturn:[pthread_cond_destroy]
+Create call:[pthread_cond_init,pthread_mutex_init]
+Enter call:[pthread_mutex_lock] noreturn:[pthread_mutex_lock]
+Leave call:[pthread_mutex_unlock] noreturn:[pthread_mutex_unlock]
+WaitCond call:[pthread_cond_wait] noreturn:[pthread_cond_wait]
+LeaveAndSignal call:[pthread_cond_broadcast,pthread_mutex_unlock,return] noreturn:[return]
+CBaseHandle_WFMO
+operatorNWindows::NSynchronization::CBaseHandle_WFMO*
+CBaseEvent_WFMO call:[Close] noreturn:[Close]
+Close
+Create
+Set call:[Enter,LeaveAndSignal] noreturn:[LeaveAndSignal]
+Reset call:[Enter,Leave] noreturn:[Leave]
+IsSignaledAndUpdate
+Create call:[Create] noreturn:[Create]
+Create call:[Create] noreturn:[Create]
+CreateIfNotCreated_Reset call:[Create] noreturn:[Create]
+CSemaphore_WFMO
+Close
+Create
+Release call:[Enter,Leave,LeaveAndSignal,return] noreturn:[LeaveAndSignal,return]
+IsSignaledAndUpdate
+MyMin
+MyMax
+MyCompare
+BoolToInt call:[return] noreturn:[return]
+BoolToUInt call:[return] noreturn:[return]
+IntToBool call:[return] noreturn:[return]
+operator== call:[Size,memcmp,sizeof]
+operator!= call:[Size,memcmp,sizeof]
+CByteBuffer_Wipe
+CByteBuffer_Wipe call:[Wipe] noreturn:[Wipe]
+Free
+CObjArray
+CObjArray
+CObjArray
+operatorT*
+operatorconstT*
+Alloc
+Free
+CObjArray2
+CObjArray2
+operatorT*
+operatorconstT*
+Size call:[return]
+IsEmpty
+SetSize
+CMidBuffer
+CMidBuffer call:[MyFree] noreturn:[MyFree]
+Free call:[MyFree]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc call:[MyAlloc,MyFree]
+AllocAtLeast call:[MyAlloc,MyFree]
+CAlignedBuffer
+CAlignedBuffer global:[g_AlignedAlloc] call:[Free] noreturn:[Free]
+CAlignedBuffer global:[g_AlignedAlloc] call:[Alloc]
+Free global:[g_AlignedAlloc] call:[Free]
+IsAllocated
+operatorchar*
+operatorconstchar*
+Size
+Alloc global:[g_AlignedAlloc] call:[Alloc,Free]
+AllocAtLeast global:[g_AlignedAlloc] call:[Alloc,Free]
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+Aes call:[return]
+CAesCoder
+QueryInterface global:[IID_ICompressFilter,IID_ICompressSetCoderProperties,IID_ICryptoProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetKeySize
+CAesCbcEncoder
+CAesCbcDecoder
+CopyCalcedKeysFrom call:[memcpy,sizeof] noreturn:[memcpy]
+IsKeyEqualTo call:[memcmp,return,sizeof] noreturn:[return]
+Wipe call:[Wipe,memset,sizeof] noreturn:[memset]
+CKey call:[Wipe] noreturn:[Wipe]
+IsThereCheck call:[return] noreturn:[return]
+UseMAC call:[return]
+Update call:[Sha256_Update] noreturn:[Sha256_Update]
+CKey call:[sizeof]
+CDecoder
+ReadVarInt
+SetDecoderProps call:[IsThereCheck,ReadVarInt,Sha256_Final,Sha256_Init,Sha256_Update,memcmp,memcpy,return] noreturn:[return]
+SetPassword call:[CopyFrom,Size,Wipe,memcmp] noreturn:[CopyFrom]
+Init call:[CalcKey_and_CheckPassword,Init,SetInitVector,SetKey] noreturn:[Init]
+Hmac_Convert_Crc32 call:[Final,SetKey,Update]
+Hmac_Convert_32Bytes call:[Final,SetKey,Update] noreturn:[Final]
+CalcKey_and_CheckPassword call:[CopyCalcedKeysFrom,Final,IsKeyEqualTo,IsThereCheck,SetKey,Size,Update,lock,memcmp,memcpy,return,sizeof] noreturn:[return]
+Free
+CBuffer < unsigned char >
+CBuffer < unsigned char >
+CBuffer < unsigned char > call:[memcpy,sizeof]
+CBuffer < unsigned char >
+operatorT*
+operatorconstT*
+Size
+Alloc call:[Free]
+AllocAtLeast call:[Free]
+CopyFrom call:[Alloc,memcpy,sizeof] noreturn:[memcpy]
+ChangeSize_KeepData call:[MyMin,memcpy,sizeof] noreturn:[memcpy]
+Wipe call:[memset,sizeof] noreturn:[memset]
+operator= call:[CopyFrom] noreturn:[CopyFrom]

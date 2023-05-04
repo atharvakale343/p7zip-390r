@@ -1,0 +1,11 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+Update call:[Sha256_Update] noreturn:[Sha256_Update]
+SetKey call:[Sha256_Final,Sha256_Init,Sha256_Update,memcpy] noreturn:[Sha256_Final,Sha256_Update,memcpy]
+Final call:[Sha256_Final,Sha256_Update] noreturn:[Sha256_Final]

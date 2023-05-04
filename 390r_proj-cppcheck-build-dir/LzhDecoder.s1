@@ -1,0 +1,96 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CMyComPtr
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[AddRef] noreturn:[AddRef]
+CMyComPtr call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CSystemException
+CInBufferException
+GetStreamSize
+GetProcessedSize
+WasFinished
+SetStream
+SetBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+ReadByte_FromBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+CInBuffer call:[Free] noreturn:[Free]
+Build
+Decode call:[GetValue,MovePos]
+COutBufferException
+COutBuffer
+COutBuffer call:[Free] noreturn:[Free]
+SetMemStream
+SetStream
+WriteByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+WriteBytes call:[WriteByte] noreturn:[WriteByte]
+CopyBlock call:[FlushWithCheck,while] noreturn:[FlushWithCheck,while]
+PutByte call:[FlushWithCheck] noreturn:[FlushWithCheck]
+PutBytes call:[FlushWithCheck,while] noreturn:[while]
+GetByte
+CCoderReleaser
+Disable
+CCoderReleaser call:[Flush] noreturn:[Flush]
+QueryInterface global:[IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+SetDictSize
+CCoder
+GetInputProcessedSize call:[GetProcessedSize] noreturn:[GetProcessedSize]
+CheckCodeLens
+ReadTP call:[Build,CheckCodeLens,GetValue,MovePos,ReadBits,return,while] noreturn:[Build,ReadBits,return]
+ReadC call:[Build,CheckCodeLens,Decode,ReadBits,return,while] noreturn:[Build,Decode,return,while]
+CodeReal call:[CopyBlock,Decode,ExtraBitsWereRead,GetProcessedSize,PutByte,ReadAlignBits,ReadBits,ReadC,ReadTP,SetRatioInfo,return] noreturn:[Decode,ReadBits,return]
+Code call:[CodeReal,Create,Disable,Flush,Init,SetStream,coderReleaser,return] noreturn:[Flush,return]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Build
+BuildFull
+Decode call:[GetValue,MovePos]
+DecodeFull call:[GetValue,MovePos]
+Create call:[Create] noreturn:[Create]
+SetStream call:[SetStream] noreturn:[SetStream]
+Init call:[Init,Normalize] noreturn:[Normalize]
+GetStreamSize call:[GetStreamSize] noreturn:[GetStreamSize]
+GetProcessedSize call:[GetProcessedSize]
+ExtraBitsWereRead call:[return] noreturn:[return]
+ExtraBitsWereRead_Fast call:[return] noreturn:[return]
+Normalize call:[ReadByte] noreturn:[ReadByte]
+GetValue call:[return]
+MovePos call:[Normalize] noreturn:[Normalize]
+ReadBits call:[GetValue,MovePos]
+AlignToByte call:[MovePos] noreturn:[MovePos]
+ReadAlignBits call:[ReadBits] noreturn:[ReadBits]

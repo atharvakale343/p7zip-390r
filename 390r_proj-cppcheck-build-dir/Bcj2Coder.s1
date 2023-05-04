@@ -1,0 +1,78 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+QueryInterface global:[IID_ICompressCoder2,IID_ICompressSetBufSize,IID_ICompressSetCoderProperties,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+QueryInterface global:[IID_ICompressCoder2,IID_ICompressGetInStreamProcessedSize2,IID_ICompressSetBufSize,IID_ICompressSetFinishMode,IID_ICompressSetInStream2,IID_ICompressSetOutStreamSize,IID_ISequentialInStream,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CBaseCoder
+CBaseCoder call:[MyFree] noreturn:[MyFree]
+Alloc call:[MyAlloc,MyFree,return] noreturn:[return]
+CEncoder
+CEncoder
+SetInBufSize call:[return] noreturn:[return]
+SetOutBufSize call:[return] noreturn:[return]
+SetCoderProperties call:[return] noreturn:[return]
+CodeReal global:[IID_ICompressGetSubStreamSize] call:[Alloc,Bcj2Enc_Encode,Bcj2Enc_Init,GetSubStreamSize,QueryInterface,Read,Release,SetRatioInfo,WriteStream,return] noreturn:[return]
+Code call:[CodeReal,return] noreturn:[CodeReal,return]
+SetInBufSize call:[return] noreturn:[return]
+SetOutBufSize call:[return] noreturn:[return]
+CDecoder
+SetFinishMode call:[return] noreturn:[return]
+InitCommon call:[Bcj2Dec_Init] noreturn:[Bcj2Dec_Init]
+Code call:[Alloc,Bcj2Dec_Decode,InitCommon,Read,SetRatioInfo,WriteStream,return,while] noreturn:[return]
+SetInStream2 call:[return] noreturn:[return]
+ReleaseInStream2 call:[Release,return] noreturn:[return]
+SetOutStreamSize call:[Alloc,InitCommon]
+Read call:[Bcj2Dec_Decode,Read,return,while] noreturn:[return]
+GetInStreamProcessedSize2 call:[return] noreturn:[return]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]
+CMyComPtr < ICompressGetSubStreamSize >
+CMyComPtr < ICompressGetSubStreamSize > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressGetSubStreamSize > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ICompressGetSubStreamSize > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

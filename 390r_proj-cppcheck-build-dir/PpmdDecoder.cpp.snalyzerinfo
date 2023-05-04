@@ -1,0 +1,59 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+StringToBstr call:[SysAllocString,return]
+CMyComBSTR
+CMyComBSTR call:[SysFreeString] noreturn:[SysFreeString]
+operator&
+operatorconstwchar_t*
+Wipe_and_Free call:[Empty,SysStringLen,memset,sizeof] noreturn:[Empty]
+CMyComBSTR call:[SysAllocString] noreturn:[SysAllocString]
+operator= call:[SysAllocString,SysFreeString]
+Len call:[SysStringLen] noreturn:[SysStringLen]
+MyCopy call:[SysAllocStringLen,SysStringLen] noreturn:[SysAllocStringLen]
+Empty call:[SysFreeString]
+CMyComBSTR_Wipe
+CMyComBSTR_Wipe call:[Wipe_and_Free] noreturn:[Wipe_and_Free]
+CMyUnknownImp
+CMyUnknownImp
+CByteInBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+ReadByte call:[ReadByteFromNewBlock] noreturn:[ReadByteFromNewBlock]
+CByteOutBufWrap call:[Free] noreturn:[Free]
+Init
+GetProcessed
+WriteByte call:[Flush] noreturn:[Flush]
+QueryInterface global:[IID_ICompressCoder,IID_ICompressGetInStreamProcessedSize,IID_ICompressSetDecoderProperties2,IID_ICompressSetFinishMode,IID_ICompressSetInStream,IID_ICompressSetOutStreamSize,IID_IUnknown] call:[return] noreturn:[return]
+AddRef
+Release
+CDecoder call:[Ppmd7_Construct]
+CDecoder global:[g_AlignedAlloc] call:[MyFree,Ppmd7_Free] noreturn:[Ppmd7_Free]
+SetDecoderProperties2 global:[g_AlignedAlloc] call:[Alloc,Ppmd7_Alloc,return] noreturn:[return]
+CodeSpec call:[Init,Ppmd7_Init,Ppmd7z_DecodeSymbol,Ppmd7z_RangeDec_Init,return] noreturn:[return]
+Code call:[CodeSpec,GetProcessed,MyAlloc,SetOutStreamSize,SetRatioInfo,WriteStream,return,while] noreturn:[return]
+SetOutStreamSize call:[return] noreturn:[return]
+SetFinishMode call:[return] noreturn:[return]
+GetInStreamProcessedSize call:[GetProcessed,return] noreturn:[return]
+SetInStream call:[return] noreturn:[return]
+ReleaseInStream call:[Release,return] noreturn:[return]
+Read call:[CodeSpec]
+CMyComPtr < ISequentialInStream >
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[AddRef] noreturn:[AddRef]
+CMyComPtr < ISequentialInStream > call:[Release] noreturn:[Release]
+Release call:[Release]
+operatorT* call:[return]
+operator&
+operator.
+operator= call:[AddRef,Release] noreturn:[AddRef,Release]
+operator= call:[return] noreturn:[return]
+operator! call:[return] noreturn:[return]
+Attach call:[Release]
+Detach
+QueryInterface call:[QueryInterface] noreturn:[QueryInterface]

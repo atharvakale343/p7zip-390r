@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17501888406745473927">
+        <error id="noConstructor" severity="style" msg="The class &apos;CBaseEvent_WFMO&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;CBaseEvent_WFMO&apos; does not declare a constructor although it has private member variables. Member variables of builtin types are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/VirtThread.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="277" column="1"/>
+            <symbol>CBaseEvent_WFMO</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CCriticalSectionLock&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CCriticalSectionLock&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/VirtThread.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="180" column="3"/>
+            <symbol>CCriticalSectionLock</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;IsSignaledAndUpdate&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;IsSignaledAndUpdate&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/VirtThread.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="314" column="16" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="273" column="16" info="Virtual function in base class"/>
+            <symbol>IsSignaledAndUpdate</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;IsSignaledAndUpdate&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;IsSignaledAndUpdate&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/VirtThread.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="380" column="16" info="Function in derived class"/>
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\Windows\Synchronization.h" line="273" column="16" info="Virtual function in base class"/>
+            <symbol>IsSignaledAndUpdate</symbol>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/7zip/Common/VirtThread.cpp">
+            <location file="C:\Users\pnegus\Documents\390r_proj\390r-debugging-setup\p7zip\CPP\7zip\Common\VirtThread.cpp" line="11" column="22"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="17310176687120749122"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="8914001795450445840"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="CNewException" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/NewHandler.h" line="50" col="1" hash="7322455032005079616"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Thread.h:27:8" my-argnr="3" my-argname="cpuSet" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Thread.h" line="28" col="14" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="14380500595775703494"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Thread.h:27:8" my-argnr="3" my-argname="cpuSet" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Thread.h" line="28" col="14" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:221:6" call-funcname="CriticalSection_Init" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="169" col="44" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:223:6" call-funcname="CriticalSection_Enter" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="171" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h:224:6" call-funcname="CriticalSection_Leave" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="172" col="39" call-argexpr="&amp;_object" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:335:8" call-funcname="Create" call-argnr="1" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h" line="338" col="12" my-id="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Windows/Synchronization.h:336:8" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="IByteIn" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="300" col="1" hash="167739804950816162"/>
+<class name="IByteOut" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="308" col="1" hash="16056529723410620758"/>
+<class name="ISeqInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="316" col="1" hash="15811878062464383472"/>
+<class name="ISeqOutStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="331" col="1" hash="13581120017943326427"/>
+<class name="ISeekInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="348" col="1" hash="5409980430128060245"/>
+<class name="ILookInStream" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="358" col="1" hash="2922350619660229276"/>
+<class name="CLookToRead2" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="387" col="9" hash="13952060819910033420"/>
+<class name="CSecToLook" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="405" col="9" hash="6900976611869147570"/>
+<class name="CSecToRead" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="415" col="9" hash="236527009783258609"/>
+<class name="ICompressProgress" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="426" col="1" hash="16912287839335148896"/>
+<class name="ISzAlloc" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/7zTypes.h" line="439" col="1" hash="15785002069964076381"/>
+<class name="CBoolPair" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyTypes.h" line="10" col="1" hash="5059033647546654313"/>
+<class name="GUID" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyGuidDef.h" line="8" col="9" hash="16029236280208274895"/>
+<class name="_LARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="60" col="9" hash="14071032740737189667"/>
+<class name="_ULARGE_INTEGER" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="61" col="9" hash="1346988564265739156"/>
+<class name="_FILETIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="73" col="9" hash="6168957329831688511"/>
+<class name="tagPROPVARIANT" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="171" col="9" hash="3569421679206012758"/>
+<class name="tagSTATPROPSTG" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="203" col="9" hash="7906361929650178997"/>
+<class name="_SYSTEMTIME" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/CPP/Common/MyWindows.h" line="239" col="9" hash="9097812269617101938"/>
+<class name="_CThread" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="63" col="9" hash="6962067275604530410"/>
+<class name="_CEvent" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="171" col="9" hash="8485416078791382621"/>
+<class name="_CSemaphore" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="196" col="9" hash="5980928483726186208"/>
+<class name="_CCriticalSection" file="C:/Users/pnegus/Documents/390r_proj/390r-debugging-setup/p7zip/C/Threads.h" line="216" col="9" hash="17730277406770459127"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functiondecl functionName="CoderThread" lineNumber="7"/>
+    <functiondecl functionName="Create" lineNumber="20"/>
+    <functiondecl functionName="Start" lineNumber="32"/>
+    <functiondecl functionName="WaitThreadFinish" lineNumber="38"/>
+    <functioncall functionName="AutoResetEvent_CreateNotSignaled"/>
+    <functioncall functionName="BOOLToBool"/>
+    <functioncall functionName="BoolToBOOL"/>
+    <functioncall functionName="Byte"/>
+    <functioncall functionName="CBaseEvent"/>
+    <functioncall functionName="CBaseHandle_WFMO"/>
+    <functioncall functionName="CBoolPair"/>
+    <functioncall functionName="CHandle"/>
+    <functioncall functionName="Close"/>
+    <functioncall functionName="CloseHandle"/>
+    <functioncall functionName="CoderThread"/>
+    <functioncall functionName="Create"/>
+    <functioncall functionName="CreateEvent"/>
+    <functioncall functionName="CreateIfNotCreated_Reset"/>
+    <functioncall functionName="CriticalSection_Delete"/>
+    <functioncall functionName="CriticalSection_Enter"/>
+    <functioncall functionName="CriticalSection_Init"/>
+    <functioncall functionName="CriticalSection_Leave"/>
+    <functioncall functionName="DeleteCriticalSection"/>
+    <functioncall functionName="Enter"/>
+    <functioncall functionName="EnterCriticalSection"/>
+    <functioncall functionName="Event_Close"/>
+    <functioncall functionName="Event_Reset"/>
+    <functioncall functionName="Event_Set"/>
+    <functioncall functionName="Event_Wait"/>
+    <functioncall functionName="Execute"/>
+    <functioncall functionName="FALSE"/>
+    <functioncall functionName="GetLastError"/>
+    <functioncall functionName="GetThreadPriority"/>
+    <functioncall functionName="HandlePtr_Close"/>
+    <functioncall functionName="Handle_WaitObject"/>
+    <functioncall functionName="INFINITE"/>
+    <functioncall functionName="INT32"/>
+    <functioncall functionName="IsCreated"/>
+    <functioncall functionName="Leave"/>
+    <functioncall functionName="LeaveAndSignal"/>
+    <functioncall functionName="LeaveCriticalSection"/>
+    <functioncall functionName="Lock"/>
+    <functioncall functionName="ManualResetEvent_Create"/>
+    <functioncall functionName="ManualResetEvent_CreateNotSignaled"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="OpenEvent"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="ResumeThread"/>
+    <functioncall functionName="SRes"/>
+    <functioncall functionName="Semaphore_Close"/>
+    <functioncall functionName="Semaphore_Create"/>
+    <functioncall functionName="Semaphore_OptCreateInit"/>
+    <functioncall functionName="Semaphore_Release1"/>
+    <functioncall functionName="Semaphore_ReleaseN"/>
+    <functioncall functionName="Semaphore_Wait"/>
+    <functioncall functionName="Set"/>
+    <functioncall functionName="SetThreadPriority"/>
+    <functioncall functionName="SuspendThread"/>
+    <functioncall functionName="THREAD_FUNC_RET_TYPE"/>
+    <functioncall functionName="TRUE"/>
+    <functioncall functionName="TerminateThread"/>
+    <functioncall functionName="Thread_Close"/>
+    <functioncall functionName="Thread_Create"/>
+    <functioncall functionName="Thread_Create_With_Affinity"/>
+    <functioncall functionName="Thread_Create_With_CpuSet"/>
+    <functioncall functionName="Thread_Wait_Close"/>
+    <functioncall functionName="Unlock"/>
+    <functioncall functionName="VARIANT_FALSE"/>
+    <functioncall functionName="VARIANT_TRUE"/>
+    <functioncall functionName="WaitForMultipleObjects"/>
+    <functioncall functionName="WaitThreadFinish"/>
+    <functioncall functionName="Wait_Close"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="operatorHANDLE"/>
+    <functioncall functionName="operatorNWindows::NSynchronization::CBaseHandle_WFMO*"/>
+    <functioncall functionName="pthread_cond_broadcast"/>
+    <functioncall functionName="pthread_cond_destroy"/>
+    <functioncall functionName="pthread_cond_init"/>
+    <functioncall functionName="pthread_cond_wait"/>
+    <functioncall functionName="pthread_mutex_destroy"/>
+    <functioncall functionName="pthread_mutex_init"/>
+    <functioncall functionName="pthread_mutex_lock"/>
+    <functioncall functionName="pthread_mutex_unlock"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,28 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+CSystemException
+CInBufferException
+GetStreamSize
+GetProcessedSize
+WasFinished
+SetStream
+SetBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+ReadByte_FromBuf
+ReadByte call:[ReadByte_FromNewBlock] noreturn:[ReadByte_FromNewBlock]
+CInBuffer call:[Free] noreturn:[Free]
+CInBufferBase
+Create call:[Free,MyAlloc,return] noreturn:[return]
+Free call:[MyFree]
+Init
+ReadBlock call:[CInBufferException,Read] noreturn:[CInBufferException]
+ReadByte_FromNewBlock call:[ReadBlock]
+ReadByte_FromNewBlock call:[ReadBlock]
+ReadBytes call:[ReadBlock,memcpy]
+Skip call:[ReadBlock]

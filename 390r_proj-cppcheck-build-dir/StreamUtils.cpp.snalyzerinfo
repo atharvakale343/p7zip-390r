@@ -1,0 +1,12 @@
+CBoolPair
+Init
+SetTrueTrue
+SetVal_as_Defined
+CUncopyable
+operator== call:[sizeof]
+operator!=
+IUnknown
+ReadStream global:[kBlockSize] call:[Read,return] noreturn:[return]
+ReadStream_FALSE call:[ReadStream,return]
+ReadStream_FAIL call:[ReadStream,return]
+WriteStream global:[kBlockSize] call:[Write,return] noreturn:[return]
