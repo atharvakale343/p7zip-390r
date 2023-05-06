@@ -16,12 +16,15 @@ header-includes:
 
 -   [Checkpoint 2](#checkpoint-2)
     -   [Contents:](#contents)
-    -   [Static Analysis](#static-analysis)
     -   [Dynamic Analysis](#dynamic-analysis)
         -   [Generating a corpus](#generating-a-corpus)
         -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
-        -   Parallel fuzzing
-        -   Results
+        -   [Parallel fuzzing](#parallel-fuzzing)
+        -   [Results](#results)
+    -   [Static Analysis](#static-analysis)
+        -   [CodeQL](#codeql)
+        -   [CPPCheck](#cppcheck)
+    -   [Next Steps](#next-steps)
 
 \newpage
 
@@ -41,7 +44,7 @@ We used `afl-plus-plus` as the primary fuzzing tool.
 
 ## Generating a corpus
 
-We took a variety of steps to find a good enough corpus for our fuzzing efforts. The major approach here to was to search online for commonly used corpora. Our main goals here was to find not only `.zip` format, but also as many different formats possible.
+We took a variety of steps to find a good enough corpus for our fuzzing efforts. The major approach here to was to search online for commonly used corpora. We wanted to find not only `.zip` format, but also as many different formats possible.
 
 We found a decent corpus at [https://github.com/strongcourage/fuzzing-corpus](https://github.com/strongcourage/fuzzing-corpus)
 
@@ -97,18 +100,29 @@ We used the following sanitizers on our target:
 -   TSAN: Thread Sanitizer: finds race conditions
 
 ```Makefile
+afl:
+	rm -rf $(BIN_AFL)
+	git clone $(GH_URL) $(BIN_AFL)
+	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_AFL)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-fuzz-afl:
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(BIN_AFL) e -y @@
+afl-asan:
+	rm -rf $(BIN_AFL_ASAN)
+	git clone $(GH_URL) $(BIN_AFL_ASAN)
+	cp 7zz-makefiles/$(BIN_AFL_ASAN).mak $(BIN_AFL_ASAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_ASAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-fuzz-afl-asan:
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 30000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
+afl-msan:
+	rm -rf $(BIN_AFL_MSAN)
+	git clone $(GH_URL) $(BIN_AFL_MSAN)
+	cp 7zz-makefiles/$(BIN_AFL_MSAN).mak $(BIN_AFL_MSAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_MSAN)/CPP/7zip/Bundles/Alone2 && AFL_CC_COMPILER=LLVM AFL_USE_MSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-fuzz-afl-msan:
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-msan -t 30000 -i in -o out -- $(BIN_AFL_MSAN) e -y @@
-
-fuzz-afl-tsan:
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-tsan -t 30000 -i in -o out -- $(BIN_AFL_TSAN) e -y @@
+afl-tsan:
+	rm -rf $(BIN_AFL_TSAN)
+	git clone $(GH_URL) $(BIN_AFL_TSAN)
+	cp 7zz-makefiles/$(BIN_AFL_TSAN).mak $(BIN_AFL_TSAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_TSAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_TSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 ```
 
 ### Parallel Fuzzing
@@ -120,34 +134,34 @@ With all different sets of compilation flags that we mentioned previously, we co
 We added the `afl-fuzz` commands in a `Makefile` and followed the official [guide](https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/fuzzing_in_depth.md#c-using-multiple-cores) for using multiple cores. Below are the commands we utilized. All of our fuzzers shared the same input and output directores to keep track of current fuzzing state.
 
 ```bash
-AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$
-(HOSTNAME) -t 2000 -i in -o out -- $(BIN_AFL) e -y @@
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 2000 -i in -o out -- $(BIN_AFL) e -y @@
 ```
 
 Our main fuzzer used a regular instrumented AFL binary with no other `CFLAGS`. We used a timeout of 2 seconds to denote a hang (or infinite loops).
 
 ```bash
-AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-af
-l-asan -t 2000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 2000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
 ```
 
 Our variant fuzzers utilized binaries compiled with other flags (such as _asan_ and _msan_). These had the same timeout as before of 2 seconds.
 
 To keep track of all fuzzers and run them simultaneouly, we used `tmux` sessions with a separate window for each fuzzer.
 
+\newpage
+
 ### Results
 
 We ran the fuzzers using multiple cores for around 2.5 days. We noticed no crashes in most of the variants, with msan being the exception. However, some fuzzers encountered hangs.
 
-![Main AFL Fuzzer](screenshots/afl-fuzzing.png)
+![Main AFL Fuzzer](screenshots/afl-fuzzing.png){width=400}
 
-![Asan Variant Fuzzer](screenshots/asan-fuzzing.png)
+![ASAN Variant Fuzzer](screenshots/asan-fuzzing.png){width=400}
 
-![Msan Variant Fuzzer](screenshots/msan-fuzzing.png)
+![MSAN Variant Fuzzer](screenshots/msan-fuzzing.png){width=400}
 
-![Tsan Variant Fuzzer](screenshots/tsan-fuzzing.png)
+![TSAN Variant Fuzzer](screenshots/tsan-fuzzing.png){width=400}
 
-We tried running an input from `in/hangs` to check where an infinite loop could occur. But, all inputs eventually completed while taking longer than 2 seconds, so we concluded that the timeout value was too low. These executions were incorrectly flagged as hangs due to relatively low timeouts. For our next fuzzing attempts, we plan to increase this and make the timout around 30 seconds to account for larger file inputs.
+We tried running an input from `in/hangs` to check where an infinite loop could occur. But, all inputs eventually terminated while taking longer than 2 seconds. Therefore, we concluded that these executions were incorrectly flagged as hangs due to relatively low timeouts. For our next fuzzing attempts, we plan to increase this and make the timout around 30 seconds to account for larger file inputs.
 
 **Analyzing msan crashes**
 
@@ -161,9 +175,9 @@ As displayed above, the crash occurs due to a use of uninitialized value in _Fil
 
 From previous error message, we see that msan has flagged `st.st_mode` as uninitialized. But, looking into **gdb**, this variable seems to be defined, set to 33204. This is because it was called with `lstat(path, &st)` at the beginning of the function, which initialized all fields of the struct.
 
-From this, we can conclude that msan had incorrectly flagged this an uninitialized and this is a _false positive_. All other msan crashes refer to the same line, so we determined that **msan** is not a good fit for this project, possibly missing out on initializers.
+From this, we can conclude that msan had incorrectly flagged this an uninitialized and this is a _false positive_. All other msan crashes refer to the same line, so we determined that **msan** is not a good fit for this project, possibly missing out on initializations.
 
-We looked more into [clang documentation](https://clang.llvm.org/docs/MemorySanitizer.html), which affirmed this belief:
+We looked more into [clang documentation](https://clang.llvm.org/docs/MemorySanitizer.html), which confirmed this hypothesis:
 
 > it may introduce false positives and therefore should be used with care
 
@@ -176,9 +190,7 @@ To analyze the code for common C/C++ bugs, we used **codeql** to scan the source
 We first created a analysis database by providing the `make` instructions to codeql.
 
 ```bash
-cd p7zip/CPP/7zip/Bundles/Alone2
 codeql database create ../../../../../codeql-playground/analysis-db.codeql -l cpp -c "make -B -f makefile.gcc" --overwrite
-cd -
 ```
 
 Then, we download _cpp-queries_ and tested the produced database against it.
@@ -194,30 +206,41 @@ But, this did not output any glaring errors, executing without any warnings or u
 
 ### CPPCheck
 
-We ran the codebase through the static analysis tool cppcheck, which tagged 1569 warnings and errors. One of the common errors flagged by cppcheck was shiftTooManyBits
+We ran the codebase through the static analysis tool **cppcheck**, which tagged 1569 warnings and errors. One of the common errors flagged by cppcheck was _shiftTooManyBits_
 
-![](screenshots/cppcheck-bitshift-cpp-1.png)
+![Occurences of _shiftTooManyBits_](screenshots/cppcheck-bitshift-cpp-1.png)
 
-Unfortunately, when looking at the actual source code, almost all of these errors come from an innocuous function:
+Unfortunately, when looking at the actual source code, almost all of these errors come from an innocuous macro:
 
-![](screenshots/cppcheck-bitshift-source-1.png)
-![](screenshots/cppcheck-bitshift-source-2.png)
+![First macro](screenshots/cppcheck-bitshift-source-1.png)
+
+![Second macro](screenshots/cppcheck-bitshift-source-2.png){width=400}
 
 The rest, on closer inspection, are also falsely flagged as errors, such as this one:
 
-![](screenshots/cppcheck-bitshift-cpp-2.png)
-![](screenshots/cppcheck-bitshift-source-3.png)
+![Another occurence of *shiftTooManyBits*](screenshots/cppcheck-bitshift-cpp-2.png)
+
+![Looking into source code](screenshots/cppcheck-bitshift-source-3.png){width=400}
 
 A more promising error seems to be a possible null pointer exception:
 
-![](screenshots/cppcheck-nullpointer.png)
-![](screenshots/cppcheck-nullpointer-source-1.png)
+![Null Pointer occurences](screenshots/cppcheck-nullpointer.png)
+
+![First null Pointer dereference](screenshots/cppcheck-nullpointer-source-1.png){width=400}
 
 This function is only called once, in the same file at line 415:
 
-![](screenshots/cppcheck-nullpointer-source-2.png)
+![Second null Pointer dereference](screenshots/cppcheck-nullpointer-source-2.png){width=400}
 
-It looks like `password` gets populated in `CryptoGetTexPassword2`, looking at that function, and the subsequent call to StringToBstr, it unfortunately looks like the nullpointer is properly checked for.
+It looks like `password` gets populated in _CryptoGetTexPassword2_, looking at that function, and the subsequent call to _StringToBstr_, it unfortunately looks like the nullpointer is properly checked for.
 
-![](screenshots/cppcheck-nullpointer-source-3.png)
-![](screenshots/cppcheck-nullpointer-source-4.png)
+![Null pointer check in *CryptoGetTexPassword2*](screenshots/cppcheck-nullpointer-source-3.png)
+
+![Null pointer check in *StringToBstr*](screenshots/cppcheck-nullpointer-source-4.png)
+
+## Next Steps
+
+-   Fuzzing with higher timeout to increase coverage and avoid false positives.
+-   Fuzzing different features of the target binary.
+-   Investigating how _p7zip_ is fuzzed and tested in [OSS-Fuzz](https://github.com/google/oss-fuzz/pull/5899).
+-   TODO on static side
