@@ -4,16 +4,8 @@ BIN_OUTPUT_PATH = CPP/7zip/Bundles/Alone2/_o/bin/7zz
 
 REPO_AFL = 7zz_afl
 REPO_AFL_ASAN = 7zz_afl_asan
-<<<<<<< Updated upstream
-=======
-REPO_DEFAULT = 7zz_default
-REPO_DEBUG = 7zz_debug
-REPO_AFL = 7zz_afl
-REPO_AFL_ASAN = 7zz_afl_asan
->>>>>>> Stashed changes
 REPO_AFL_MSAN = 7zz_afl_msan
 REPO_AFL_UBSAN = 7zz_afl_ubsan
-REPO_AFL_CFISAN = 7zz_afl_cfisan
 REPO_AFL_TSAN = 7zz_afl_tsan
 
 BIN_AFL = ../../$(REPO_AFL)/$(BIN_OUTPUT_PATH)
