@@ -18,6 +18,10 @@ header-includes:
   - [Contents:](#contents)
   - [Static Analysis](#static-analysis)
   - [Dynamic Analysis](#dynamic-analysis)
+    - Generating a corpus
+    - Experimenting with fuzzing composition flags
+    - Parallel fuzzing
+    - Results
 
 \newpage
 
