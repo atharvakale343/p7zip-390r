@@ -6,8 +6,8 @@ date: "2023-04-06"
 caption-justification: centering
 titlepage: true
 header-includes:
-    - \usepackage{fvextra}
-    - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
 # Checkpoint 2
@@ -17,8 +17,17 @@ header-includes:
 - [Checkpoint 2](#checkpoint-2)
   - [Contents:](#contents)
   - [Static Analysis](#static-analysis)
+  - [Dynamic Analysis](#dynamic-analysis)
 
 \newpage
+
+## Static Analysis
+
+\newpage
+
+## Dynamic Analysis
+
+![](screenshots/code-ql-results.png)
 
 ![](screenshots/afl-fuzzing.png)
 
@@ -32,7 +41,7 @@ header-includes:
 
 We ran the codebase through the static analysis tool cppcheck, which tagged 1569 warnings and errors. One of the common errors flagged by cppcheck was shiftTooManyBits
 
-![](screenshots/cppcheck-bitshift.png)
+![](screenshots/cppcheck-bitshift-cpp-1.png)
 
 Unfortunately, when looking at the actual source code, almost all of these errors come from an innocuous function:
 
@@ -57,4 +66,3 @@ It looks like `password` gets populated in `CryptoGetTexPassword2`, looking at t
 
 ![](screenshots/cppcheck-nullpointer-source-3.png)
 ![](screenshots/cppcheck-nullpointer-source-4.png)
-
