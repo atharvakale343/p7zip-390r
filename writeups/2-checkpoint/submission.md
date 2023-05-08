@@ -24,6 +24,7 @@ header-includes:
     -   [Static Analysis](#static-analysis)
         -   [CodeQL](#codeql)
         -   [CPPCheck](#cppcheck)
+		-   [Further Thoughts](#further-thoughts)
     -   [Next Steps](#next-steps)
 
 \newpage
@@ -238,8 +239,16 @@ It looks like `password` gets populated in _CryptoGetTexPassword2_, looking at t
 
 ![Null pointer check in *StringToBstr*](screenshots/cppcheck-nullpointer-source-4.png)
 
+
+### Further Thoughts
+
+We analyzed our target with **cppcheck** and **codeQL**. These utilities have obvious limitations, but as an aside we thought it interesting to explore any existing work documenting the effectiveness of each. A recent 2022 study titled "An Empirical Study on the Effectiveness of Static C Code Analyzers for Vulnerability Detection", found that in general, cppcheck was ineffective at identifying vulnerabilities in their tested scenarios when run alone (Lipp et al., 2022). Further, among the tested scenarios, **codeQL** was second to the industry utility **CommSCA**; however, even in the best case scenario, 30% of the 192 vulnerabilities tested were not detected.
+
+Ultimately, it seems that static analysis with standard utilities of this particular target may not prove particularly fruitful, since both CPPCheck and Codeql failed to find anything particularly interesting. As such, our coming work when it comes to static analysis sshould involve getting LLVM bitcode at some point in compilation, and then writing queries for vulnerable functions such as **malloc()**.
+
 ## Next Steps
 
 -   Fuzzing with higher timeout to increase coverage and avoid false positives
 -   Fuzzing different features of the target binary
 -   Investigating how _p7zip_ is fuzzed and tested in [OSS-Fuzz](https://github.com/google/oss-fuzz/pull/5899)
+-   Figure out how to inject LLVM pass and emit bitcode, then write queries
