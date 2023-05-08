@@ -240,7 +240,6 @@ It looks like `password` gets populated in _CryptoGetTexPassword2_, looking at t
 
 ## Next Steps
 
--   Fuzzing with higher timeout to increase coverage and avoid false positives.
--   Fuzzing different features of the target binary.
--   Investigating how _p7zip_ is fuzzed and tested in [OSS-Fuzz](https://github.com/google/oss-fuzz/pull/5899).
--   TODO on static side
+-   Fuzzing with higher timeout to increase coverage and avoid false positives
+-   Fuzzing different features of the target binary
+-   Investigating how _p7zip_ is fuzzed and tested in [OSS-Fuzz](https://github.com/google/oss-fuzz/pull/5899)
