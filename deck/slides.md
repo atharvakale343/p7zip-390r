@@ -29,3 +29,26 @@ AFL Fuzzing Buildings:
 
 Dynamic Analysis
 
+Fuzzing
+
+- Fuzzing is a popular technique against binary targets
+- We fuzzed p7zip's extract (e) subcommand
+- afl-plus-plus (https://github.com/AFLplusplus/AFLplusplus)
+
+Generating a corpus
+
+- Goal: Find a varied corpus that hits several compression formats
+- We found a decent corpus at https://github.com/strongcourage/fuzzing-corpus
+
+Makefile target: get-inputs
+
+Minimizing the Corpus
+- Used tools:
+- afl-cmin
+    - Ensures only "interesting" inputs are considered
+- afl-tmin
+    - Strips the input to make it lightweight
+- We found that these two steps significantly increased coverage of our fuzzing efforts
+
+Makefile target: minimize
+
