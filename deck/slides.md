@@ -52,3 +52,35 @@ Minimizing the Corpus
 
 Makefile target: minimize
 
+Fuzzing Composition Flags
+
+- Discovered not sufficient to just fuzz a vanilla `afl` binary
+
+![](screenshots/vanilla-afl-binary.png)
+
+(Put red circle emoji)
+
+Fuzzing Composition Flags
+
+- Looked to several sanitizers to find non-crashing bugs
+
+We used the following sanitizers on our target:
+- ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free,
+heap/buffer overflows, initialization order bugs etc.
+- MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs
+etc.
+- TSAN: Thread Sanitizer: finds race conditions
+
+Makefile target: fuzz-afl-<sanitizer>
+
+Parallel Fuzzing
+
+- Discovered it is efficient to have one fuzzer running of each type
+- Set up a main fuzzer with several service fuzzing
+- All fuzzers share same output dictionaries
+
+![](screenshots/afl-whatsup.png)
+
+(Cybersec room servers ftw)
+
+Potential Bugs Discovered
