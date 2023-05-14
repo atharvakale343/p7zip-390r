@@ -9,7 +9,9 @@ REPO_AFL_UBSAN = 7zz_afl_ubsan
 REPO_AFL_TSAN = 7zz_afl_tsan
 
 BIN_AFL = ../../$(REPO_AFL)/$(BIN_OUTPUT_PATH)
+BIN_AFL_HARNESS = ../../$(REPO_AFL)_harness/$(BIN_OUTPUT_PATH)
 BIN_AFL_ASAN = ../../$(REPO_AFL_ASAN)/$(BIN_OUTPUT_PATH)
+BIN_AFL_ASAN_HARNESS = ../../$(REPO_AFL_ASAN)_harness/$(BIN_OUTPUT_PATH)
 BIN_AFL_MSAN = ../../$(REPO_AFL_MSAN)/$(BIN_OUTPUT_PATH)
 BIN_AFL_UBSAN = ../../$(REPO_AFL_UBSAN)/$(BIN_OUTPUT_PATH)
 BIN_AFL_TSAN = ../../$(REPO_AFL_TSAN)/$(BIN_OUTPUT_PATH)
@@ -37,13 +39,13 @@ fuzz-afl:
 	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(BIN_AFL) e -y @@
 
 fuzz-afl-archive: 
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(HARNESS_ARCHIVE) @@
+	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(BIN_AFL_HARNESS) @@
 
 fuzz-afl-asan:
 	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 30000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
 
 fuzz-afl-asan-archive:
-	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 30000 -i in -o out -- $(HARNESS_ARCHIVE) @@
+	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 30000 -i in -o out -- $(BIN_AFL_ASAN_HARNESS) @@
 
 fuzz-afl-msan:
 	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-msan -t 30000 -i in -o out -- $(BIN_AFL_MSAN) e -y @@
