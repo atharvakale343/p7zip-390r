@@ -2,15 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 #define INPUT_DIR "harness_inputs"
 #define CHUNK_SIZE 1000
 
-void write_chunk_to_file(const char *filename, const unsigned char *chunk, size_t size)
-{
+void write_chunk_to_file(const char *filename, const unsigned char *chunk, size_t size) {
     FILE *file = fopen(filename, "wb");
-    if (file == NULL)
-    {
+    if (file == NULL) {
         perror("Failed to create input file");
         exit(1);
     }
@@ -18,31 +17,26 @@ void write_chunk_to_file(const char *filename, const unsigned char *chunk, size_
     fclose(file);
 }
 
-void generate_random_filename(char *filename, size_t max_length)
-{
+void generate_random_filename(char *filename, size_t max_length) {
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     size_t charset_length = sizeof(charset) - 1;
 
     srand((unsigned int)time(NULL));
-    for (size_t i = 0; i < max_length - 1; ++i)
-    {
+    for (size_t i = 0; i < max_length - 1; ++i) {
         filename[i] = charset[rand() % charset_length];
     }
     filename[max_length - 1] = '\0';
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc < 2)
-    {
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
         fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);
         return 1;
     }
 
     // Open the input file in binary mode
     FILE *input_file = fopen(argv[1], "rb");
-    if (input_file == NULL)
-    {
+    if (input_file == NULL) {
         perror("Failed to open input file");
         return 1;
     }
@@ -68,7 +62,9 @@ int main(int argc, char *argv[])
     }
 
     // Build the command with the list of files
-    char command[4096] = "../../7zz_afl_asan/CPP/7zip/Bundles/Alone2/_o/bin/7zz a archive.zip -y";
+    char *exec_file = "../7zz_afl_asan/CPP/7zip/Bundles/Alone2/_o/bin/7zz";
+
+    char command[4096] = "";
     for (int i = 0; i < file_count; i++) {
         char escaped_file[256];
         snprintf(escaped_file, sizeof(escaped_file), "%s", output_files[i]);
@@ -76,14 +72,14 @@ int main(int argc, char *argv[])
         strncat(command, escaped_file, sizeof(command) - strlen(command) - 1);
     }
 
+    printf("command: %s\n", command);
+    char *commands[6] = {exec_file, "a", "check.zip", "-y", command, NULL};
+
     // Execute the command
-    if (fork() == 0)
-    {
-        execvp(command[0], command);
-        perror("Failed to execute zip command");
-        exit(1);
-    }
-    
+
+    execvp(commands[0], commands);
+    perror("Failed to execute zip command");
+    exit(1);
 
     fclose(input_file);
 
