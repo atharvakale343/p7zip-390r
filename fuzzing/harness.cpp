@@ -271,5 +271,6 @@ int main(int argc, char *argv[]) {
         remove(output_files[i]);
     }
 
+    free(command);
     return 0;
 }
