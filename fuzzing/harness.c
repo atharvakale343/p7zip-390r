@@ -50,33 +50,40 @@ int main(int argc, char *argv[])
     // Read the raw bytes from the input file
     unsigned char input_bytes[CHUNK_SIZE];
     size_t input_size;
-    while ((input_size = fread(input_bytes, sizeof(unsigned char), CHUNK_SIZE, input_file)) > 0)
-    {
+
+    // Array to store output file names
+    char output_files[256][256];
+    int file_count = 0;
+
+    while ((input_size = fread(input_bytes, sizeof(unsigned char), CHUNK_SIZE, input_file)) > 0) {
         // Generate a unique random file name for the input chunk
         char output_file[256];
         generate_random_filename(output_file, 16);
         strcat(output_file, ".zip");
-        char output_file_path[256];
-        snprintf(output_file_path, sizeof(output_file_path), "%s/%s", INPUT_DIR, output_file);
+        snprintf(output_files[file_count], sizeof(output_files[file_count]), "%s/%s", INPUT_DIR, output_file);
+        file_count++;
 
         // Write the input chunk to a temporary file
-        write_chunk_to_file(output_file_path, input_bytes, input_size);
-
-        // Create the command to run the zip tool's archive command
-        char *command[] = {"../../7zz_afl_asan/CPP/7zip/Bundles/Alone2/_o/bin/7zz", "a",
-                           "archive.zip", "-y", output_file_path, NULL};
-
-        // Execute the command
-        if (fork() == 0)
-        {
-            execvp(command[0], command);
-            perror("Failed to execute zip command");
-            exit(1);
-        }
-
-        // Clean up the temporary file
-        remove(output_file_path);
+        write_chunk_to_file(output_files[file_count - 1], input_bytes, input_size);
     }
+
+    // Build the command with the list of files
+    char command[4096] = "../../7zz_afl_asan/CPP/7zip/Bundles/Alone2/_o/bin/7zz a archive.zip -y";
+    for (int i = 0; i < file_count; i++) {
+        char escaped_file[256];
+        snprintf(escaped_file, sizeof(escaped_file), "%s", output_files[i]);
+        strncat(command, " ", sizeof(command) - strlen(command) - 1);
+        strncat(command, escaped_file, sizeof(command) - strlen(command) - 1);
+    }
+
+    // Execute the command
+    if (fork() == 0)
+    {
+        execvp(command[0], command);
+        perror("Failed to execute zip command");
+        exit(1);
+    }
+    
 
     fclose(input_file);
 
