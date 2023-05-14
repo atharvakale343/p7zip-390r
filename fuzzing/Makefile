@@ -26,6 +26,13 @@ get-inputs:
 	mv fuzzing-corpus/gzip/go-fuzz/* in_raw
 	mv fuzzing-corpus/lrzip/* in_raw
 
+get-inputs-for-archive:
+	rm -rf in_raw fuzzing-corpus && mkdir in_raw
+
+	git clone -n --depth=1 --filter=tree:0 https://github.com/strongcourage/fuzzing-corpus.git
+	cd fuzzing-corpus && git sparse-checkout set --no-cone txt/mopt && git checkout
+	mv fuzzing-corpus/txt/mopt/* in_raw
+
 fuzz-afl: 
 	AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(BIN_AFL) e -y @@
 
