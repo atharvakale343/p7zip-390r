@@ -263,9 +263,13 @@ int main(int argc, char *argv[]) {
     }
     command[file_count + 4] = NULL;
 
-
     // Execute the command
     main_7zz(file_count + 4, command);
+
+    // Delete files
+    for (int i = 0; i < file_count; i++) {
+        remove(output_files[i]);
+    }
 
     return 0;
 }
