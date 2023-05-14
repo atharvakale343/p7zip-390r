@@ -3,10 +3,15 @@ AFL_CXX = /usr/local/bin/afl-clang-fast++
 AFL_FUZZ = /usr/local/bin/afl-fuzz
 
 BIN_DEFAULT = 7zz_default
+BIN_DEFAULT_HARNESS = 7zz_default_harness
 BIN_DEBUG = 7zz_debug
+BIN_DEBUG_HARNESS = 7zz_debug_harness
 BIN_AFL = 7zz_afl
+BIN_AFL_HARNESS = 7zz_afl_harness
 BIN_AFL_ASAN = 7zz_afl_asan
+BIN_AFL_ASAN_HARNESS = 7zz_afl_asan_harness
 BIN_AFL_ASAN_DBG = 7zz_afl_asan_dbg
+BIN_AFL_ASAN_DBG_HARNESS = 7zz_afl_asan_dbg_harness
 BIN_AFL_MSAN = 7zz_afl_msan
 BIN_AFL_UBSAN = 7zz_afl_ubsan
 BIN_AFL_CFISAN = 7zz_afl_cfisan
@@ -20,11 +25,26 @@ default:
 	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_DEFAULT)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_DEFAULT)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
 
+default-harness:
+	rm -rf $(BIN_DEFAULT_HARNESS)
+	git clone $(GH_URL) $(BIN_DEFAULT_HARNESS)
+	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_DEFAULT_HARNESS)/CPP/7zip/7zip_gcc.mak
+	cp fuzzing/harness.cpp $(BIN_DEFAULT_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
+	cd $(BIN_DEFAULT_HARNESS)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
+
 afl:
 	rm -rf $(BIN_AFL)
 	git clone $(GH_URL) $(BIN_AFL)
 	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_AFL)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-harness:
+	rm -rf $(BIN_AFL_HARNESS)
+	git clone $(GH_URL) $(BIN_AFL_HARNESS)
+	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_AFL_HARNESS)/CPP/7zip/7zip_gcc.mak
+	cp fuzzing/harness.cpp $(BIN_AFL_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
+	cd $(BIN_AFL_HARNESS)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
 
 afl-asan:
 	rm -rf $(BIN_AFL_ASAN)
@@ -32,11 +52,25 @@ afl-asan:
 	cp 7zz-makefiles/$(BIN_AFL_ASAN).mak $(BIN_AFL_ASAN)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_ASAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
+afl-asan-harness:
+	rm -rf $(BIN_AFL_ASAN_HARNESS)
+	git clone $(GH_URL) $(BIN_AFL_ASAN_HARNESS)
+	cp 7zz-makefiles/$(BIN_AFL_ASAN).mak $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/7zip_gcc.mak
+	cp fuzzing/harness.cpp $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
+	cd $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
 afl-asan-dbg:
 	rm -rf $(BIN_AFL_ASAN_DBG)
 	git clone $(GH_URL) $(BIN_AFL_ASAN_DBG)
 	cp 7zz-makefiles/$(BIN_AFL_ASAN_DBG).mak $(BIN_AFL_ASAN_DBG)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-asan-dbg-harness:
+	rm -rf $(BIN_AFL_ASAN_DBG_HARNESS)
+	git clone $(GH_URL) $(BIN_AFL_ASAN_DBG_HARNESS)
+	cp 7zz-makefiles/$(BIN_AFL_ASAN_DBG).mak $(BIN_AFL_ASAN_DBG_HARNESS)/CPP/7zip/7zip_gcc.mak
+	cp fuzzing/harness.cpp $(BIN_AFL_ASAN_DBG_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
+	cd $(BIN_AFL_ASAN_DBG_HARNESS)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 afl-msan:
 	rm -rf $(BIN_AFL_MSAN)
@@ -67,3 +101,10 @@ debug:
 	git clone $(GH_URL) $(BIN_DEBUG)
 	cp 7zz-makefiles/$(BIN_DEBUG).mak $(BIN_DEBUG)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_DEBUG)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
+
+debug-harness:
+	rm -fr $(BIN_DEBUG_HARNESS)
+	git clone $(GH_URL) $(BIN_DEBUG_HARNESS)
+	cp 7zz-makefiles/$(BIN_DEBUG).mak $(BIN_DEBUG_HARNESS)/CPP/7zip/7zip_gcc.mak
+	cp fuzzing/harness.cpp $(BIN_DEBUG_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
+	cd $(BIN_DEBUG_HARNESS)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
