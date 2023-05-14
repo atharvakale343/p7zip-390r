@@ -64,5 +64,8 @@ minimize-afl-asan:
 	rm -rf in_unique in
 	afl-cmin -T all -i in_raw -o in_unique -- $(BIN_AFL_ASAN) e -y @@
 	mv in_unique in
+
+harness: harness.c
+	gcc harness.c -o harness && cp harness fuzzing-work
 #	mkdir in
 #	cd in_unique; for i in *; do afl-tmin -i "$$i" -o "../in/$$i" -- ../$(BIN_AFL_ASAN) e -y @@; done
