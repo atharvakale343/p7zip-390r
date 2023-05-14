@@ -6,6 +6,7 @@ BIN_DEFAULT = 7zz_default
 BIN_DEBUG = 7zz_debug
 BIN_AFL = 7zz_afl
 BIN_AFL_ASAN = 7zz_afl_asan
+BIN_AFL_ASAN_DBG = 7zz_afl_asan_dbg
 BIN_AFL_MSAN = 7zz_afl_msan
 BIN_AFL_UBSAN = 7zz_afl_ubsan
 BIN_AFL_CFISAN = 7zz_afl_cfisan
@@ -30,6 +31,12 @@ afl-asan:
 	git clone $(GH_URL) $(BIN_AFL_ASAN)
 	cp 7zz-makefiles/$(BIN_AFL_ASAN).mak $(BIN_AFL_ASAN)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_ASAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-asan-dbg:
+	rm -rf $(BIN_AFL_ASAN_DBG)
+	git clone $(GH_URL) $(BIN_AFL_ASAN_DBG)
+	cp 7zz-makefiles/$(BIN_AFL_ASAN_DBG).mak $(BIN_AFL_ASAN_DBG)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 afl-msan:
 	rm -rf $(BIN_AFL_MSAN)
@@ -56,6 +63,7 @@ afl-tsan:
 	cd $(BIN_AFL_TSAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_TSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 debug:
+	rm -fr $(BIN_DEBUG)
 	git clone $(GH_URL) $(BIN_DEBUG)
 	cp 7zz-makefiles/$(BIN_DEBUG).mak $(BIN_DEBUG)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_DEBUG)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc

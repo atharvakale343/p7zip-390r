@@ -24,9 +24,9 @@ endif
 # for object file
 CFLAGS_BASE_LIST = -c
 # CFLAGS_BASE_LIST = -S
-CFLAGS_BASE = -O2 $(CFLAGS_BASE_LIST) $(CFLAGS_WARN_WALL) $(CFLAGS_WARN) \
+CFLAGS_BASE = -O0 $(CFLAGS_BASE_LIST) $(CFLAGS_WARN_WALL) $(CFLAGS_WARN) \
  -DNDEBUG -D_REENTRANT -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE \
- -fPIC -fsanitize=memory
+ -fPIC -fsanitize=address -lasan
 
 # -D_7ZIP_AFFINITY_DISABLE
 
@@ -36,13 +36,13 @@ IS_MINGW = 1
 endif
 
 ifdef IS_MINGW
-LDFLAGS_STATIC_2 = -static -fsanitize=memory
+LDFLAGS_STATIC_2 = -static -fsanitize=address -lasan
 else
 ifndef DEF_FILE
 ifndef IS_NOT_STANDALONE
 ifndef MY_DYNAMIC_LINK
 ifneq ($(CC), clang)
-LDFLAGS_STATIC_2 = -g -fsanitize=memory
+LDFLAGS_STATIC_2 =-g2 -O0 -fsanitize=address -lasan
 # -static
 # -static-libstdc++ -static-libgcc
 endif
@@ -51,7 +51,7 @@ endif
 endif
 endif
 
-LDFLAGS_STATIC = -fsanitize=memory -DNDEBUG $(LDFLAGS_STATIC_2) -g
+LDFLAGS_STATIC = -fsanitize=address -lasan -DNDEBUG $(LDFLAGS_STATIC_2)-g2 -O0
 
 ifndef O
   ifdef IS_MINGW
@@ -67,10 +67,10 @@ ifdef DEF_FILE
 
 ifdef IS_MINGW
 SHARED_EXT=.dll
-LDFLAGS = -fsanitize=memory -shared -DEF $(DEF_FILE) $(LDFLAGS_STATIC)
+LDFLAGS = -fsanitize=address -lasan -shared -DEF $(DEF_FILE) $(LDFLAGS_STATIC)
 else
 SHARED_EXT=.so
-LDFLAGS = -fsanitize=memory -shared -fPIC $(LDFLAGS_STATIC)
+LDFLAGS = -fsanitize=address -lasan -shared -fPIC $(LDFLAGS_STATIC)
 CC_SHARED=-fPIC
 endif
 
@@ -147,7 +147,7 @@ endif
 
 
 
-CFLAGS = $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -fsanitize=memory -g -o $@
+CFLAGS = $(MY_ARCH_2) $(LOCAL_FLAGS) $(CFLAGS_BASE2) $(CFLAGS_BASE) $(CC_SHARED) -fsanitize=address -lasan -g2 -O0 -o $@
 
 
 ifdef IS_MINGW
@@ -175,7 +175,7 @@ CXX_WARN_FLAGS =
 #-Wno-invalid-offsetof
 #-Wno-reorder
 
-CXXFLAGS = -fsanitize=memory $(MY_ARCH_2) -g $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS)
+CXXFLAGS = -fsanitize=address -lasan $(MY_ARCH_2)-g2 -O0 $(LOCAL_FLAGS) $(CXXFLAGS_BASE2) $(CFLAGS_BASE) $(CXXFLAGS_EXTRA) $(CC_SHARED) -o $@ $(CXX_WARN_FLAGS)
 
 STATIC_TARGET=
 ifdef COMPL_STATIC
@@ -1341,7 +1341,7 @@ $O/liblz4.$(DYSUFFIX): ../../../../C/lz4/lib/lz4.h
 	$(RM) lz4_build
 	$(MY_MKDIR) -p lz4_build
 	$(CD) lz4_build; \
-	cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug -fsanitize=memory  ../../../../../C/lz4/build/cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug -fsanitize=memory  -DLZ4_BUILD_CLI=OFF -DLZ4_BUILD_LEGACY_LZ4C=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug ../../../../../C/lz4/build/cmake -DCMAKE_C_FLAGS="-g2" -DCMAKE_BUILD_TYPE=Debug -DLZ4_BUILD_CLI=OFF -DLZ4_BUILD_LEGACY_LZ4C=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) lz4_build/liblz4.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
@@ -1361,7 +1361,7 @@ $O/libbrotlicommon.$(DYSUFFIX) $O/libbrotlienc.$(DYSUFFIX) $O/libbrotlidec.$(DYS
 	$(RM) brotli_build
 	$(MY_MKDIR) -p brotli_build
 	$(CD) brotli_build; \
-	cmake -DCMAKE_BUILD_TYPE=Debug -fsanitize=memory  -DCMAKE_C_FLAGS="-g2" ../../../../../C/brotli/ -DCMAKE_BUILD_TYPE=Debug -fsanitize=memory  -DCMAKE_C_FLAGS="-g2" -DBUILD_TESTING=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" ../../../../../C/brotli/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" -DBUILD_TESTING=OFF -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) brotli_build/libbrotlicommon.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
@@ -1413,7 +1413,7 @@ $O/liblzhamdll.$(DYSUFFIX) $O/liblzhamcomp.$(DYSUFFIX) $O/liblzhamdecomp.$(DYSUF
 	$(RM) lzham_build
 	$(MY_MKDIR) -p lzham_build
 	$(CD) lzham_build; \
-	cmake -DCMAKE_C_FLAGS="-g2" ../../../../../C/lzham_codec/ -DCMAKE_BUILD_TYPE=Debug -fsanitize=memory  -DCMAKE_C_FLAGS="-g2" -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
+	cmake -DCMAKE_C_FLAGS="-g2" ../../../../../C/lzham_codec/ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS="-g2" -DCMAKE_C_COMPILER=$(CC) -DCMAKE_CXX_COMPILER=$(CXX); \
 	$(MAKE) -j; \
 	$(CD) ../; \
 	$(CP) lzham_build/lzhamcomp/liblzhamcomp.$(DYSUFFIX)* $O/$(7z_LIB)/$(7Z_ADDON_CODEC)
