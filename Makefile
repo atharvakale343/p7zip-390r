@@ -61,7 +61,7 @@ afl-asan-harness:
 	cp fuzzing/harness.cpp $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
 	cd $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-update-asan-harness:
+update-afl-asan-harness:
 	CXX=$(AFL_CXX) CFLAGS="-fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_HARNESS)
 
 afl-asan-dbg:
@@ -70,7 +70,7 @@ afl-asan-dbg:
 	cp 7zz-makefiles/$(BIN_AFL_ASAN_DBG).mak $(BIN_AFL_ASAN_DBG)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
-update-asan-dbg-harness:
+update-afl-asan-dbg-harness:
 	CXX=$(AFL_CXX) CFLAGS="-g2 -O0 -fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)
 
 afl-asan-dbg-harness:
