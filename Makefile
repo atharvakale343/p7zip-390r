@@ -46,7 +46,7 @@ afl-harness:
 	cd $(BIN_AFL_HARNESS)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 update-afl-harness:
-	bash -c "./update_harness.sh $(BIN_AFL_ASAN_HARNESS)"
+	bash -c "./update_harness.sh $(BIN_AFL_HARNESS)"
 
 afl-asan:
 	rm -rf $(BIN_AFL_ASAN)
