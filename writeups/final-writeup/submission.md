@@ -63,9 +63,17 @@ _p7zip_ provides the following features:
 
 ### Code Layout
 
+[Call Graph for extract command](../../screenshots/func_call_graph1.png)
+
+[Call Graph for archive command](../../screenshots/func_call_graph2.png)
+
 ### Coding Observations
 
 ### Target Features
+
+The main features of `7zz` is to extract from different compression formats and archive a collection of files. We decided to focus mainly on the `extract` or **e** command which accepts a compressed file and extracts its contents to the current directory.
+
+We also looked into the `archive` or **a** command that compresses a list of files into a `.7z` file. This uses various compression algorithms such as LZ4, Brotli, Lizard, etc.
 
 ## Automated Analysis
 
@@ -218,7 +226,7 @@ However, this is a potential bug if combined with static/taint analysis so see i
 
 ### Archive command
 
-We also fuzzed the `archive` command of `7zz`. For this, we initially chose a corpus of *.txt* files, fuzzing the `a` command-line argument (along with `-y` to avoid user input hangs). But, we could not directly fuzz this since `afl-fuzz` only supports one cli argument and `a` can be used with multiple files with the following syntax:
+We also fuzzed the `archive` command of `7zz`. For this, we initially chose a corpus of _.txt_ files, fuzzing the `a` command-line argument (along with `-y` to avoid user input hangs). But, we could not directly fuzz this since `afl-fuzz` only supports one cli argument and `a` can be used with multiple files with the following syntax:
 
 ```bash
 7zz a files.zip file1.txt file2.txt file3.txt
@@ -230,9 +238,21 @@ We concluded that it would not be sufficient to just archive one file so we deci
 
 Our approach for the harness is as follows:
 
-- TODO
+-   As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
+-   Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
+-   With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
+
+We created a new _MainAr.cpp_ with the `main` function being replaced by our harness which would mutate the input and pass it into _argv_ of `main_7zz`, the original `main` function of p7zip. This way, we can fuzz the archive command with multiple files and potentially discover more bugs.
+
+```bash
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 30000 -i in -o out -- $(BIN_AFL_HARNESS) @@
+```
+
+Our `afl-fuzz` command just passes in a cli argument to the harness.
 
 ### Results
+
+TODO
 
 ### OSS-Fuzz
 
