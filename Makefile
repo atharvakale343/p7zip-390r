@@ -46,7 +46,7 @@ afl-harness:
 	cd $(BIN_AFL_HARNESS)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 update-afl-harness:
-	CXX=$AFL_CXX ./update_harness.sh $(BIN_AFL_HARNESS)
+	CXX=$(AFL_CXX) ./update_harness.sh $(BIN_AFL_HARNESS)
 
 afl-asan:
 	rm -rf $(BIN_AFL_ASAN)
@@ -62,7 +62,7 @@ afl-asan-harness:
 	cd $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 update-asan-harness:
-	CXX=$AFL_CXX CFLAGS="-fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_HARNESS)
+	CXX=$(AFL_CXX) CFLAGS="-fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_HARNESS)
 
 afl-asan-dbg:
 	rm -rf $(BIN_AFL_ASAN_DBG)
@@ -71,7 +71,7 @@ afl-asan-dbg:
 	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 update-asan-dbg-harness:
-	CXX=$AFL_CXX CFLAGS="-g2 -O0 -fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)
+	CXX=$(AFL_CXX) CFLAGS="-g2 -O0 -fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)
 
 afl-asan-dbg-harness:
 	rm -rf $(BIN_AFL_ASAN_DBG_HARNESS)
