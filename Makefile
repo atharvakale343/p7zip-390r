@@ -1,5 +1,5 @@
-AFL_CC = /usr/local/bin/afl-clang-fast
-AFL_CXX = /usr/local/bin/afl-clang-fast++
+AFL_CC = /usr/local/bin/afl-gcc-fast
+AFL_CXX = /usr/local/bin/afl-g++-fast
 AFL_FUZZ = /usr/local/bin/afl-fuzz
 
 BIN_DEFAULT = 7zz_default
@@ -71,7 +71,7 @@ afl-asan-dbg:
 	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
 update-afl-asan-dbg-harness:
-	CXX=$(AFL_CXX) CFLAGS="-g2 -O0 -fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)
+	CXX=$(AFL_CXX) CFLAGS="-g -O0 -fsanitize=address -lasan" ./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)
 
 afl-asan-dbg-harness:
 	rm -rf $(BIN_AFL_ASAN_DBG_HARNESS)

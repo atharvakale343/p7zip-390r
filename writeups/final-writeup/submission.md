@@ -55,7 +55,9 @@ _p7zip_ provides the following features:
 
 1. Several compression algorithms (_lz4_, _zstd_, _Lizard_, etc...)
 2. CLI frontend
-3. Cryptographic algorithms for archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
+3. Cryptographic algorithms for
+   Home
+   Exp archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
 
 \newpage
 
@@ -196,11 +198,43 @@ We tried running an input from `in/hangs` to check where an infinite loop could 
 
 **Analyzing asan crashes**
 
+![ASAN error output](../deck/screenshots/asan-error-out.png)
+
+Upon executing the ASAN compiled binary on one of the crash inputs, we found that it occured due to "request allocation size exceeding maximum supported size". This likely occured due to malloc being called with a huge size argument and returning `NULL`.
+
+![Location of error](../deck/screenshots/error-function.png)
+
+The crash occurs at the `buf.Alloc` call, which executes a C++ `new` operation that internally calls `malloc`. Here, an argument of `unpackSize64` is passed into the function.
+
+![Analyzing size argument in GDB](../deck/screenshots/gdb-error-function.png)
+
+As shown above, the `unpackSize64` argument is a large unsigned integer, so `malloc` fails to allocate this memory and ASAN instigates a crash. If we can control this size argument, this could be a potential bug.
+
+![Size in File header](../deck/screenshots/size-argument-header.png)
+
+We analyzed the input file in more detail and found `unpackSize64` (in little endian) within the header of the file. So we can attempt to modify this offset within the header and control the amount of memory malloc'd. But, this is not an outright segfault since CPP error handling accounts for this and throws an exception, which is caught by the `p7zip` error handler.
+
+However, this is a potential bug if combined with static/taint analysis so see if we could perform a possible overflow due to some arithmetic operations performed on this size argument.
+
 ### Archive command
+
+We also fuzzed the `archive` command of `7zz`. For this, we initially chose a corpus of *.txt* files, fuzzing the `a` command-line argument (along with `-y` to avoid user input hangs). But, we could not directly fuzz this since `afl-fuzz` only supports one cli argument and `a` can be used with multiple files with the following syntax:
+
+```bash
+7zz a files.zip file1.txt file2.txt file3.txt
+```
+
+We concluded that it would not be sufficient to just archive one file so we decided to create a harness which would allow for multiple file as arguments.
 
 ### Harness
 
+Our approach for the harness is as follows:
+
+- TODO
+
 ### Results
+
+### OSS-Fuzz
 
 ### Static Analysis
 
