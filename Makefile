@@ -45,6 +45,8 @@ afl-harness:
 	cp fuzzing/harness.cpp $(BIN_AFL_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
 	cd $(BIN_AFL_HARNESS)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
+update-afl-harness:
+	bash -c "./update_harness.sh $(BIN_AFL_ASAN_HARNESS)"
 
 afl-asan:
 	rm -rf $(BIN_AFL_ASAN)
@@ -59,11 +61,17 @@ afl-asan-harness:
 	cp fuzzing/harness.cpp $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
 	cd $(BIN_AFL_ASAN_HARNESS)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
 
+update-asan-harness:
+	CFLAGS="-fsanitize=address -lasan" bash -c "./update_harness.sh $(BIN_AFL_ASAN_HARNESS)"
+
 afl-asan-dbg:
 	rm -rf $(BIN_AFL_ASAN_DBG)
 	git clone $(GH_URL) $(BIN_AFL_ASAN_DBG)
 	cp 7zz-makefiles/$(BIN_AFL_ASAN_DBG).mak $(BIN_AFL_ASAN_DBG)/CPP/7zip/7zip_gcc.mak
 	cd $(BIN_AFL_ASAN_DBG)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+update-asan-dbg-harness:
+	CFLAGS="-g2 -O0 -fsanitize=address -lasan" bash -c "./update_harness.sh $(BIN_AFL_ASAN_DBG_HARNESS)"
 
 afl-asan-dbg-harness:
 	rm -rf $(BIN_AFL_ASAN_DBG_HARNESS)
@@ -108,3 +116,6 @@ debug-harness:
 	cp 7zz-makefiles/$(BIN_DEBUG).mak $(BIN_DEBUG_HARNESS)/CPP/7zip/7zip_gcc.mak
 	cp fuzzing/harness.cpp $(BIN_DEBUG_HARNESS)/CPP/7zip/UI/Console/MainAr.cpp
 	cd $(BIN_DEBUG_HARNESS)/CPP/7zip/Bundles/Alone2 && make -f makefile.gcc
+
+update-debug-harness:
+	CFLAGS="-O0 -g" bash -c "./update_harness.sh $(BIN_DEBUG_HARNESS)"
