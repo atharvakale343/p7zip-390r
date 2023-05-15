@@ -26,6 +26,7 @@
 
 #define INPUT_DIR "harness_inputs"
 #define CHUNK_SIZE 1000
+#define MAX_FILES 15
 // Harness imports end here
 
 using namespace NWindows;
@@ -238,11 +239,15 @@ int main(int argc, char *argv[])
     size_t input_size;
 
     // Array to store output file names
-    char output_files[256][256];
+    char output_files[MAX_FILES][256];
     int file_count = 0;
 
     while ((input_size = fread(input_bytes, sizeof(unsigned char), CHUNK_SIZE, input_file)) > 0)
     {
+        if (file_count == MAX_FILES) {
+            break;
+        }
+
         // Generate a unique random file name for the input chunk
         char output_file[256];
         generate_random_filename(output_file, 16);
