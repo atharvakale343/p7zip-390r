@@ -10,42 +10,200 @@ header-includes:
     - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
-# Checkpoint 1
+# Final Writeup
 
+Public Github Repository - This should include all code you wrote for eg. static analysis, fuzzing harnesses, etc. If you built your target with instrumentation for the purposes of fuzzing, this should also include build scripts. If you performed reverse engineering on your target and eg. started renaming variables/functions/did work on that front, include the relevant ghidra files as well.
 
+Start your writeup with a description of what you learned about this target. This should include some notes about the code layout, maybe some coding practices you noticed while going through the target or just more general functionality. Which parts of the target did you think were most interesting for the purposes of finding bugs?
 
+Describe what you chose for your automated analysis portion and why. How did you set this up, did you encounter issues (eg. slow fuzzer performance), and if so what did you to improve on these issues.
 
-    Public Github Repository - This should include all code you wrote for eg. static analysis, fuzzing harnesses, etc. If you built your target with instrumentation for the purposes of fuzzing, this should also include build scripts. If you performed reverse engineering on your target and eg. started renaming variables/functions/did work on that front, include the relevant ghidra files as well.
+What were the biggest challenges you faced when dealing with your target?
 
-    Start your writeup with a description of what you learned about this target. This should include some notes about the code layout, maybe some coding practices you noticed while going through the target or just more general functionality. Which parts of the target did you think were most interesting for the purposes of finding bugs?
-
-    Describe what you chose for your automated analysis portion and why. How did you set this up, did you encounter issues (eg. slow fuzzer performance), and if so what did you to improve on these issues.
-
-    What were the biggest challenges you faced when dealing with your target?
-
-    If given more time, what do you think would be good next steps to continue doing research on the target with the goal of finding bugs?
-
-
+If given more time, what do you think would be good next steps to continue doing research on the target with the goal of finding bugs?
 
 ## Contents:
 
--   [Github Repository]()
--   [Overview of the Target]()
-    - Code Layout
-    - Coding Observations
-    - Analyzing a Target Feature
--   [Automated Analysis]()
-    - Fuzzing
-        - How was it set up
-        - Results etc...
-    - Static Analysis
-        - ...
+-   [Github Repository](#github-link)
+-   [Overview of the Target](#overview-of-the-target)
+    -   [Code Layout](#code-layout)
+    -   [Coding Observations](#coding-observations)
+    -   [Analyzing Target Features](#target-features)
+-   [Automated Analysis](#automated-analysis)
+    -   [Fuzzing](#fuzzing)
+        -   How was it set up
+        -   Results etc...
+    -   [Static Analysis](#static-analysis)
+        -   ...
 -   [Challenges Faced]()
-    - ...
+    -   ...
 -   [Next Steps]()
 
 \newpage
 
-![](screenshots/afl-asan-out.png)
+## Github Link
 
-![](screenshots/asan-out.png)
+[https://github.com/atharvakale343/p7zip-390r](https://github.com/atharvakale343/p7zip-390r)
+
+\newpage
+
+## Overview of the Target
+
+**p7zip** is a fully compliant linux port of the open source _7zip_ tool for Windows. It is a utility used to archive and extract various compression formats. It is primarily used in Windows GUI tools as an underlying utility to support their file compression features.
+
+_p7zip_ provides the following features:
+
+1. Several compression algorithms (_lz4_, _zstd_, _Lizard_, etc...)
+2. CLI frontend
+3. Cryptographic algorithms for archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
+
+\newpage
+
+### Code Layout
+
+### Coding Observations
+
+### Target Features
+
+## Automated Analysis
+
+### Fuzzing
+
+Fuzzing was the main dynamic analysis technique we used against our target `p7zip`. We mainly fuzzed the extract (`e`) feature of our binary as the feature uses several decompression algorithms as part of its execution.
+
+We used `afl-plus-plus` as the primary fuzzing tool.
+
+[https://github.com/AFLplusplus/AFLplusplus](https://github.com/AFLplusplus/AFLplusplus)
+
+### Generating a corpus
+
+We took a variety of steps to find a good enough corpus for our fuzzing efforts. The major approach here to was to search online for commonly used corpora. We wanted to find not only `.zip` format, but also as many different formats possible.
+
+We found a decent corpus at [https://github.com/strongcourage/fuzzing-corpus](https://github.com/strongcourage/fuzzing-corpus)
+
+This included the following formats:
+
+-   `.zip`
+-   `.gzip`
+-   `.lrzip`
+-   `.jar`
+
+We added this as a target to our fuzzing Makefile.
+
+```Makefile
+get-inputs:
+	rm -rf in_raw fuzzing-corpus && mkdir in_raw
+
+	git clone -n --depth=1 --filter=tree:0 git@github.com:strongcourage/fuzzing-corpus.git
+	cd fuzzing-corpus && git sparse-checkout set --no-cone zip gzip/go-fuzz lrzip jar && git checkout
+	mv fuzzing-corpus/zip/go-fuzz/* in_raw
+	mv fuzzing-corpus/jar/* in_raw
+	mv fuzzing-corpus/gzip/go-fuzz/* in_raw
+	mv fuzzing-corpus/lrzip/* in_raw
+```
+
+The next step was to choose only "interesting" inputs from this corpus. This includes small inputs that don't crash that binary immediately.
+
+We used the `afl-cmin` functionality to minimize the corpus.
+
+```bash
+afl-cmin -i in_raw -o in_unique -- $(BIN_AFL) e -y @@
+```
+
+Another important minimization step included `tmin`. This augments each input such that it can be as small as possible without compromising it's ability to mutate and produce coverage in the instrumented target.
+
+Unfortunately, this process takes a long time, and it only completed for us after a day.
+
+```bash
+cd in_unique; for i in *; do afl-tmin -i "$$i" -o "../in/$$i" -- ../$(BIN_AFL) e -y @@; done
+```
+
+The cybersec room servers come in handy here!
+
+### Experimenting with fuzzing composition flags
+
+We discovered that it is not enough to fuzz a plain instrumented target with `afl-plus-plus`. The target binary may not be easily crashed with mutated inputs as `p7zip` has a robust input error checker. We took to fuzzing with various sanitizers instead to search for harder to find bugs.
+
+We used the following sanitizers on our target:
+
+-   ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free, heap/buffer overflows, initialization order bugs etc.
+
+-   MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs etc.
+
+-   TSAN: Thread Sanitizer: finds race conditions
+
+```Makefile
+afl:
+	rm -rf $(BIN_AFL)
+	git clone $(GH_URL) $(BIN_AFL)
+	cp 7zz-makefiles/$(BIN_DEFAULT).mak $(BIN_AFL)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL)/CPP/7zip/Bundles/Alone2 && CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-asan:
+	rm -rf $(BIN_AFL_ASAN)
+	git clone $(GH_URL) $(BIN_AFL_ASAN)
+	cp 7zz-makefiles/$(BIN_AFL_ASAN).mak $(BIN_AFL_ASAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_ASAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_ASAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-msan:
+	rm -rf $(BIN_AFL_MSAN)
+	git clone $(GH_URL) $(BIN_AFL_MSAN)
+	cp 7zz-makefiles/$(BIN_AFL_MSAN).mak $(BIN_AFL_MSAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_MSAN)/CPP/7zip/Bundles/Alone2 && AFL_CC_COMPILER=LLVM AFL_USE_MSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+
+afl-tsan:
+	rm -rf $(BIN_AFL_TSAN)
+	git clone $(GH_URL) $(BIN_AFL_TSAN)
+	cp 7zz-makefiles/$(BIN_AFL_TSAN).mak $(BIN_AFL_TSAN)/CPP/7zip/7zip_gcc.mak
+	cd $(BIN_AFL_TSAN)/CPP/7zip/Bundles/Alone2 && AFL_USE_TSAN=1 CC=$(AFL_CC) CXX=$(AFL_CXX) make -f makefile.gcc
+```
+
+### Extract command
+
+### Parallel Fuzzing
+
+To start with, our approach was to fuzz the `extract` command of `7zz`. So we found an appropriate corpus and fuzzed with the `e` command-line argument (along with `-y` to account for same filenames / avoid user input hangs).
+
+With all different sets of compilation flags that we mentioned previously, we compiled the binaries with AFL instrumentation. Then, to more effectively fuzz, we setup a parallel fuzzing environment in one of the **CyberSec club** VMs.
+
+We added the `afl-fuzz` commands in a `Makefile` and followed the official [guide](https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/fuzzing_in_depth.md#c-using-multiple-cores) for using multiple cores. Below are the commands we utilized. All of our fuzzers shared the same input and output directores to keep track of current fuzzing state.
+
+```bash
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-afl-$(HOSTNAME) -t 2000 -i in -o out -- $(BIN_AFL) e -y @@
+```
+
+Our main fuzzer used a regular instrumented AFL binary with no other `CFLAGS`. We used a timeout of 30 seconds to denote a hang (or infinite loops).
+
+```bash
+AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -S variant-afl-asan -t 2000 -i in -o out -- $(BIN_AFL_ASAN) e -y @@
+```
+
+Our variant fuzzers utilized binaries compiled with other flags (such as _asan_ and _msan_). These had the same timeout as before of 30 seconds.
+
+To keep track of all fuzzers and run them simultaneouly, we used `tmux` sessions with a separate window for each fuzzer.
+
+\newpage
+
+### Results
+
+We ran the fuzzers using multiple cores for around 5 days. We noticed no crashes in most of the variants, with ASAN being the exception. However, some fuzzers encountered hangs.
+
+![Main AFL Fuzzer](screenshots/afl-out.png){width=400}
+
+![ASAN Variant Fuzzer](screenshots/afl-asan-out.png){width=400}
+
+We tried running an input from `in/hangs` to check where an infinite loop could occur. But, all inputs eventually terminated while taking longer than 30 seconds. Therefore, we concluded that these executions were incorrectly flagged as hangs due to large size of the file. We could possibly set the timeout even higher to avoid this issue.
+
+**Analyzing asan crashes**
+
+### Archive command
+
+### Harness
+
+### Results
+
+### Static Analysis
+
+## Challenges Faced
+
+## Next Steps

@@ -3,7 +3,7 @@ SC = $(wildcard screenshots/*.png)
 
 INPUT_MD = submission.md
 OUTPUT_TEX = submission.tex
-OUTPUT_PDF = checkpoint.pdf
+OUTPUT_PDF = writeup.pdf
 ZIP_CMD = zip -FSr -j submission.zip $(OUTPUT_PDF)
 
 OUTPUT_PDF_PDFLATEX = $(patsubst %.tex,%.pdf,$(OUTPUT_TEX))
