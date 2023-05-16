@@ -49,7 +49,7 @@ If given more time, what do you think would be good next steps to continue doing
 -   [Challenges Faced](#challenges-faced)
     -   [Working with the codebase](#working-with-a-large-cc-codebase)
     -   ...
--   [Next Steps]()
+-   [Next Steps](#next-steps)
 
 \newpage
 
@@ -303,3 +303,8 @@ These more advanced approaches seem more well suited to a project of this size, 
 It was our first exposure to working with a large C/C++ codebase. Although neatly organized at first glance, the project quickly turned into a codebase with a bunch of build scripts. Our first challenge was to figure out how to get a debug and release build going. Documentation on the dependencies was sparse, so this involved a compile-and-fail cycle to find all the dependencies for our systems. However, this experience provided us with great insight on how real world C++ projects are build, and gave us some direction on how to design such a codebase for a project in the future.
 
 ## Next Steps
+
+-   We noticed slow fuzzing especially with the `harness` so _Snapshot fuzzing_ could help in making the process more effective and gain more coverage.
+-   Perform _Data Flow Analysis_ in tandem with simpler syntactic analysis tools/dynamic analysis.
+-   Find more corpora for the `archive` command as only _.txt_ files might not be enough to discover bugs.
+-   Set up variant analysis based on other commonly found bugs in open-source projects.
