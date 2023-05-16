@@ -6,8 +6,8 @@ date: "2023-05-14"
 caption-justification: centering
 titlepage: true
 header-includes:
-    - \usepackage{fvextra}
-    - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
 # Final Writeup
@@ -24,20 +24,20 @@ If given more time, what do you think would be good next steps to continue doing
 
 ## Contents:
 
--   [Github Repository](#github-link)
--   [Overview of the Target](#overview-of-the-target)
-    -   [Code Layout](#code-layout)
-    -   [Coding Observations](#coding-observations)
-    -   [Analyzing Target Features](#target-features)
--   [Automated Analysis](#automated-analysis)
-    -   [Fuzzing](#fuzzing)
-        -   How was it set up
-        -   Results etc...
-    -   [Static Analysis](#static-analysis)
-        -   ...
--   [Challenges Faced]()
-    -   ...
--   [Next Steps]()
+- [Github Repository](#github-link)
+- [Overview of the Target](#overview-of-the-target)
+  - [Code Layout](#code-layout)
+  - [Coding Observations](#coding-observations)
+  - [Analyzing Target Features](#target-features)
+- [Automated Analysis](#automated-analysis)
+  - [Fuzzing](#fuzzing)
+    - How was it set up
+    - Results etc...
+  - [Static Analysis](#static-analysis)
+    - ...
+- [Challenges Faced]()
+  - ...
+- [Next Steps]()
 
 \newpage
 
@@ -93,10 +93,10 @@ We found a decent corpus at [https://github.com/strongcourage/fuzzing-corpus](ht
 
 This included the following formats:
 
--   `.zip`
--   `.gzip`
--   `.lrzip`
--   `.jar`
+- `.zip`
+- `.gzip`
+- `.lrzip`
+- `.jar`
 
 We added this as a target to our fuzzing Makefile.
 
@@ -136,11 +136,11 @@ We discovered that it is not enough to fuzz a plain instrumented target with `af
 
 We used the following sanitizers on our target:
 
--   ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free, heap/buffer overflows, initialization order bugs etc.
+- ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free, heap/buffer overflows, initialization order bugs etc.
 
--   MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs etc.
+- MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs etc.
 
--   TSAN: Thread Sanitizer: finds race conditions
+- TSAN: Thread Sanitizer: finds race conditions
 
 ```Makefile
 afl:
@@ -238,9 +238,9 @@ We concluded that it would not be sufficient to just archive one file so we deci
 
 Our approach for the harness is as follows:
 
--   As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
--   Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
--   With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
+- As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
+- Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
+- With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
 
 We created a new _MainAr.cpp_ with the `main` function being replaced by our harness which would mutate the input and pass it into _argv_ of `main_7zz`, the original `main` function of p7zip. This way, we can fuzz the archive command with multiple files and potentially discover more bugs.
 
@@ -254,7 +254,33 @@ Our `afl-fuzz` command just passes in a cli argument to the harness.
 
 TODO
 
-### OSS-Fuzz
+\newpage
+
+### OSS-Fuzz and State of Fuzzing `p7zip`
+
+When we were researching good ways to fuzz `p7zip`, we found a [pull request](https://github.com/google/oss-fuzz/pull/5899) on the repository that asks the maintainer if they would like `p7zip` to be part of a wider fuzzing initiative by Google called [OSSFuzz](https://github.com/google/oss-fuzz) which fuzzes popular open-source projects for free. Although this pull request was never merged, it hinted to us that it was possible that some organizations are fuzzing this project regularly.
+
+Interestingly, we also found that the repository itself has a fuzzer set up for some of its codecs (compression algorithms).
+
+For example, we found a dependency [zstd](https://github.com/facebook/zstd/tree/dev/tests/fuzz), which is a real-time compression library build by Meta. This has a fuzzing subdirectory set up for fuzzing this library.
+
+![zstd Fuzzing Setup](screenshots/zstd-fuzzing.png)
+
+We found that they are using [libFuzzer](https://llvm.org/docs/LibFuzzer.html), a coverage guided fuzzing library by LLVM. They also use AFL in tandem with their setup.
+
+We found really interesting design choices in their fuzzing setup. One such choice was to incorporate unit-fuzzing, which is fuzzing small features of the target.
+
+This was evident in a **simple LLVM harness** they wrote:
+
+![Simple Compress Harness](screenshots/llvm-fuzz-simple.png)
+
+In this harness, they first produce an input using the libFuzzer's input generator. They then call into the function they are fuzzing-`ZSTD_compressCCtx`.
+
+![`ZSTD_compressCCtx()`](screenshots/compressCCtx.png)
+
+This seems to be a major function in their library that handles compression of certain input frames.
+
+These more advanced approaches seem more well suited to a project of this size, as fuzzing with a small harness may provide a higher exec speed.
 
 ### Static Analysis
 
