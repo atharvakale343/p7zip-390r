@@ -6,8 +6,8 @@ date: "2023-05-14"
 caption-justification: centering
 titlepage: true
 header-includes:
-  - \usepackage{fvextra}
-  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+    - \usepackage{fvextra}
+    - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
 # Final Writeup
@@ -24,20 +24,32 @@ If given more time, what do you think would be good next steps to continue doing
 
 ## Contents:
 
-- [Github Repository](#github-link)
-- [Overview of the Target](#overview-of-the-target)
-  - [Code Layout](#code-layout)
-  - [Coding Observations](#coding-observations)
-  - [Analyzing Target Features](#target-features)
-- [Automated Analysis](#automated-analysis)
-  - [Fuzzing](#fuzzing)
-    - How was it set up
-    - Results etc...
-  - [Static Analysis](#static-analysis)
-    - ...
-- [Challenges Faced]()
-  - ...
-- [Next Steps]()
+-   [Github Repository](#github-link)
+-   [Overview of the Target](#overview-of-the-target)
+    -   [Code Layout](#code-layout)
+    -   [Coding Observations](#coding-observations)
+    -   [Analyzing Target Features](#target-features)
+-   [Automated Analysis](#automated-analysis)
+
+    -   [Fuzzing](#fuzzing)
+
+        -   [Generating a corpus](#generating-a-corpus)
+        -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
+        -   [Extract command](#extract-command)
+            -   [Parallel fuzzing](#parallel-fuzzing)
+            -   [Results](#extract-fuzzing-results)
+        -   [Archive command](#archive-command)
+            -   [Harness](#harness)
+            -   [Results](#archive-fuzzing-results)
+        -   [OSS-Fuzz](#oss-fuzz-and-state-of-fuzzing-p7zip)
+
+    -   [Static Analysis](#static-analysis)
+        -   ...
+
+-   [Challenges Faced](#challenges-faced)
+    -   [Working with the codebase](#working-with-a-large-cc-codebase)
+    -   ...
+-   [Next Steps]()
 
 \newpage
 
@@ -93,10 +105,10 @@ We found a decent corpus at [https://github.com/strongcourage/fuzzing-corpus](ht
 
 This included the following formats:
 
-- `.zip`
-- `.gzip`
-- `.lrzip`
-- `.jar`
+-   `.zip`
+-   `.gzip`
+-   `.lrzip`
+-   `.jar`
 
 We added this as a target to our fuzzing Makefile.
 
@@ -136,11 +148,11 @@ We discovered that it is not enough to fuzz a plain instrumented target with `af
 
 We used the following sanitizers on our target:
 
-- ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free, heap/buffer overflows, initialization order bugs etc.
+-   ASAN: Address Sanitizer: discovers memory error vulnerabilities such as use-after-free, heap/buffer overflows, initialization order bugs etc.
 
-- MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs etc.
+-   MSAN: Memory Sanitizer: mainly used to discover reads to uninitialized memory such as structs etc.
 
-- TSAN: Thread Sanitizer: finds race conditions
+-   TSAN: Thread Sanitizer: finds race conditions
 
 ```Makefile
 afl:
@@ -194,7 +206,7 @@ To keep track of all fuzzers and run them simultaneouly, we used `tmux` sessions
 
 \newpage
 
-### Results
+### Extract Fuzzing Results
 
 We ran the fuzzers using multiple cores for around 5 days. We noticed no crashes in most of the variants, with ASAN being the exception. However, some fuzzers encountered hangs.
 
@@ -238,9 +250,9 @@ We concluded that it would not be sufficient to just archive one file so we deci
 
 Our approach for the harness is as follows:
 
-- As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
-- Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
-- With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
+-   As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
+-   Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
+-   With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
 
 We created a new _MainAr.cpp_ with the `main` function being replaced by our harness which would mutate the input and pass it into _argv_ of `main_7zz`, the original `main` function of p7zip. This way, we can fuzz the archive command with multiple files and potentially discover more bugs.
 
@@ -250,7 +262,7 @@ AFL_SKIP_CPUFREQ=1 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 $(AFL_FUZZ) -M main-a
 
 Our `afl-fuzz` command just passes in a cli argument to the harness.
 
-### Results
+### Archive Fuzzing Results
 
 TODO
 
@@ -289,7 +301,5 @@ These more advanced approaches seem more well suited to a project of this size, 
 ### Working with a large C/C++ codebase
 
 It was our first exposure to working with a large C/C++ codebase. Although neatly organized at first glance, the project quickly turned into a codebase with a bunch of build scripts. Our first challenge was to figure out how to get a debug and release build going. Documentation on the dependencies was sparse, so this involved a compile-and-fail cycle to find all the dependencies for our systems. However, this experience provided us with great insight on how real world C++ projects are build, and gave us some direction on how to design such a codebase for a project in the future.
-
-Real world projects
 
 ## Next Steps
