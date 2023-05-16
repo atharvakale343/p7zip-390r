@@ -260,4 +260,10 @@ TODO
 
 ## Challenges Faced
 
+### Working with a large C/C++ codebase
+
+It was our first exposure to working with a large C/C++ codebase. Although neatly organized at first glance, the project quickly turned into a codebase with a bunch of build scripts. Our first challenge was to figure out how to get a debug and release build going. Documentation on the dependencies was sparse, so this involved a compile-and-fail cycle to find all the dependencies for our systems. However, this experience provided us with great insight on how real world C++ projects are build, and gave us some direction on how to design such a codebase for a project in the future.
+
+Real world projects
+
 ## Next Steps
