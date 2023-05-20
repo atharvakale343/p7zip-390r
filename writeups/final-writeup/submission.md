@@ -24,32 +24,29 @@ If given more time, what do you think would be good next steps to continue doing
 
 ## Contents:
 
--   [Github Repository](#github-link)
--   [Overview of the Target](#overview-of-the-target)
-    -   [Code Layout](#code-layout)
-    -   [Coding Observations](#coding-observations)
-    -   [Analyzing Target Features](#target-features)
--   [Automated Analysis](#automated-analysis)
-
-    -   [Fuzzing](#fuzzing)
-
-        -   [Generating a corpus](#generating-a-corpus)
-        -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
-        -   [Extract command](#extract-command)
-            -   [Parallel fuzzing](#parallel-fuzzing)
-            -   [Results](#extract-fuzzing-results)
-        -   [Archive command](#archive-command)
-            -   [Harness](#harness)
-            -   [Results](#archive-fuzzing-results)
-        -   [OSS-Fuzz](#oss-fuzz-and-state-of-fuzzing-p7zip)
-
-    -   [Static Analysis](#static-analysis)
-        -   ...
-
--   [Challenges Faced](#challenges-faced)
-    -   [Working with the codebase](#working-with-a-large-cc-codebase)
-    -   ...
--   [Next Steps](#next-steps)
+- [Final Writeup](#final-writeup)
+	- [Contents:](#contents)
+	- [Github Link](#github-link)
+	- [Overview of the Target](#overview-of-the-target)
+		- [Code Layout](#code-layout)
+		- [Coding Observations](#coding-observations)
+		- [Target Features](#target-features)
+	- [Automated Analysis](#automated-analysis)
+		- [Fuzzing](#fuzzing)
+		- [Generating a corpus](#generating-a-corpus)
+		- [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
+		- [Extract command](#extract-command)
+		- [Parallel Fuzzing](#parallel-fuzzing)
+		- [Extract Fuzzing Results](#extract-fuzzing-results)
+		- [Archive command](#archive-command)
+		- [Harness](#harness)
+		- [Archive Fuzzing Results](#archive-fuzzing-results)
+		- [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
+		- [Static Analysis](#static-analysis)
+			- [CppCheck](#cppcheck)
+	- [Challenges Faced](#challenges-faced)
+		- [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
+	- [Next Steps](#next-steps)
 
 \newpage
 
@@ -295,6 +292,24 @@ This seems to be a major function in their library that handles compression of c
 These more advanced approaches seem more well suited to a project of this size, as fuzzing with a small harness may provide a higher exec speed.
 
 ### Static Analysis
+
+We used three main tools for static analysis: CppCheck, CodeQl, and Flawfinder.
+
+- CppCheck relies on multiple integrated tools for analyzing source; focuses on detecting undefined behavior
+
+- CodeQL abstracts the source to a QL-language IR, which can then be queried
+
+- Flawfinder is a syntatic analysis engine that scans for vulnerable code patterns
+
+We used three seperate tools because static analysis tolos are significantly more effective at finding vulnerabilities when combined*
+
+*CPPCheck/Flawfinder in particular when run alone struggle to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint)
+
+#### CppCheck
+
+CppCheck tagged a large number of erros, but most were false posistives associated with a macro, sech as this one:
+
+
 
 ## Challenges Faced
 
