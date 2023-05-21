@@ -364,11 +364,11 @@ We get 82 results from this pass, such as this one:
 
 ![First codeQL Hit](screenshots/codeql-first-hit.png){width=400}
 
-But all of the hits were in the C section of th ecode, and we'd been looking at the cpp version. Where the new/new[] operator replaces malloc for object initialization. But there was a wrapper function Alloc() which takes in a size parameter, so we rewrote the query to find all calls to this function
+But all of the hits were in the C section of the code, and we'd been looking at the cpp version. Where the new/new[] operator replaces malloc for object initialization. But there was a wrapper function Alloc() which takes in a size parameter, so we rewrote the query to find all calls to this function
 
 ![Second codeQL Pass](screenshots/codeql-second-pass.png)
 
-However, tracking the basic dataflow into the `alloc()` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the `new` operator):
+Through tracking the basic dataflow into the `alloc()` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the `new` operator):
 
 ![`Size Bug source`](screenshots/xmlresource.png)
 
