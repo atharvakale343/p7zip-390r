@@ -42,10 +42,13 @@ If given more time, what do you think would be good next steps to continue doing
 		- [Harness](#harness)
 		- [Archive Fuzzing Results](#archive-fuzzing-results)
 		- [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
-		- [Static Analysis](#static-analysis)
-			- [CppCheck](#cppcheck)
+	- [Static Analysis](#static-analysis)
+		- [CppCheck](#cppcheck)
+		- [CodeQL](#codeql)
+		- [FlawFinder](#flawfinder)
 	- [Challenges Faced](#challenges-faced)
 		- [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
+		- [Bug Hunting False Positives](#bug-hunting-false-positives)
 	- [Next Steps](#next-steps)
 
 \newpage
@@ -291,7 +294,7 @@ This seems to be a major function in their library that handles compression of c
 
 These more advanced approaches seem more well suited to a project of this size, as fuzzing with a small harness may provide a higher exec speed.
 
-### Static Analysis
+## Static Analysis
 
 We used three main tools for static analysis: CppCheck, CodeQl, and Flawfinder.
 
@@ -301,14 +304,62 @@ We used three main tools for static analysis: CppCheck, CodeQl, and Flawfinder.
 
 - Flawfinder is a syntatic analysis engine that scans for vulnerable code patterns
 
-We used three seperate tools because static analysis tolos are significantly more effective at finding vulnerabilities when combined*
+We used three seperate tools because static analysis tools are significantly more effective at finding vulnerabilities when combined*
 
 *CPPCheck/Flawfinder in particular when run alone struggle to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint)
 
-#### CppCheck
+### CppCheck
 
-CppCheck tagged a large number of erros, but most were false posistives associated with a macro, sech as this one:
+CppCheck tagged a large number of errors, but most were false positives.
 
+One such error reported undefined bit shifting:
+
+![`Bit Shift False Positive`](screenshots/cppcheck-bitshift-cpp-2.png)
+
+But this was just due to an innocuous macro: 
+
+![`Macro`](screenshots/cppcheck-bitshift-source-1.png)
+
+More promising was a potential null pointer bug: 
+
+![`Nullptr Warning`](screenshots/cppcheck-nullpointer.png)
+
+But this was checked for in the source:
+
+![`Warning Source`](screenshots/cppcheck-nullpointer-source-1.png)
+![`Warning Source`](screenshots/cppcheck-nullpointer-source-4.png)
+
+### CodeQL
+
+CodeQL creates a database from source, which can be queried for dataflow analysis. 
+
+Running it against the default CPP queries produced nothing interesting:
+
+![`CodeQL analysis output`](screenshots/flawfinder.png)
+
+However, tracking the basic dataflow into the ```alloc()``` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the ```new``` operator):
+
+![`Size Bug source`](screenshots/xmlresource.png)
+
+The ```XMLResource``` element is part of the header field of the file, which can theoretically be controlled. However, as noted, this triggers CPP error handling so is not a serious bug.
+
+### FlawFinder
+
+FlawFinder is a purely syntactical engine, which means it doesn't do any control flow, data flow, etc. analysis. It simply scans for vulnerable code patterns.
+
+As such, most warnings are not going to be particularly interesting:
+
+![`Flawfinder results`](screenshots/xmlresource.png)
+
+However, there was one particular flag that caught our eyes, and it had to do with a specific use of ```strcpy()``` in WimHandler.cpp:
+
+![`WimHandler strcpy()`](screenshots/strcpy.png)
+
+It was stated in the presentation that this was a potential segfault/buffer overflow. This was not correct, as ```method``` is cast as ```unsigned```, and as such there is no risk of overflow with this specific ```strcpy```.
+
+Method is a part of the WIM file header and is derived from the compression flags. It would be interesting if this was the source of a bug, but alas.
+
+We examined the ```ConvertUInt32ToString()``` function as well, just in case, but it appears to be robust.
 
 
 ## Challenges Faced
@@ -317,9 +368,16 @@ CppCheck tagged a large number of erros, but most were false posistives associat
 
 It was our first exposure to working with a large C/C++ codebase. Although neatly organized at first glance, the project quickly turned into a codebase with a bunch of build scripts. Our first challenge was to figure out how to get a debug and release build going. Documentation on the dependencies was sparse, so this involved a compile-and-fail cycle to find all the dependencies for our systems. However, this experience provided us with great insight on how real world C++ projects are build, and gave us some direction on how to design such a codebase for a project in the future.
 
+### Bug Hunting False Positives
+
+Another challenge for this target had to do with the static analysis portion. We ran our target through three utilities, and in total there were thousands of reported errors/warnings. Given the size and complexity of the codebase, bug hunting false positives was a chore. 
+
+
 ## Next Steps
 
 -   We noticed slow fuzzing especially with the `harness` so _Snapshot fuzzing_ could help in making the process more effective and gain more coverage.
--   Perform _Data Flow Analysis_ in tandem with simpler syntactic analysis tools/dynamic analysis.
+-   Writing more in depth queries in CodeQL to perform more comprehensive control-flow analysis.
+-   Perform _Data Flow Analysis_ in tandem with simpler syntactic analysis tools/dynamic analysis using CodeQL or similar.
+-   Delve into the compile process in order to emit LLVM bitcode and consequently the IR so we can write passes on the target.
 -   Find more corpora for the `archive` command as only _.txt_ files might not be enough to discover bugs.
 -   Set up variant analysis based on other commonly found bugs in open-source projects.
