@@ -24,32 +24,32 @@ If given more time, what do you think would be good next steps to continue doing
 
 ## Contents:
 
--   [Final Writeup](#final-writeup)
-    -   [Contents:](#contents)
-    -   [Github Link](#github-link)
-    -   [Overview of the Target](#overview-of-the-target)
-        -   [Code Layout](#code-layout)
-        -   [Coding Observations](#coding-observations)
-        -   [Target Features](#target-features)
-    -   [Automated Analysis](#automated-analysis)
-        -   [Fuzzing](#fuzzing)
-        -   [Generating a corpus](#generating-a-corpus)
-        -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
-        -   [Extract command](#extract-command)
-        -   [Parallel Fuzzing](#parallel-fuzzing)
-        -   [Extract Fuzzing Results](#extract-fuzzing-results)
-        -   [Archive command](#archive-command)
-        -   [Harness](#harness)
-        -   [Archive Fuzzing Results](#archive-fuzzing-results)
-        -   [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
-    -   [Static Analysis](#static-analysis)
-        -   [CppCheck](#cppcheck)
-        -   [CodeQL](#codeql)
-        -   [FlawFinder](#flawfinder)
-    -   [Challenges Faced](#challenges-faced)
-        -   [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
-        -   [Bug Hunting False Positives](#bug-hunting-false-positives)
-    -   [Next Steps](#next-steps)
+- [Final Writeup](#final-writeup)
+	- [Contents:](#contents)
+	- [Github Link](#github-link)
+	- [Overview of the Target](#overview-of-the-target)
+		- [Code Layout](#code-layout)
+		- [Coding Observations](#coding-observations)
+		- [Target Features](#target-features)
+	- [Automated Analysis](#automated-analysis)
+		- [Fuzzing](#fuzzing)
+		- [Generating a corpus](#generating-a-corpus)
+		- [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
+		- [Extract command](#extract-command)
+		- [Parallel Fuzzing](#parallel-fuzzing)
+		- [Extract Fuzzing Results](#extract-fuzzing-results)
+		- [Archive command](#archive-command)
+		- [Harness](#harness)
+		- [Archive Fuzzing Results](#archive-fuzzing-results)
+		- [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
+	- [Static Analysis](#static-analysis)
+		- [CppCheck](#cppcheck)
+		- [CodeQL](#codeql)
+		- [FlawFinder](#flawfinder)
+	- [Challenges Faced](#challenges-faced)
+		- [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
+		- [Bug Hunting False Positives](#bug-hunting-false-positives)
+	- [Next Steps](#next-steps)
 
 \newpage
 
@@ -78,6 +78,12 @@ _p7zip_ provides the following features:
 ![Call Graph for extract command](../../screenshots/func_call_graph1.png)
 
 ![Call Graph for archive command](../../screenshots/func_call_graph2.png)
+
+This is a very large codebase. Thankfully there was a bit of documentation on code layout. And because we were almost entirely using automated analysis tools, we didn't have to do a lot of interacting with the codebase directly - once we got everything working anyway.
+
+[DOC/readme.txt](https://github.com/p7zip-project/p7zip/tree/master/DOC) has some useful high level overviews of the codebase:
+
+![Code Base Overview](screenshots/codebase_overview.png){width=550}
 
 ### Coding Observations
 
@@ -347,6 +353,20 @@ CodeQL creates a database from source, which can be queried for dataflow analysi
 Running it against the default CPP queries produced nothing interesting:
 
 ![`CodeQL analysis output`](screenshots/flawfinder.png)
+
+Next we worked on trying to find bugs associated with allocation functions. We designed a query to find all calls to malloc where the allocation size came from somewhere that had arithmetic operations on the way. This was only looking at local flow at first.
+
+![First codeQL Pass](screenshots/codeql-first-pass.png)
+
+This just looks for all instances of malloc, where the source has arithmetic operations.
+
+We get 82 results from this pass, such as this one:
+
+![First codeQL Hit](screenshots/codeql-first-hit.png){width=400}
+
+But all of the hits were in the C section of th ecode, and we'd been looking at the cpp version. Where the new/new[] operator replaces malloc for object initialization. But there was a wrapper function Alloc() which takes in a size parameter, so we rewrote the query to find all calls to this function
+
+![Second codeQL Pass](screenshots/codeql-second-pass.png)
 
 However, tracking the basic dataflow into the `alloc()` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the `new` operator):
 
