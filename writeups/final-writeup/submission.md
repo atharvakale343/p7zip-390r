@@ -75,11 +75,13 @@ _p7zip_ provides the following features:
 
 ### Code Layout
 
-[Call Graph for extract command](../../screenshots/func_call_graph1.png)
+![Call Graph for extract command](../../screenshots/func_call_graph1.png)
 
-[Call Graph for archive command](../../screenshots/func_call_graph2.png)
+![Call Graph for archive command](../../screenshots/func_call_graph2.png)
 
 ### Coding Observations
+
+TODO
 
 ### Target Features
 
