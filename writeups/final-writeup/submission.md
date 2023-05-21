@@ -81,7 +81,12 @@ _p7zip_ provides the following features:
 
 ### Coding Observations
 
-TODO
+The functionality of the console version of this application is straightforward. The binary accepts
+command line arguments (main defined in MainAr.cpp), then passes them to main2(), where they are parsed. 
+
+From there, depending on the supplied command, extract/archive arguments are handled, with the respective call graphs given above.
+
+P7zip's argument parser is robust, and given the functionality of our target (accepts and parses a file), it is clear that fuzzing is an obvious choice here for finding bugs. 
 
 ### Target Features
 
