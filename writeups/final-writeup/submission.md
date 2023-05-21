@@ -24,32 +24,32 @@ If given more time, what do you think would be good next steps to continue doing
 
 ## Contents:
 
-- [Final Writeup](#final-writeup)
-	- [Contents:](#contents)
-	- [Github Link](#github-link)
-	- [Overview of the Target](#overview-of-the-target)
-		- [Code Layout](#code-layout)
-		- [Coding Observations](#coding-observations)
-		- [Target Features](#target-features)
-	- [Automated Analysis](#automated-analysis)
-		- [Fuzzing](#fuzzing)
-		- [Generating a corpus](#generating-a-corpus)
-		- [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
-		- [Extract command](#extract-command)
-		- [Parallel Fuzzing](#parallel-fuzzing)
-		- [Extract Fuzzing Results](#extract-fuzzing-results)
-		- [Archive command](#archive-command)
-		- [Harness](#harness)
-		- [Archive Fuzzing Results](#archive-fuzzing-results)
-		- [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
-	- [Static Analysis](#static-analysis)
-		- [CppCheck](#cppcheck)
-		- [CodeQL](#codeql)
-		- [FlawFinder](#flawfinder)
-	- [Challenges Faced](#challenges-faced)
-		- [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
-		- [Bug Hunting False Positives](#bug-hunting-false-positives)
-	- [Next Steps](#next-steps)
+-   [Final Writeup](#final-writeup)
+    -   [Contents:](#contents)
+    -   [Github Link](#github-link)
+    -   [Overview of the Target](#overview-of-the-target)
+        -   [Code Layout](#code-layout)
+        -   [Coding Observations](#coding-observations)
+        -   [Target Features](#target-features)
+    -   [Automated Analysis](#automated-analysis)
+        -   [Fuzzing](#fuzzing)
+        -   [Generating a corpus](#generating-a-corpus)
+        -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
+        -   [Extract command](#extract-command)
+        -   [Parallel Fuzzing](#parallel-fuzzing)
+        -   [Extract Fuzzing Results](#extract-fuzzing-results)
+        -   [Archive command](#archive-command)
+        -   [Harness](#harness)
+        -   [Archive Fuzzing Results](#archive-fuzzing-results)
+        -   [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
+    -   [Static Analysis](#static-analysis)
+        -   [CppCheck](#cppcheck)
+        -   [CodeQL](#codeql)
+        -   [FlawFinder](#flawfinder)
+    -   [Challenges Faced](#challenges-faced)
+        -   [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
+        -   [Bug Hunting False Positives](#bug-hunting-false-positives)
+    -   [Next Steps](#next-steps)
 
 \newpage
 
@@ -264,7 +264,11 @@ Our `afl-fuzz` command just passes in a cli argument to the harness.
 
 ### Archive Fuzzing Results
 
-TODO
+We also ran these fuzzers using multiple cores, but for a shorter timeframe of around 2 days. We did not notice any crashes or hangs in any of the fuzzers. Also, we were not able to observe the fuzzers for a longer duration and record more insights as the cybersec room servers had been shut down.
+
+![Main AFL Fuzzer](screenshots/afl-fuzz-archive.png)
+
+![ASAN Variant Fuzzer](screenshots/afl-asan-archive.png)
 
 \newpage
 
@@ -298,15 +302,15 @@ These more advanced approaches seem more well suited to a project of this size, 
 
 We used three main tools for static analysis: CppCheck, CodeQl, and Flawfinder.
 
-- CppCheck relies on multiple integrated tools for analyzing source; focuses on detecting undefined behavior
+-   CppCheck relies on multiple integrated tools for analyzing source; focuses on detecting undefined behavior
 
-- CodeQL abstracts the source to a QL-language IR, which can then be queried
+-   CodeQL abstracts the source to a QL-language IR, which can then be queried
 
-- Flawfinder is a syntatic analysis engine that scans for vulnerable code patterns
+-   Flawfinder is a syntatic analysis engine that scans for vulnerable code patterns
 
-We used three seperate tools because static analysis tools are significantly more effective at finding vulnerabilities when combined*
+We used three seperate tools because static analysis tools are significantly more effective at finding vulnerabilities when combined\*
 
-*CPPCheck/Flawfinder in particular when run alone struggle to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint)
+*CPPCheck/Flawfinder* in particular when run alone struggle to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint)
 
 ### CppCheck
 
@@ -316,11 +320,11 @@ One such error reported undefined bit shifting:
 
 ![`Bit Shift False Positive`](screenshots/cppcheck-bitshift-cpp-2.png)
 
-But this was just due to an innocuous macro: 
+But this was just due to an innocuous macro:
 
 ![`Macro`](screenshots/cppcheck-bitshift-source-1.png)
 
-More promising was a potential null pointer bug: 
+More promising was a potential null pointer bug:
 
 ![`Nullptr Warning`](screenshots/cppcheck-nullpointer.png)
 
@@ -331,17 +335,17 @@ But this was checked for in the source:
 
 ### CodeQL
 
-CodeQL creates a database from source, which can be queried for dataflow analysis. 
+CodeQL creates a database from source, which can be queried for dataflow analysis.
 
 Running it against the default CPP queries produced nothing interesting:
 
 ![`CodeQL analysis output`](screenshots/flawfinder.png)
 
-However, tracking the basic dataflow into the ```alloc()``` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the ```new``` operator):
+However, tracking the basic dataflow into the `alloc()` sink by writing a query we were able to pin down the source of the bug that triggered the program crash (invalid size passed to the `new` operator):
 
 ![`Size Bug source`](screenshots/xmlresource.png)
 
-The ```XMLResource``` element is part of the header field of the file, which can theoretically be controlled. However, as noted, this triggers CPP error handling so is not a serious bug.
+The `XMLResource` element is part of the header field of the file, which can theoretically be controlled. However, as noted, this triggers CPP error handling so is not a serious bug.
 
 ### FlawFinder
 
@@ -351,16 +355,15 @@ As such, most warnings are not going to be particularly interesting:
 
 ![`Flawfinder results`](screenshots/xmlresource.png)
 
-However, there was one particular flag that caught our eyes, and it had to do with a specific use of ```strcpy()``` in WimHandler.cpp:
+However, there was one particular flag that caught our eyes, and it had to do with a specific use of `strcpy()` in WimHandler.cpp:
 
 ![`WimHandler strcpy()`](screenshots/strcpy.png)
 
-It was stated in the presentation that this was a potential segfault/buffer overflow. This was not correct, as ```method``` is cast as ```unsigned```, and as such there is no risk of overflow with this specific ```strcpy```.
+It was stated in the presentation that this was a potential segfault/buffer overflow. This was not correct, as `method` is cast as `unsigned`, and as such there is no risk of overflow with this specific `strcpy`.
 
 Method is a part of the WIM file header and is derived from the compression flags. It would be interesting if this was the source of a bug, but alas.
 
-We examined the ```ConvertUInt32ToString()``` function as well, just in case, but it appears to be robust.
-
+We examined the `ConvertUInt32ToString()` function as well, just in case, but it appears to be robust.
 
 ## Challenges Faced
 
@@ -370,8 +373,7 @@ It was our first exposure to working with a large C/C++ codebase. Although neatl
 
 ### Bug Hunting False Positives
 
-Another challenge for this target had to do with the static analysis portion. We ran our target through three utilities, and in total there were thousands of reported errors/warnings. Given the size and complexity of the codebase, bug hunting false positives was a chore. 
-
+Another challenge for this target had to do with the static analysis portion. We ran our target through three utilities, and in total there were thousands of reported errors/warnings. Given the size and complexity of the codebase, bug hunting false positives was a chore.
 
 ## Next Steps
 
