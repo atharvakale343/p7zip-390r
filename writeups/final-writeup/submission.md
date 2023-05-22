@@ -12,44 +12,32 @@ header-includes:
 
 # Final Writeup
 
-Public Github Repository - This should include all code you wrote for eg. static analysis, fuzzing harnesses, etc. If you built your target with instrumentation for the purposes of fuzzing, this should also include build scripts. If you performed reverse engineering on your target and eg. started renaming variables/functions/did work on that front, include the relevant ghidra files as well.
-
-Start your writeup with a description of what you learned about this target. This should include some notes about the code layout, maybe some coding practices you noticed while going through the target or just more general functionality. Which parts of the target did you think were most interesting for the purposes of finding bugs?
-
-Describe what you chose for your automated analysis portion and why. How did you set this up, did you encounter issues (eg. slow fuzzer performance), and if so what did you to improve on these issues.
-
-What were the biggest challenges you faced when dealing with your target?
-
-If given more time, what do you think would be good next steps to continue doing research on the target with the goal of finding bugs?
-
 ## Contents:
 
-- [Final Writeup](#final-writeup)
-	- [Contents:](#contents)
-	- [Github Link](#github-link)
-	- [Overview of the Target](#overview-of-the-target)
-		- [Code Layout](#code-layout)
-		- [Coding Observations](#coding-observations)
-		- [Target Features](#target-features)
-	- [Automated Analysis](#automated-analysis)
-		- [Fuzzing](#fuzzing)
-		- [Generating a corpus](#generating-a-corpus)
-		- [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
-		- [Extract command](#extract-command)
-		- [Parallel Fuzzing](#parallel-fuzzing)
-		- [Extract Fuzzing Results](#extract-fuzzing-results)
-		- [Archive command](#archive-command)
-		- [Harness](#harness)
-		- [Archive Fuzzing Results](#archive-fuzzing-results)
-		- [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
-	- [Static Analysis](#static-analysis)
-		- [CppCheck](#cppcheck)
-		- [CodeQL](#codeql)
-		- [FlawFinder](#flawfinder)
-	- [Challenges Faced](#challenges-faced)
-		- [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
-		- [Bug Hunting False Positives](#bug-hunting-false-positives)
-	- [Next Steps](#next-steps)
+-   [Github Link](#github-link)
+-   [Overview of the Target](#overview-of-the-target)
+    -   [Code Layout](#code-layout)
+    -   [Coding Observations](#coding-observations)
+    -   [Target Features](#target-features)
+-   [Automated Analysis](#automated-analysis)
+    -   [Fuzzing](#fuzzing)
+        -   [Generating a corpus](#generating-a-corpus)
+        -   [Experimenting with fuzzing composition flags](#experimenting-with-fuzzing-composition-flags)
+        -   [Extract command](#extract-command)
+            -   [Parallel Fuzzing](#parallel-fuzzing)
+            -   [Extract Fuzzing Results](#extract-fuzzing-results)
+        -   [Archive command](#archive-command)
+            -   [Harness](#harness)
+            -   [Archive Fuzzing Results](#archive-fuzzing-results)
+        -   [OSS-Fuzz and State of Fuzzing `p7zip`](#oss-fuzz-and-state-of-fuzzing-p7zip)
+	-   [Static Analysis](#static-analysis)
+		-   [CppCheck](#cppcheck)
+		-   [CodeQL](#codeql)
+		-   [FlawFinder](#flawfinder)
+-   [Challenges Faced](#challenges-faced)
+    -   [Working with a large C/C++ codebase](#working-with-a-large-cc-codebase)
+    -   [Bug Hunting False Positives](#bug-hunting-false-positives)
+-   [Next Steps](#next-steps)
 
 \newpage
 
@@ -67,9 +55,7 @@ _p7zip_ provides the following features:
 
 1. Several compression algorithms (_lz4_, _zstd_, _Lizard_, etc...)
 2. CLI frontend
-3. Cryptographic algorithms for
-   Home
-   Exp archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
+3. Cryptographic algorithms for archive encryption (_SHA256_, _AES_, _RAR5_, etc...)
 
 \newpage
 
@@ -79,7 +65,7 @@ _p7zip_ provides the following features:
 
 ![Call Graph for archive command](../../screenshots/func_call_graph2.png)
 
-This is a very large codebase. Thankfully there was a bit of documentation on code layout. And because we were almost entirely using automated analysis tools, we didn't have to do a lot of interacting with the codebase directly - once we got everything working anyway.
+This is a very large codebase. Thankfully there was a bit of documentation on code layout. And because we were almost entirely using automated analysis tools, we did not have to do a lot of interacting with the codebase directly - once we got everything working anyway.
 
 [DOC/readme.txt](https://github.com/p7zip-project/p7zip/tree/master/DOC) has some useful high level overviews of the codebase:
 
@@ -88,17 +74,19 @@ This is a very large codebase. Thankfully there was a bit of documentation on co
 ### Coding Observations
 
 The functionality of the console version of this application is straightforward. The binary accepts
-command line arguments (main defined in MainAr.cpp), then passes them to main2(), where they are parsed. 
+command line arguments (main defined in _MainAr.cpp_), then passes them to `main2()`, where they are parsed.
 
 From there, depending on the supplied command, extract/archive arguments are handled, with the respective call graphs given above.
 
-P7zip's argument parser is robust, and given the functionality of our target (accepts and parses a file), it is clear that fuzzing is an obvious choice here for finding bugs. 
+p7zip's argument parser is robust, and given the functionality of our target (accepts and parses a file), it is clear that fuzzing is an obvious choice here for finding bugs.
 
 ### Target Features
 
-The main features of `7zz` is to extract from different compression formats and archive a collection of files. We decided to focus mainly on the `extract` or **e** command which accepts a compressed file and extracts its contents to the current directory.
+The main features of _7zz_ is to extract from different compression formats and archive a collection of files. We decided to focus mainly on the `extract` or **e** command which accepts a compressed file and extracts its contents to the current directory.
 
-We also looked into the `archive` or **a** command that compresses a list of files into a `.7z` file. This uses various compression algorithms such as LZ4, Brotli, Lizard, etc.
+We also looked into the `archive` or **a** command that compresses a list of files into a _.7z_ file. This uses various compression algorithms such as LZ4, Brotli, Lizard, etc.
+
+\newpage
 
 ## Automated Analysis
 
@@ -137,7 +125,7 @@ get-inputs:
 	mv fuzzing-corpus/lrzip/* in_raw
 ```
 
-The next step was to choose only "interesting" inputs from this corpus. This includes small inputs that don't crash that binary immediately.
+The next step was to choose only "interesting" inputs from this corpus. This includes small inputs that do not crash that binary immediately.
 
 We used the `afl-cmin` functionality to minimize the corpus.
 
@@ -197,7 +185,7 @@ afl-tsan:
 
 ### Parallel Fuzzing
 
-To start with, our approach was to fuzz the `extract` command of `7zz`. So we found an appropriate corpus and fuzzed with the `e` command-line argument (along with `-y` to account for same filenames / avoid user input hangs).
+To start with, our approach was to fuzz the `extract` command of _7zz_. So we found an appropriate corpus and fuzzed with the `e` command-line argument (along with `-y` to account for same filenames / avoid user input hangs).
 
 With all different sets of compilation flags that we mentioned previously, we compiled the binaries with AFL instrumentation. Then, to more effectively fuzz, we setup a parallel fuzzing environment in one of the **CyberSec club** VMs.
 
@@ -251,7 +239,7 @@ However, this is a potential bug if combined with static/taint analysis so see i
 
 ### Archive command
 
-We also fuzzed the `archive` command of `7zz`. For this, we initially chose a corpus of _.txt_ files, fuzzing the `a` command-line argument (along with `-y` to avoid user input hangs). But, we could not directly fuzz this since `afl-fuzz` only supports one cli argument and `a` can be used with multiple files with the following syntax:
+We also fuzzed the `archive` command of _7zz_. For this, we initially chose a corpus of _.txt_ files, fuzzing the `a` command-line argument (along with `-y` to avoid user input hangs). But, we could not directly fuzz this since `afl-fuzz` only supports one cli argument and `a` can be used with multiple files with the following syntax:
 
 ```bash
 7zz a files.zip file1.txt file2.txt file3.txt
@@ -265,7 +253,7 @@ Our approach for the harness is as follows:
 
 -   As `afl-fuzz` allows for only one input to the target binary, our harness would accept one file name as argument.
 -   Contents of this input file would be divided into chunks of $1000$ bytes and one new file will be created for each chunk.
--   With a maximum limit of $15$ files, these set of created files would be passed in as arguments to `7zz`.
+-   With a maximum limit of $15$ files, these set of created files would be passed in as arguments to _7zz_.
 
 We created a new _MainAr.cpp_ with the `main` function being replaced by our harness which would mutate the input and pass it into _argv_ of `main_7zz`, the original `main` function of p7zip. This way, we can fuzz the archive command with multiple files and potentially discover more bugs.
 
@@ -303,7 +291,7 @@ This was evident in a **simple LLVM harness** they wrote:
 
 ![Simple Compress Harness](screenshots/llvm-fuzz-simple.png)
 
-In this harness, they first produce an input using the libFuzzer's input generator. They then call into the function they are fuzzing-`ZSTD_compressCCtx`.
+In this harness, they first produce an input using the libFuzzer's input generator. They then call into the function they are fuzzing - `ZSTD_compressCCtx`.
 
 ![`ZSTD_compressCCtx()`](screenshots/compressCCtx.png)
 
@@ -313,17 +301,17 @@ These more advanced approaches seem more well suited to a project of this size, 
 
 ## Static Analysis
 
-We used three main tools for static analysis: CppCheck, CodeQl, and Flawfinder.
+We used three main tools for static analysis: **CppCheck**, **CodeQl**, and **Flawfinder**.
 
--   CppCheck relies on multiple integrated tools for analyzing source; focuses on detecting undefined behavior
+-   CppCheck relies on multiple integrated tools for analyzing source and focuses on detecting undefined behavior
 
 -   CodeQL abstracts the source to a QL-language IR, which can then be queried
 
 -   Flawfinder is a syntatic analysis engine that scans for vulnerable code patterns
 
-We used three seperate tools because static analysis tools are significantly more effective at finding vulnerabilities when combined\*
+We used three seperate tools because static analysis tools are significantly more effective at finding vulnerabilities when combined.
 
-*CPPCheck/Flawfinder* in particular when run alone struggle to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint)
+_CPPCheck/Flawfinder_ in particular when run alone struggles to identify vulnerabilities, according to Lip et al. 2022 empirical study (preprint).
 
 ### CppCheck
 
@@ -344,6 +332,7 @@ More promising was a potential null pointer bug:
 But this was checked for in the source:
 
 ![`Warning Source`](screenshots/cppcheck-nullpointer-source-1.png)
+
 ![`Warning Source`](screenshots/cppcheck-nullpointer-source-4.png)
 
 ### CodeQL
@@ -364,7 +353,7 @@ We get 82 results from this pass, such as this one:
 
 ![First codeQL Hit](screenshots/codeql-first-hit.png){width=400}
 
-But all of the hits were in the C section of the code, and we'd been looking at the cpp version. Where the new/new[] operator replaces malloc for object initialization. But there was a wrapper function Alloc() which takes in a size parameter, so we rewrote the query to find all calls to this function
+But all of the hits were in the C section of the code, and we'd been looking at the cpp version. Where the **new/new[]** operator replaces malloc for object initialization. But there was a wrapper function `Alloc()` which takes in a size parameter, so we rewrote the query to find all calls to this function
 
 ![Second codeQL Pass](screenshots/codeql-second-pass.png)
 
@@ -376,19 +365,19 @@ The `XMLResource` element is part of the header field of the file, which can the
 
 ### FlawFinder
 
-FlawFinder is a purely syntactical engine, which means it doesn't do any control flow, data flow, etc. analysis. It simply scans for vulnerable code patterns.
+FlawFinder is a purely syntactical engine, which means it does not do any control flow, data flow, etc. analysis. It simply scans for vulnerable code patterns.
 
-As such, most warnings are not going to be particularly interesting:
+As such, most warnings are not going to be particularly interesting.
 
 ![`Flawfinder results`](screenshots/xmlresource.png)
 
-However, there was one particular flag that caught our eyes, and it had to do with a specific use of `strcpy()` in WimHandler.cpp:
+However, there was one particular flag that caught our eyes, and it had to do with a specific use of `strcpy()` in _WimHandler.cpp_.
 
 ![`WimHandler strcpy()`](screenshots/strcpy.png)
 
 It was stated in the presentation that this was a potential segfault/buffer overflow. This was not correct, as `method` is cast as `unsigned`, and as such there is no risk of overflow with this specific `strcpy`.
 
-Method is a part of the WIM file header and is derived from the compression flags. It would be interesting if this was the source of a bug, but alas.
+`method` is a part of the _WIM_ file header and is derived from the compression flags. It would be interesting if this was the source of a bug, but alas.
 
 We examined the `ConvertUInt32ToString()` function as well, just in case, but it appears to be robust.
 
@@ -404,7 +393,7 @@ Another challenge for this target had to do with the static analysis portion. We
 
 ## Next Steps
 
--   We noticed slow fuzzing especially with the `harness` so _Snapshot fuzzing_ could help in making the process more effective and gain more coverage.
+-   We noticed slow fuzzing especially with the `harness` so _Ssnapshot fuzzing_ could help in making the process more effective and gain more coverage.
 -   Writing more in depth queries in CodeQL to perform more comprehensive control-flow analysis.
 -   Perform _Data Flow Analysis_ in tandem with simpler syntactic analysis tools/dynamic analysis using CodeQL or similar.
 -   Delve into the compile process in order to emit LLVM bitcode and consequently the IR so we can write passes on the target.
