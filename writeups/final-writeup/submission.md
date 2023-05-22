@@ -383,6 +383,8 @@ It was stated in the presentation that this was a potential segfault/buffer over
 
 We examined the `ConvertUInt32ToString()` function as well, just in case, but it appears to be robust.
 
+\newpage
+
 ## Challenges Faced
 
 ### Working with a large C/C++ codebase
@@ -392,6 +394,8 @@ It was our first exposure to working with a large C/C++ codebase. Although neatl
 ### Bug Hunting False Positives
 
 Another challenge for this target had to do with the static analysis portion. We ran our target through three utilities, and in total there were thousands of reported errors/warnings. Given the size and complexity of the codebase, bug hunting false positives was a chore.
+
+\newpage
 
 ## Next Steps
 
