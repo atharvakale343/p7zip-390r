@@ -299,6 +299,8 @@ This seems to be a major function in their library that handles compression of c
 
 These more advanced approaches seem more well suited to a project of this size, as fuzzing with a small harness may provide a higher exec speed.
 
+\newpage
+
 ## Static Analysis
 
 We used three main tools for static analysis: **CppCheck**, **CodeQl**, and **Flawfinder**.
