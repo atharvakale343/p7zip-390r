@@ -55,7 +55,6 @@ dkms.conf
 .DS_Store
 
 # General
-p7zip*
 .vscode
 .gdb_history
 venv
@@ -71,5 +70,4 @@ codeql
 analysis-db.codeql
 p7zip-dbg
 fuzzing-work
-7zz_*
-!7zz_*.mak
+7zz_*/
